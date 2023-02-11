@@ -1,0 +1,38 @@
+<resources>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    -->
+	<string name="nome_cpu">CPU-Name</string>
+	<string name="nome_utente">Nutzername</string>
+	<string name="prefisso_punti"></string>
+	<string name="suffisso_punti">-Punkte</string>
+	<string name="prefisso_nel_mazzo_rimangono">Es sind noch&#160;</string>
+	<string name="suffisso_nel_mazzo_rimangono">&#160;Karten im Stapel</string>
+	<string name="il_seme_di_briscola_e">Der Trumpfanzug ist</string>
+	<string name="applicazione">Informationen</string>
+	<string name="informazioni">Informations</string>
+	<string name="opzioni">Optionen</string>
+	<string name="secondi">Sekunden, in denen die Stücke gezeigt werden</string>
+	<string name="carta_briscola">Die Karte mit der Trumpffarbe kann punkten</string>
+	<string name="avvisa_tallone">Warnungen, wenn das Deck endet</string>
+	<string name="il_mazzo_e_finito">Das Deck ist fertig</string>
+	<string name="prefisso_cpu_gioca">Die CPU hat die gespielt&#160;</string>
+	<string name="suffisso_cpu_gioca">&#160;der&#160;</string>
+	<string name="briscola">Briscola</string>
+	<string name="salva">Speichern</string>
+	<string name="valore_non_valido">Ungültiger rvalue</string>
+	<string name="valore_troppo_alto">rWert zu hoch</string>
+	<string name="gioco_pareggiato">Das Spiel ist unentschieden</string>
+	<string name="hai_vinto">Sie haben gewonnen mit</string>
+	<string name="hai_perso">Sie verlieren um</string>
+	<string name="per"></string>
+	<string name="punti">Punkte.</string>
+	<string name="gioco_finito">Das Spiel ist vorbei..</string>
+	<string name="nuovo_gioco">Möchten Sie ein neues Spiel starten?</string>
+	<string name="no">NEIN</string>
+	<string name="condividi">Aktie</string>
+	<string name="bastoni">Sticks</string>
+	<string name="coppe">Cups</string>
+	<string name="denari">Denier</string>
+	<string name="spade">Schwerter</string>
+</resources>

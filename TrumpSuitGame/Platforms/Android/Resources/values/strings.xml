@@ -1,0 +1,38 @@
+<resources>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    -->
+	<string name="nome_cpu">CPU name</string>
+	<string name="nome_utente">User name</string>
+	<string name="prefisso_punti"></string>
+	<string name="suffisso_punti">&#160;Points</string>
+	<string name="prefisso_nel_mazzo_rimangono">There are&#160;</string>
+	<string name="suffisso_nel_mazzo_rimangono">&#160;cards left in the Deck</string>
+	<string name="il_seme_di_briscola_e">The trump suit is</string>
+	<string name="applicazione">Application</string>
+	<string name="informazioni">Informations</string>
+	<string name="opzioni">Options</string>
+	<string name="secondi">Seconds during which to show the plays</string>
+	<string name="carta_briscola">The Card designating the trump suit can score points</string>
+	<string name="avvisa_tallone">Alerts when the deck ends</string>
+	<string name="il_mazzo_e_finito">The Deck is finished</string>
+	<string name="prefisso_cpu_gioca">The CPU has played the&#160;</string>
+	<string name="suffisso_cpu_gioca">&#160;of&#160;</string>
+	<string name="briscola">Briscola</string>
+	<string name="salva">Save</string>
+	<string name="valore_non_valido">Invalid rvalue</string>
+	<string name="valore_troppo_alto">rvalue too high</string>
+	<string name="gioco_pareggiato">The game is drawn</string>
+	<string name="hai_vinto">You won</string>
+	<string name="hai_perso">Yo losy</string>
+	<string name="per">by</string>
+	<string name="punti">points.</string>
+	<string name="gioco_finito">The match is over.</string>
+	<string name="nuovo_gioco">Do you want to start a new game?</string>
+	<string name="no">No</string>
+	<string name="condividi">Share</string>
+	<string name="bastoni">Sticks</string>
+	<string name="coppe">Cups</string>
+	<string name="denari">Denier</string>
+	<string name="spade">Swords</string>
+</resources>

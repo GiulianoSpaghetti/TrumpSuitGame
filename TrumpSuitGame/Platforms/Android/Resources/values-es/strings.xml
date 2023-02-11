@@ -1,0 +1,38 @@
+<resources>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    -->
+	<string name="nome_cpu">Nombre de la CPU</string>
+	<string name="nome_utente">Nombre de usuario</string>
+	<string name="prefisso_punti">puntos de&#160;</string>
+	<string name="suffisso_punti"></string>
+	<string name="prefisso_nel_mazzo_rimangono">Quedan&#160;</string>
+	<string name="suffisso_nel_mazzo_rimangono">&#160;cartas en la baraja</string>
+	<string name="il_seme_di_briscola_e">El palo de triunfo es</string>
+	<string name="applicazione">Solicitud</string>
+	<string name="informazioni">Informaciones</string>
+	<string name="opzioni">Opciones</string>
+	<string name="secondi">Segundos durante los cuales mostrar las jugadas</string>
+	<string name="carta_briscola">La carta que designa el palo de triunfo puede sumar puntos</string>
+	<string name="avvisa_tallone">Alertas cuando termina el mazo</string>
+	<string name="il_mazzo_e_finito">La baraja está terminada</string>
+	<string name="prefisso_cpu_gioca">La CPU ha jugado el&#160;</string>
+	<string name="suffisso_cpu_gioca">&#160;de&#160;</string>
+	<string name="briscola">Briscola</string>
+	<string name="salva">Ahorrar</string>
+	<string name="valore_non_valido">Valor no válido</string>
+	<string name="valore_troppo_alto">valor demasiado alto</string>
+	<string name="gioco_pareggiato">El juego esta dibujado</string>
+	<string name="hai_vinto">Ganaste</string>
+	<string name="hai_perso">Yo perdido</string>
+	<string name="per">por</string>
+	<string name="punti">puntos.</string>
+	<string name="gioco_finito">El partido ha terminado.</string>
+	<string name="nuovo_gioco">¿Quieres empezar un nuevo juego?</string>
+	<string name="no">No</string>
+	<string name="condividi">Compartir</string>
+	<string name="bastoni">Palos</string>
+	<string name="coppe">Tazas</string>
+	<string name="denari">Negador</string>
+	<string name="spade">Espadas</string>
+</resources>

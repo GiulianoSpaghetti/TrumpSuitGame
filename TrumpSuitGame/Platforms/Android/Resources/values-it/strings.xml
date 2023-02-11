@@ -1,0 +1,38 @@
+<resources>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    -->
+	<string name="nome_cpu">Nome della CPU</string>
+	<string name="nome_utente">Nome Utente</string>
+	<string name="prefisso_punti">Punti di&#160;</string>
+	<string name="suffisso_punti"></string>
+	<string name="prefisso_nel_mazzo_rimangono">Nel mazzo rimangono&#160;</string>
+	<string name="suffisso_nel_mazzo_rimangono">&#160;carte</string>
+	<string name="il_seme_di_briscola_e">Il seme di briscola è</string>
+	<string name="applicazione">Applicazione</string>
+	<string name="informazioni">Informazioni</string>
+	<string name="opzioni">Opzioni</string>
+	<string name="secondi">Secondi durante i quali mostrare le giocate</string>
+	<string name="carta_briscola">La carta che designa il seme di briscola può dar punti</string>
+	<string name="avvisa_tallone">Avvisa quando il tallone finisce</string>
+	<string name="il_mazzo_e_finito">IL tallone è finito</string>
+	<string name="prefisso_cpu_gioca">La CPU ha giocato il&#160;</string>
+	<string name="suffisso_cpu_gioca">&#160;di&#160;</string>
+	<string name="briscola">Briscola</string>
+	<string name="salva">Salva</string>
+	<string name="valore_non_valido">Valore non valido</string>
+	<string name="valore_troppo_alto">Valore troppo altro</string>
+	<string name="gioco_pareggiato">Pareggio</string>
+	<string name="hai_vinto">Hai vinto</string>
+	<string name="hai_perso">Hai perso</string>
+	<string name="per">per</string>
+	<string name="punti">punti.</string>
+	<string name="gioco_finito">Il gioco è finito.</string>
+	<string name="nuovo_gioco">Vuoi iniziare un nuovo gioco?</string>
+	<string name="no">No</string>
+	<string name="condividi">Conividi</string>
+	<string name="bastoni">Bastoni</string>
+	<string name="coppe">Coppe</string>
+	<string name="denari">Denari</string>
+	<string name="spade">Spade</string>
+</resources>
