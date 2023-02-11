@@ -23,8 +23,8 @@ public partial class MainPage : ContentPage
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
         m = new Mazzo(e);
         Carta.Inizializza(40, CartaHelperBriscola.GetIstanza(e));
-        g = new Giocatore(new GiocatoreHelperUtente(), Preferences.Get("nomeUtente", "Giulio"), 3);
-        cpu = new Giocatore(new GiocatoreHelperCpu(ElaboratoreCarteBriscola.GetCartaBriscola()), Preferences.Get("nomeCpu", "Cpu"), 3);
+                g = new Giocatore(new GiocatoreHelperUtente(), Preferences.Get("nomeUtente", ""), 3);
+        cpu = new Giocatore(new GiocatoreHelperCpu(ElaboratoreCarteBriscola.GetCartaBriscola()), Preferences.Get("nomeCpu", ""), 3);
         primo = g;
         secondo = cpu;
         briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());

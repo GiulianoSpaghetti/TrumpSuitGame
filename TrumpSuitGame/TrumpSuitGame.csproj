@@ -43,14 +43,14 @@
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android33.0|AnyCPU'">
 	  <ApplicationId>org.numerone.altervista.trumpsuitgame</ApplicationId>
-	  <ApplicationDisplayVersion>1.3</ApplicationDisplayVersion>
-	  <ApplicationVersion>15</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.4</ApplicationDisplayVersion>
+	  <ApplicationVersion>16</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android33.0|AnyCPU'">
 	  <ApplicationId>org.numerone.altervista.trumpsuitgame</ApplicationId>
-	  <ApplicationDisplayVersion>1.3</ApplicationDisplayVersion>
-	  <ApplicationVersion>15</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.4</ApplicationDisplayVersion>
+	  <ApplicationVersion>16</ApplicationVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
