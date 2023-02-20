@@ -14,9 +14,9 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <Label Text="The Trump Suit Game version 1.4.0" Grid.Row="0" />
+        <Label Text="The Trump Suit Game version 1.5.0" Grid.Row="0" />
         <Label Text="Two player trump game simulator without multiplayer"  Grid.Row="1"/>
-        <Label Text="ⓒ Giulio Sorrentino 2023" Grid.Row="2" />
+        <Label Text="ⓒ Giulio Sorrentino 2023, some right reserved" Grid.Row="2" />
         <Label Text="License: GPLv3 or, in your humble opinion, any later version" Grid.Row="3"/>
         <Label Text="Card images are the property of Modiano" Grid.Row="4" />
         <Button Text="More Informations" Clicked="OnSito_Click" Grid.Row="5" />

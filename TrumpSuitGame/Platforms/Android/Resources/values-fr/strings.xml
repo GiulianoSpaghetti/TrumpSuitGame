@@ -35,4 +35,9 @@
 	<string name="coppe">Coupes</string>
 	<string name="denari">Denier</string>
 	<string name="spade">Épées</string>
+	<string name="with_the_game" formatted="false">Avec%20le%20jeu%20Trump%20Suit%20Game%20le%20jeu%20</string>
+	<string name="versus">contre</string>
+	<string name="is_finished" formatted="false">est%20terminé</string>
+	<string name="at">a</string>
+	<string name="on_platform" formatted="false">sur%20la%20plateforme</string>
 </resources>

@@ -35,4 +35,9 @@
 	<string name="coppe">Copas</string>
 	<string name="denari">Negador</string>
 	<string name="spade">espadas</string>
+	<string name="with_the_game" formatted="false">Com%20o%20jogo%20Trump%20Suit%20Game%20o%20jogo%20</string>
+	<string name="versus">contra</string>
+	<string name="is_finished" formatted="false">està%20terminado</string>
+	<string name="at">a</string>
+	<string name="on_platform" formatted="false">na%20platfroma</string>
 </resources>

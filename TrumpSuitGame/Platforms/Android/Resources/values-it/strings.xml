@@ -35,4 +35,9 @@
 	<string name="coppe">Coppe</string>
 	<string name="denari">Denari</string>
 	<string name="spade">Spade</string>
+	<string name="with_the_game" formatted="false">Con%20la%20CBriscola%20la%20partita%20</string>
+	<string name="versus">contro</string>
+	<string name="is_finished" formatted="false">è%20terminata</string>
+	<string name="at">a</string>
+    <string name="on_platform" formatted="false">su%20piattaforma</string>
 </resources>

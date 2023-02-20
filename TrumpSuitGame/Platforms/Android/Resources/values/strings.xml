@@ -35,4 +35,9 @@
 	<string name="coppe">Cups</string>
 	<string name="denari">Denier</string>
 	<string name="spade">Swords</string>
+	<string name="with_the_game" formatted="false">With%20the%20Trump%20Suit%20Game%20the%20game%20</string>
+	<string name="versus">versus</string>
+	<string name="is_finished" formatted="false">is%20finished</string>
+	<string name="at">at</string>
+	<string name="on_platform" formatted="false">on%20platfrom</string>
 </resources>

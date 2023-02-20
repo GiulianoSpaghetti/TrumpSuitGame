@@ -4,7 +4,7 @@
     -->
 	<string name="nome_cpu">Nombre de la CPU</string>
 	<string name="nome_utente">Nombre de usuario</string>
-	<string name="prefisso_punti">puntos de&#160;</string>
+	<string name="prefisso_punti">Puntos de&#160;</string>
 	<string name="suffisso_punti"></string>
 	<string name="prefisso_nel_mazzo_rimangono">Quedan&#160;</string>
 	<string name="suffisso_nel_mazzo_rimangono">&#160;cartas en la baraja</string>
@@ -35,4 +35,9 @@
 	<string name="coppe">Tazas</string>
 	<string name="denari">Negador</string>
 	<string name="spade">Espadas</string>
+	<string name="with_the_game" formatted="false">Con%20el%20juego%20Trump%20Suit%20Game%20el%20juego%20</string>
+	<string name="versus">versus</string>
+	<string name="is_finished" formatted="false">està%20terminado</string>
+	<string name="at">a</string>
+	<string name="on_platform" formatted="false">en%20plataforma</string>
 </resources>
