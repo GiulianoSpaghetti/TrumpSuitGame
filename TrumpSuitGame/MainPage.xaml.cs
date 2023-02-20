@@ -1,4 +1,5 @@
-﻿using org.altervista.numerone.framework;
+﻿using CommunityToolkit.Maui.Alerts;
+using org.altervista.numerone.framework;
 
 namespace TrumpSuitGame;
 
@@ -13,9 +14,11 @@ public partial class MainPage : ContentPage
     private static IDispatcherTimer t;
     private TapGestureRecognizer gesture;
     private ElaboratoreCarteBriscola e;
+    CancellationTokenSource cancellationTokenSource;
     public MainPage()
     {
         this.InitializeComponent();
+        cancellationTokenSource= new CancellationTokenSource();
         briscolaDaPunti = Preferences.Get("briscolaDaPunti", false);
         avvisaTalloneFinito = Preferences.Get("avvisaTalloneFinito", true);
         secondi = (UInt16)Preferences.Get("secondi", 5);
@@ -59,7 +62,6 @@ public partial class MainPage : ContentPage
                 NomeCpu.Text = cpu.GetNome();
                 aggiornaNomi = false;
             }
-            Informazioni.Text = "";
             c = primo.GetCartaGiocata();
             c1 = secondo.GetCartaGiocata();
             ((Image)this.FindByName(c.GetID())).IsVisible = false;
@@ -83,7 +85,7 @@ public partial class MainPage : ContentPage
                     ((Image)this.FindByName(Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola()).GetID())).IsVisible = false;
                     NelMazzoRimangono.IsVisible = false;
                     if (avvisaTalloneFinito)
-                        Informazioni.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.il_mazzo_e_finito)}";
+                        Snackbar.Make($"{App.GetResource(TrumpSuitGame.Resource.String.il_mazzo_e_finito)}").Show(cancellationTokenSource.Token);
                 }
                 for (UInt16 i = 0; i < g.GetNumeroCarte(); i++)
                 {
@@ -99,9 +101,9 @@ public partial class MainPage : ContentPage
                 {
                     GiocaCpu();
                     if (cpu.GetCartaGiocata().StessoSeme(briscola))
-                        Informazioni.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_cpu_gioca)}{cpu.GetCartaGiocata().GetValore() + 1}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_cpu_gioca)}{App.GetResource(TrumpSuitGame.Resource.String.briscola)}";
+                        Snackbar.Make($"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_cpu_gioca)}{cpu.GetCartaGiocata().GetValore() + 1}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_cpu_gioca)}{App.GetResource(TrumpSuitGame.Resource.String.briscola)}").Show(cancellationTokenSource.Token);
                     else if (cpu.GetCartaGiocata().GetPunteggio() > 0)
-                        Informazioni.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_cpu_gioca)}{cpu.GetCartaGiocata().GetValore() + 1}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_cpu_gioca)}{cpu.GetCartaGiocata().GetSemeStr()}";
+                        Snackbar.Make($"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_cpu_gioca)}{cpu.GetCartaGiocata().GetValore() + 1}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_cpu_gioca)}{cpu.GetCartaGiocata().GetSemeStr()}").Show(cancellationTokenSource.Token);
                 }
 
             }

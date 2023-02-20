@@ -69,7 +69,5 @@
             <Label x:Name="PuntiUtente" Text="" Grid.Row="0" Grid.Column="4"  TextColor="White" />
             <Label x:Name="PuntiCpu" Text="" Grid.Row="1" Grid.Column="4"  TextColor="White" />
             <Label x:Name="NelMazzoRimangono" Text="" Grid.Row="2" Grid.Column="4" TextColor="White" />
-            <Label x:Name="CartaBriscola" Text="" Grid.Row="3" Grid.Column="4" TextColor="White" />
-            <Label x:Name="Informazioni" Grid.Row="5" Grid.Column="2" TextColor="White" />
-        </Grid>
+            <Label x:Name="CartaBriscola" Text="" Grid.Row="3" Grid.Column="4" TextColor="White" />        </Grid>
 </ContentPage>

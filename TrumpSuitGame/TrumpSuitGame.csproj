@@ -43,14 +43,14 @@
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android33.0|AnyCPU'">
 	  <ApplicationId>org.numerone.altervista.trumpsuitgame</ApplicationId>
-	  <ApplicationDisplayVersion>1.5</ApplicationDisplayVersion>
-	  <ApplicationVersion>19</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.6</ApplicationDisplayVersion>
+	  <ApplicationVersion>20</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android33.0|AnyCPU'">
 	  <ApplicationId>org.numerone.altervista.trumpsuitgame</ApplicationId>
-	  <ApplicationDisplayVersion>1.5</ApplicationDisplayVersion>
-	  <ApplicationVersion>19</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.6</ApplicationDisplayVersion>
+	  <ApplicationVersion>20</ApplicationVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -72,6 +72,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="4.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
