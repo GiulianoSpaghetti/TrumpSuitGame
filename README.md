@@ -7,7 +7,7 @@ A Trump Suit simulator with two players without multiplayer, written in maui.
 
 # The new fashion google way
 
-[![google](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=org.numerone.altervista.trumpsuitgame&gl=en)
+[![google](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=org.altervista.numerone.trumpsuitgame&hl=en)
 
 # Donazioni
 
