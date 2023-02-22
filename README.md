@@ -18,7 +18,7 @@ Open the Hype app, log in, select payments, send money, select my number in the 
 
 # Bugs
 
-The application is fully internazionalized in 6 languages: espanol, france, german, english, italian and portugese, but if you change language to your smartphone you have to uninstall and reinstall the application.
+The application is fully internazionalized in 6 languages: espanol, france, german, english, italian and portuguese, but if you change language to your smartphone you have to uninstall and reinstall the application.
 
 # Bibliografy
 https://learn.microsoft.com/en-us/dotnet/communitytoolkit/maui/alerts/snackbar?tabs=android
