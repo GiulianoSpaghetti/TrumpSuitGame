@@ -16,7 +16,9 @@ A Trump Suit simulator with two players without multiplayer, written in maui.
 You can also donate through Hype card as long as you have my mobile number in the address book. Do you know where you can find it? On my curriculum.
 Open the Hype app, log in, select payments, send money, select my number in the address book, set the amount, enter the reason and follow the instructions on the video.
 
+# Bugs
 
+The application is fully internazionalized in 6 languages: espanol, france, german, english, italian and portugese, but if you change language to your smartphone you have to uninstall and reinstall the application.
 
 # Bibliografy
 https://learn.microsoft.com/en-us/dotnet/communitytoolkit/maui/alerts/snackbar?tabs=android
