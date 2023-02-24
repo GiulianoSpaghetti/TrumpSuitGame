@@ -2,20 +2,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TrumpSuitGame.GreetingsPage"
-             Title="Game Over"
-             BackgroundColor="LightBlue">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Label x:Name="fpRisultrato" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" />
-        <Button x:Name="btnNo" Clicked="OnCancelFp_Click" Grid.Row="1" Grid.Column="1" />
-        <Button x:Name="btnShare" Clicked="OnFPShare_Click" Grid.Row="1" Grid.Column="2" />
-    </Grid>
+             BackgroundColor="Green">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="fpRisultrato" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" />
+            <Button x:Name="btnNo" Clicked="OnCancelFp_Click" Grid.Row="1" Grid.Column="1" />
+            <Button x:Name="btnShare" Clicked="OnFPShare_Click" Grid.Row="1" Grid.Column="2" />
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
