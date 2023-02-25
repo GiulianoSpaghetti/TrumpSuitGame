@@ -10,6 +10,16 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="File">
+            <MenuFlyoutItem Text="New Game" Clicked="OnNuovaPartita_Click" />
+            <MenuFlyoutItem Text="Options" Clicked="OnOpzioni_Click" />
+            <MenuFlyoutItem Text="Exit" Clicked="OnCancelFp_Click" />
+        </MenuBarItem>
+        <MenuBarItem Text="?">
+            <MenuFlyoutItem Text="Informations" Clicked="OnInfo_Click" />
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
     <ContentPage.Content>
         <Grid x:Name="Applicazione">
             <Grid.RowDefinitions>

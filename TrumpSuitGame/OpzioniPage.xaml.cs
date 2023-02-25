@@ -8,19 +8,29 @@ public partial class OpzioniPage : ContentPage
 	public OpzioniPage()
 	{
 		InitializeComponent();
-        Title = App.GetResource(Resource.String.opzioni);
         txtNomeUtente.Text = Preferences.Get("nomeUtente", "");
         txtCpu.Text = Preferences.Get("nomeCpu", "");
         secondi = (UInt16) Preferences.Get("secondi", 5);
         txtSecondi.Text=secondi.ToString();
         briscolaDaPunti = Preferences.Get("briscolaDaPunti", false);
         avvisaTalloneFinito = Preferences.Get("avvisaTalloneFinito", true);
+#if ANDROID
+        Title = App.GetResource(Resource.String.opzioni);
         opNomeCpu.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.nome_cpu)}: ";
         opNomeUtente.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.nome_utente)}: ";
         Secondi.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.secondi)}";
         lbCartaBriscola.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.carta_briscola)}";
         lbAvvisaTallone.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.avvisa_tallone)}";
         btnOk.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.salva)}";
+#else
+        Title="Options";
+        opNomeCpu.Text="CPU Name: ";
+        opNomeUtente.Text="Username: ";
+        Secondi.Text="Seconds uring the which show the plays";
+        lbCartaBriscola.Text="The card designating the trump sui can give points";
+        lbAvvisaTallone.Text="Alters when the deck ends";
+        btnOk.Text="Save";
+#endif
     }
 
     public async void OnOk_Click(Object source, EventArgs evt)
@@ -44,12 +54,16 @@ public partial class OpzioniPage : ContentPage
         }
         catch (FormatException ex)
         {
+#if ANDROID
             txtSecondi.Text = App.GetResource(TrumpSuitGame.Resource.String.valore_non_valido);
             return;
         }
         if (secondi > 10)
         {
             txtSecondi.Text = App.GetResource(TrumpSuitGame.Resource.String.valore_troppo_alto);
+#else
+            txtSecondi.Text="Invalid rvalue";
+#endif
             return;
         }
         Preferences.Set("secondi", secondi);

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrumpSuitGame", "TrumpSuitGame\TrumpSuitGame.csproj", "{284FD65F-05D7-4438-BC39-646C65138706}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrumpSuitGame", "TrumpSuitGame\TrumpSuitGame.csproj", "{6A891A3F-A2FB-4C5F-A178-27C51E45750F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{284FD65F-05D7-4438-BC39-646C65138706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{284FD65F-05D7-4438-BC39-646C65138706}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{284FD65F-05D7-4438-BC39-646C65138706}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{284FD65F-05D7-4438-BC39-646C65138706}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{284FD65F-05D7-4438-BC39-646C65138706}.Release|Any CPU.Build.0 = Release|Any CPU
-		{284FD65F-05D7-4438-BC39-646C65138706}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6A891A3F-A2FB-4C5F-A178-27C51E45750F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A891A3F-A2FB-4C5F-A178-27C51E45750F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A891A3F-A2FB-4C5F-A178-27C51E45750F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6A891A3F-A2FB-4C5F-A178-27C51E45750F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A891A3F-A2FB-4C5F-A178-27C51E45750F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A891A3F-A2FB-4C5F-A178-27C51E45750F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

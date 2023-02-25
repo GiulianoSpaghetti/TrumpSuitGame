@@ -43,11 +43,18 @@ namespace org.altervista.numerone.framework
 		public string GetSemeStr(UInt16 Carta) {
 			string s = "a";
 			switch (Carta / 10) {
-                case 0: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.bastoni); break;
+#if ANDROID
+				case 0: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.bastoni); break;
                 case 1: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.coppe); break;
                 case 2: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.denari); break;
                 case 3: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.spade); break;
-            }
+#else
+				case 0: s = "batons"; break;
+				case 1: s = "cups"; break;
+				case 2: s = "denarii"; break;
+				case 3: s = "swords"; break;
+#endif
+			}
             return s;
 		}
 
