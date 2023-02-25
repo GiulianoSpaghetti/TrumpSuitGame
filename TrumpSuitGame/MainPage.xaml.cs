@@ -261,7 +261,6 @@ public partial class MainPage : ContentPage
         aggiornaNomi = true;
     }
 
-#if WINDOWS
     private void OnNuovaPartita_Click(object sender, EventArgs evt)
     {
         NuovaPartita();
@@ -281,5 +280,4 @@ public partial class MainPage : ContentPage
     {
         Application.Current.Quit();
     }
-#endif
 }

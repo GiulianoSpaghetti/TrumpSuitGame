@@ -67,7 +67,10 @@ public partial class OpzioniPage : ContentPage
             return;
         }
         Preferences.Set("secondi", secondi);
-        AppShell.aggiorna = true;
+        if (DeviceInfo.Current.Platform == DevicePlatform.WinUI)
+            AppShellWindows.aggiorna = true;
+        else
+            AppShell.aggiorna = true;
         await Shell.Current.GoToAsync("//Main");
     }
 }
