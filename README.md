@@ -22,6 +22,7 @@ The application is fully internazionalized in 6 languages: espanol, france, germ
 
 # Bibliografy
 https://learn.microsoft.com/en-us/dotnet/communitytoolkit/maui/alerts/snackbar?tabs=android
+https://learn.microsoft.com/en-us/dotnet/maui/platform-integration/device/information?view=net-maui-7.0&tabs=windows
 
 # Windows Version (in italian)
 https://github.com/numerunix/cbriscola.maui
