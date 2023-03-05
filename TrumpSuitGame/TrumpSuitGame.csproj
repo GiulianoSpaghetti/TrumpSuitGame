@@ -33,25 +33,25 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android33.0|AnyCPU'">
 	  <ApplicationId>org.altervista.numerone.trumpsuitgame</ApplicationId>
 	  <ApplicationDisplayVersion>2.2</ApplicationDisplayVersion>
-	  <ApplicationVersion>28</ApplicationVersion>
+	  <ApplicationVersion>29</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android33.0|AnyCPU'">
 	  <ApplicationId>org.altervista.numerone.trumpsuitgame</ApplicationId>
 	  <ApplicationDisplayVersion>2.2</ApplicationDisplayVersion>
-	  <ApplicationVersion>28</ApplicationVersion>
+	  <ApplicationVersion>29</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-windows10.0.19041.0|AnyCPU'">
 	  <ApplicationId>org.altervista.numerone.trumpsuitgame</ApplicationId>
 	  <ApplicationDisplayVersion>2.2</ApplicationDisplayVersion>
-	  <ApplicationVersion>28</ApplicationVersion>
+	  <ApplicationVersion>29</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-windows10.0.19041.0|AnyCPU'">
 	  <ApplicationId>org.altervista.numerone.trumpsuitgame</ApplicationId>
 	  <ApplicationDisplayVersion>2.2</ApplicationDisplayVersion>
-	  <ApplicationVersion>28</ApplicationVersion>
+	  <ApplicationVersion>29</ApplicationVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
