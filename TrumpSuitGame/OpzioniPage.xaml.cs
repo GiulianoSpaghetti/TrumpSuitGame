@@ -14,6 +14,8 @@ public partial class OpzioniPage : ContentPage
         txtSecondi.Text=secondi.ToString();
         briscolaDaPunti = Preferences.Get("briscolaDaPunti", false);
         avvisaTalloneFinito = Preferences.Get("avvisaTalloneFinito", true);
+        cbAvvisaTallone.IsChecked = avvisaTalloneFinito;
+        cbCartaBriscola.IsChecked = briscolaDaPunti;
 #if ANDROID
         Title = App.GetResource(Resource.String.opzioni);
         opNomeCpu.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.nome_cpu)}: ";
@@ -23,12 +25,12 @@ public partial class OpzioniPage : ContentPage
         lbAvvisaTallone.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.avvisa_tallone)}";
         btnOk.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.salva)}";
 #else
-        Title="Options";
+        Title = "Options";
         opNomeCpu.Text="CPU Name: ";
         opNomeUtente.Text="Username: ";
-        Secondi.Text="Seconds uring the which show the plays";
-        lbCartaBriscola.Text="The card designating the trump sui can give points";
-        lbAvvisaTallone.Text="Alters when the deck ends";
+        Secondi.Text="Seconds during the which show the plays";
+        lbCartaBriscola.Text="The card designating the trump suit can give points";
+        lbAvvisaTallone.Text="Alerts when the deck ends";
         btnOk.Text="Save";
 #endif
     }
@@ -67,10 +69,11 @@ public partial class OpzioniPage : ContentPage
             return;
         }
         Preferences.Set("secondi", secondi);
-        if (DeviceInfo.Current.Platform == DevicePlatform.WinUI)
-            AppShellWindows.aggiorna = true;
-        else
+#if WINDOWS
+        AppShellWindows.aggiorna = true;
+#else
             AppShell.aggiorna = true;
+#endif
         await Shell.Current.GoToAsync("//Main");
     }
 }

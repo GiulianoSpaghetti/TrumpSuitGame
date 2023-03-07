@@ -205,7 +205,7 @@ public partial class MainPage : ContentPage
         PuntiCpu.Text = $"{cpu.GetNome()} points: {cpu.GetPunteggio()}";
         PuntiUtente.Text = $"{g.GetNome()} points: {g.GetPunteggio()}";
         NelMazzoRimangono.Text = $"There are still {m.GetNumeroCarte()} cards in the deck";
-        CartaBriscola.Text = $"The trump suit is: {briscola.GetSemeStr}";
+        CartaBriscola.Text = $"The trump suit is: {briscola.GetSemeStr()}";
 #endif
         NelMazzoRimangono.IsVisible = true;
         CartaBriscola.IsVisible = true;
