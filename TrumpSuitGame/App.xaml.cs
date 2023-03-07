@@ -6,21 +6,15 @@ public partial class App : Application
     public App()
     {
         InitializeComponent();
-        if (DeviceInfo.Current.Platform == DevicePlatform.Android)
-        {
-            piattaforma = "Android";
-            MainPage = new AppShell();
-        }
-        else if (DeviceInfo.Current.Platform == DevicePlatform.WinUI)
-        {
-            piattaforma = "Windows NT";
-            MainPage = new AppShellWindows();
-        }
-        else
-        {
-            piattaforma = "unkonwn platform";
-            MainPage = new AppShell();
-        }
+#if WINDOWS
+        MainPage = new AppShellWindows();
+#else
+        MainPage = new AppShell();
+#endif
+        piattaforma = DeviceInfo.Current.Model;
+        if (piattaforma == "System Product Name")
+            piattaforma = "PC";
+
     }
 
 #if ANDROID
@@ -30,4 +24,4 @@ public partial class App : Application
 
     }
 #endif
-}
+    }

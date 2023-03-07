@@ -54,7 +54,7 @@ public partial class GreetingsPage : ContentPage
 #if ANDROID
         await Launcher.Default.OpenAsync(new Uri($"https://twitter.com/intent/tweet?text={App.GetResource(TrumpSuitGame.Resource.String.with_the_game)}{g.GetNome()}%20{App.GetResource(TrumpSuitGame.Resource.String.versus)}%20{cpu.GetNome()}%20{App.GetResource(TrumpSuitGame.Resource.String.is_finished)}%20{g.GetPunteggio()}%20{App.GetResource(TrumpSuitGame.Resource.String.at)}%20{cpu.GetPunteggio()}%20{App.GetResource(TrumpSuitGame.Resource.String.on_platform)}%20{App.piattaforma}&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2FTrumpSuitGame"));
 #else
-        await Launcher.Default.OpenAsync(new Uri($"https://twitter.com/intent/tweet?text=Whith%20the%20game%20Trump%20Suit%20Game%20the%20match%20{g.GetNome()}%20versus%20{cpu.GetNome}%20os%20finished%20{g.GetPunteggio()}%20at{cpu.GetPunteggio()}%20on%20platform%20{App.piattaforma}))&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2FTrumpSuitGame"));
+        await Launcher.Default.OpenAsync(new Uri($"https://twitter.com/intent/tweet?text=With%20the%20game%20Trump%20Suit%20Game%20the%20match%20{g.GetNome()}%20versus%20{cpu.GetNome()}%20is%20finished%20{g.GetPunteggio()}%20at%20{cpu.GetPunteggio()}%20on%20platform%20{App.piattaforma}&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2FTrumpSuitGame"));
 #endif
         btnShare.IsEnabled = false;
     }

@@ -62,6 +62,7 @@ public partial class MainPage : ContentPage
         t.Interval = TimeSpan.FromSeconds(secondi);
         t.Tick += (s, e) =>
         {
+            string snack="";
             if (aggiornaNomi)
             {
                 NomeUtente.Text = g.GetNome();
@@ -102,9 +103,9 @@ public partial class MainPage : ContentPage
                     NelMazzoRimangono.IsVisible = false;
                     if (avvisaTalloneFinito)
 #if ANDROID
-                        Snackbar.Make($"{App.GetResource(TrumpSuitGame.Resource.String.il_mazzo_e_finito)}").Show(cancellationTokenSource.Token);
+                        snack+=$"{App.GetResource(TrumpSuitGame.Resource.String.il_mazzo_e_finito)}\n";
 #else
-                        Snackbar.Make("The deck is finished").Show(cancellationTokenSource.Token);
+                        snack += "The deck is finished\n";
 #endif
                 }
                 for (UInt16 i = 0; i < g.GetNumeroCarte(); i++)
@@ -122,16 +123,18 @@ public partial class MainPage : ContentPage
                     GiocaCpu();
                     if (cpu.GetCartaGiocata().StessoSeme(briscola))
 #if ANDROID
-                        Snackbar.Make($"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_cpu_gioca)}{cpu.GetCartaGiocata().GetValore() + 1}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_cpu_gioca)}{App.GetResource(TrumpSuitGame.Resource.String.briscola)}").Show(cancellationTokenSource.Token);
+                        snack+=$"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_cpu_gioca)}{cpu.GetCartaGiocata().GetValore() + 1}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_cpu_gioca)}{App.GetResource(TrumpSuitGame.Resource.String.briscola)}\n";
 #else
-                        Snackbar.Make($"The CPU has played the {cpu.GetCartaGiocata().GetValore() + 1} of trump").Show(cancellationTokenSource.Token);
+                        snack += $"The CPU has played the {cpu.GetCartaGiocata().GetValore() + 1} of trump\n";
 #endif
                     else if (cpu.GetCartaGiocata().GetPunteggio() > 0)
 #if ANDROID
-                        Snackbar.Make($"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_cpu_gioca)}{cpu.GetCartaGiocata().GetValore() + 1}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_cpu_gioca)}{cpu.GetCartaGiocata().GetSemeStr()}").Show(cancellationTokenSource.Token);
+                        snack+=$"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_cpu_gioca)}{cpu.GetCartaGiocata().GetValore() + 1}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_cpu_gioca)}{cpu.GetCartaGiocata().GetSemeStr()}\n";
 #else
-                        Snackbar.Make($"The CPU has played the {cpu.GetCartaGiocata().GetValore() + 1} of {cpu.GetCartaGiocata().GetSemeStr()}").Show(cancellationTokenSource.Token);
+                        snack += $"The CPU has played the {cpu.GetCartaGiocata().GetValore() + 1} of {cpu.GetCartaGiocata().GetSemeStr()}\n";
 #endif
+                    if (snack!="")
+                        Snackbar.Make(snack).Show(cancellationTokenSource.Token);
                 }
 
             }
