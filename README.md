@@ -28,4 +28,5 @@ On windows if you click the ok of the toast a new game window appear.
 
 # Bibliografy
 https://learn.microsoft.com/en-us/dotnet/communitytoolkit/maui/alerts/snackbar?tabs=android
+
 https://learn.microsoft.com/en-us/dotnet/maui/platform-integration/device/information?view=net-maui-7.0&tabs=windows
