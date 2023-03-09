@@ -22,11 +22,11 @@ Open the Hype app, log in, select payments, send money, select my number in the 
 
 # Bugs
 
-The application is fully internazionalized in 6 languages: espanol, france, german, english, italian and portuguese, but if you change language to your smartphone you have to uninstall and reinstall the application.
+The application on google is fully internazionalized in 6 languages: espanol, france, german, english, italian and portuguese, but if you change language to your smartphone you have to uninstall and reinstall the application.
+
+On windows if you click the ok of the toast a new game window appear.
 
 # Bibliografy
 https://learn.microsoft.com/en-us/dotnet/communitytoolkit/maui/alerts/snackbar?tabs=android
-https://learn.microsoft.com/en-us/dotnet/maui/platform-integration/device/information?view=net-maui-7.0&tabs=windows
 
-# Windows Version (in italian)
-https://github.com/numerunix/cbriscola.maui
+https://learn.microsoft.com/en-us/dotnet/maui/platform-integration/device/information?view=net-maui-7.0&tabs=windows
