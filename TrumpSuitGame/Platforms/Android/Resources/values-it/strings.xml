@@ -22,7 +22,7 @@
 	<string name="salva">Salva</string>
 	<string name="valore_non_valido">Valore non valido</string>
 	<string name="valore_troppo_alto">Valore troppo altro</string>
-	<string name="gioco_pareggiato">Pareggio</string>
+	<string name="gioco_pareggiato">La partita è finita in parità</string>
 	<string name="hai_vinto">Hai vinto</string>
 	<string name="hai_perso">Hai perso</string>
 	<string name="per">per</string>

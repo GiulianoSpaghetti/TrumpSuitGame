@@ -38,49 +38,49 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 	  <ApplicationId>org.altervista.numerone.trumpsuitgame</ApplicationId>
 	  <ApplicationDisplayVersion>2.2</ApplicationDisplayVersion>
-	  <ApplicationVersion>30</ApplicationVersion>
+	  <ApplicationVersion>31</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
 	  <ApplicationId>org.altervista.numerone.trumpsuitgame</ApplicationId>
 	  <ApplicationDisplayVersion>2.2</ApplicationDisplayVersion>
-	  <ApplicationVersion>30</ApplicationVersion>
+	  <ApplicationVersion>31</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-maccatalyst|AnyCPU'">
 	  <ApplicationId>org.altervista.numerone.trumpsuitgame</ApplicationId>
 	  <ApplicationDisplayVersion>2.2</ApplicationDisplayVersion>
-	  <ApplicationVersion>30</ApplicationVersion>
+	  <ApplicationVersion>31</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-maccatalyst|AnyCPU'">
 	  <ApplicationId>org.altervista.numerone.trumpsuitgame</ApplicationId>
 	  <ApplicationDisplayVersion>2.2</ApplicationDisplayVersion>
-	  <ApplicationVersion>30</ApplicationVersion>
+	  <ApplicationVersion>31</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android33.0|AnyCPU'">
 	  <ApplicationId>org.altervista.numerone.trumpsuitgame</ApplicationId>
 	  <ApplicationDisplayVersion>2.2</ApplicationDisplayVersion>
-	  <ApplicationVersion>30</ApplicationVersion>
+	  <ApplicationVersion>31</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android33.0|AnyCPU'">
 	  <ApplicationId>org.altervista.numerone.trumpsuitgame</ApplicationId>
 	  <ApplicationDisplayVersion>2.2</ApplicationDisplayVersion>
-	  <ApplicationVersion>30</ApplicationVersion>
+	  <ApplicationVersion>31</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-windows10.0.22621.0|AnyCPU'">
 	  <ApplicationId>org.altervista.numerone.trumpsuitgame</ApplicationId>
 	  <ApplicationDisplayVersion>2.2</ApplicationDisplayVersion>
-	  <ApplicationVersion>30</ApplicationVersion>
+	  <ApplicationVersion>31</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-windows10.0.22621.0|AnyCPU'">
 	  <ApplicationId>org.altervista.numerone.trumpsuitgame</ApplicationId>
 	  <ApplicationDisplayVersion>2.2</ApplicationDisplayVersion>
-	  <ApplicationVersion>30</ApplicationVersion>
+	  <ApplicationVersion>31</ApplicationVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
