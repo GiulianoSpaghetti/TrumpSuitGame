@@ -13,7 +13,7 @@ public partial class App : Application
 #endif
         piattaforma = DeviceInfo.Current.Model;
         if (piattaforma == "System Product Name")
-            piattaforma = "PC";
+            piattaforma = "Windows " + DeviceInfo.Current.VersionString;
 
     }
 
