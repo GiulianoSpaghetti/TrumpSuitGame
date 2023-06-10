@@ -5,7 +5,7 @@ namespace TrumpSuitGame;
 public partial class GreetingsPage : ContentPage
 {
     private Giocatore g, cpu;
-	public GreetingsPage(Giocatore g, Giocatore cpu)
+	public GreetingsPage(Giocatore g, Giocatore cpu, GiocatoreHelperCpu helper)
 	{
 		InitializeComponent();
 #if ANDROID
@@ -44,8 +44,7 @@ public partial class GreetingsPage : ContentPage
         }
         fpRisultrato.Text = $"The game is over. {s} Do you want to play again?";
         btnNo.Text = "No";
-        GiocatoreHelperCpu h=(GiocatoreHelperCpu) cpu.GetHelper(); 
-        if (h.GetLivello() == 3)
+        if (helper.GetLivello() == 3)
         {
             btnShare.Text = "Share";
             btnShare.IsEnabled = true;

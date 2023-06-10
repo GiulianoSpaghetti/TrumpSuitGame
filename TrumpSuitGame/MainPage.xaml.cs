@@ -16,6 +16,7 @@ public partial class MainPage : ContentPage
     private TapGestureRecognizer gesture;
     private ElaboratoreCarteBriscola e;
     private UInt16 level;
+    private GiocatoreHelperCpu helper;
     CancellationTokenSource cancellationTokenSource;
     public MainPage()
     {
@@ -29,7 +30,7 @@ public partial class MainPage : ContentPage
         m = new Mazzo(e);
         Carta.Inizializza(40, CartaHelperBriscola.GetIstanza(e));
         g = new Giocatore(new GiocatoreHelperUtente(), Preferences.Get("nomeUtente", ""), 3);
-        cpu = new Giocatore(new GiocatoreHelperCpu(ElaboratoreCarteBriscola.GetCartaBriscola(), level), Preferences.Get("nomeCpu", ""), 3);
+        cpu = new Giocatore(helper=new GiocatoreHelperCpu(ElaboratoreCarteBriscola.GetCartaBriscola(), level), Preferences.Get("nomeCpu", ""), 3);
         primo = g;
         secondo = cpu;
         briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());
@@ -143,7 +144,7 @@ public partial class MainPage : ContentPage
             }
             else
             {
-                Navigation.PushAsync(new GreetingsPage(g, cpu));
+                Navigation.PushAsync(new GreetingsPage(g, cpu, helper));
                 NuovaPartita();
             }
             t.Stop();
@@ -180,6 +181,9 @@ public partial class MainPage : ContentPage
     private void NuovaPartita()
     {
         Image img;
+        if (level != helper.GetLivello()) {
+            Snackbar.Make("The level has changed, a new game is starting").Show(cancellationTokenSource.Token);
+        }
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
         m = new Mazzo(e);
         briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());
