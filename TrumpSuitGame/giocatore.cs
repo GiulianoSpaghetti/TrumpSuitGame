@@ -124,6 +124,12 @@ namespace org.altervista.numerone.framework
 		{
 			return numeroCarte;
 		}
+
+		public GiocatoreHelper GetHelper()
+		{
+			return helper;
+
+		}
 	}
 
 }

@@ -44,7 +44,12 @@ public partial class GreetingsPage : ContentPage
         }
         fpRisultrato.Text = $"The game is over. {s} Do you want to play again?";
         btnNo.Text = "No";
-        btnShare.Text = "Share";
+        GiocatoreHelperCpu h=(GiocatoreHelperCpu) cpu.GetHelper(); 
+        if (h.GetLivello() == 3)
+        {
+            btnShare.Text = "Share";
+            btnShare.IsEnabled = true;
+        }
 #endif
     }
 

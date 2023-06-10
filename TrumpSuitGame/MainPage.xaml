@@ -16,6 +16,11 @@
             <MenuFlyoutItem Text="Options" Clicked="OnOpzioni_Click" />
             <MenuFlyoutItem Text="Exit" Clicked="OnCancelFp_Click" />
         </MenuBarItem>
+        <MenuBarItem Text="Level">
+            <MenuFlyoutItem Text="Level 1" Clicked="level1_Click" />
+            <MenuFlyoutItem Text="Level 2" Clicked="level2_Click" />
+            <MenuFlyoutItem Text="Level 3" Clicked="level3_Click" />
+        </MenuBarItem>
         <MenuBarItem Text="?">
             <MenuFlyoutItem Text="Informations" Clicked="OnInfo_Click" />
         </MenuBarItem>
@@ -86,7 +91,8 @@
             <Label x:Name="PuntiUtente" Text="" Grid.Row="0" Grid.Column="4" />
             <Label x:Name="PuntiCpu" Text="" Grid.Row="1" Grid.Column="4" />
             <Label x:Name="NelMazzoRimangono" Text="" Grid.Row="2" Grid.Column="4"  />
-            <Label x:Name="CartaBriscola" Text="" Grid.Row="3" Grid.Column="4" />  
+            <Label x:Name="CartaBriscola" Text="" Grid.Row="3" Grid.Column="4" />
+            <Label x:Name="Level" Text="" Grid.Row="4" Grid.Column="4" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -6,13 +6,13 @@
   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
   IgnorableNamespaces="uap rescap">
 
-  <Identity Name="21961GiulioSorrentino.Thetrumpsuitgame" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="2.2.44.0" />
+  <Identity Name="maui-package-name-placeholder" Publisher="CN=numeronesoft" Version="2.2.2.0" />
 
-  <mp:PhoneIdentity PhoneProductId="3b4250e7-8717-4ac9-89b6-92b458840c00" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="DEBB4CFC-1855-4388-805E-D39F0468EC7E" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>The trump suit game</DisplayName>
-    <PublisherDisplayName>Giulio Sorrentino</PublisherDisplayName>
+    <DisplayName>$placeholder$</DisplayName>
+    <PublisherDisplayName>User Name</PublisherDisplayName>
     <Logo>$placeholder$.png</Logo>
   </Properties>
 
@@ -28,7 +28,7 @@
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="The trump suit game"
+        DisplayName="$placeholder$"
         Description="$placeholder$"
         Square150x150Logo="$placeholder$.png"
         Square44x44Logo="$placeholder$.png"

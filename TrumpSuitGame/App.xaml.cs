@@ -2,7 +2,7 @@
 
 public partial class App : Application
 {
-	public static string piattaforma;
+    public static string piattaforma;
     public App()
     {
         InitializeComponent();
@@ -24,4 +24,4 @@ public partial class App : Application
 
     }
 #endif
-    }
+}
