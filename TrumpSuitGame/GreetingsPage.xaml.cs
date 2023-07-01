@@ -44,12 +44,10 @@ public partial class GreetingsPage : ContentPage
         }
         fpRisultrato.Text = $"The game is over. {s} Do you want to play again?";
         btnNo.Text = "No";
-        if (helper.GetLivello() == 3)
-        {
-            btnShare.Text = "Share";
-            btnShare.IsEnabled = true;
-        }
+        btnShare.Text = "Share";
 #endif
+        btnShare.IsEnabled = helper.GetLivello() == 3;
+
     }
 
 

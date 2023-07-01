@@ -6,7 +6,7 @@
   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
   IgnorableNamespaces="uap rescap">
 
-  <Identity Name="21961GiulioSorrentino.Thetrumpsuitgame" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="2.3.1.0" />
+  <Identity Name="21961GiulioSorrentino.Thetrumpsuitgame" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="2.3.6.0" />
 
   <mp:PhoneIdentity PhoneProductId="f7fca726-304d-4272-a251-6158adeb48d8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

@@ -8,8 +8,8 @@ public partial class OpzioniPage : ContentPage
 	public OpzioniPage()
 	{
 		InitializeComponent();
-        txtNomeUtente.Text = Preferences.Get("nomeUtente", "");
-        txtCpu.Text = Preferences.Get("nomeCpu", "");
+        txtNomeUtente.Text = Preferences.Get("nomeUtente", "numerone");
+        txtCpu.Text = Preferences.Get("nomeCpu", "numerona");
         secondi = (UInt16) Preferences.Get("secondi", 5);
         txtSecondi.Text=secondi.ToString();
         briscolaDaPunti = Preferences.Get("briscolaDaPunti", false);
