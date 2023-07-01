@@ -12,13 +12,13 @@ public partial class AppShellWindows : Shell
     protected override void OnNavigated(ShellNavigatedEventArgs args)
     {
         string current = args.Current.Location.ToString();
+        base.OnNavigated(args);
         if (current is "//Main")
             if (aggiorna)
             {
-                MainPage.AggiornaOpzioni();
+                MainPage.main.AggiornaOpzioni();
                 aggiorna = false;
             }
-        base.OnNavigated(args);
 
     }
 }

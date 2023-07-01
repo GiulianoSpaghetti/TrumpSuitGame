@@ -1,13 +1,17 @@
+using org.altervista.numerone.framework;
+
 namespace TrumpSuitGame;
 
 public partial class OpzioniPage : ContentPage
 {
-    private bool briscolaDaPunti;
-    private bool avvisaTalloneFinito;
-    private UInt16 secondi;
+    private static bool briscolaDaPunti;
+    private static bool avvisaTalloneFinito;
+    private static UInt16 secondi;
+    private static UInt16 livello;
 	public OpzioniPage()
 	{
 		InitializeComponent();
+        livello = (UInt16)Preferences.Get("livello", 3);
         txtNomeUtente.Text = Preferences.Get("nomeUtente", "numerone");
         txtCpu.Text = Preferences.Get("nomeCpu", "numerona");
         secondi = (UInt16) Preferences.Get("secondi", 5);
@@ -16,19 +20,23 @@ public partial class OpzioniPage : ContentPage
         avvisaTalloneFinito = Preferences.Get("avvisaTalloneFinito", true);
         cbAvvisaTallone.IsChecked = avvisaTalloneFinito;
         cbCartaBriscola.IsChecked = briscolaDaPunti;
+        pkrlivello.SelectedIndex = livello - 1;
 #if ANDROID
         Title = App.GetResource(Resource.String.opzioni);
         opNomeCpu.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.nome_cpu)}: ";
         opNomeUtente.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.nome_utente)}: ";
-        Secondi.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.secondi)}";
+        lbSecondi.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.secondi)}";
+        lbLivello.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.level)}: ";
         lbCartaBriscola.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.carta_briscola)}";
         lbAvvisaTallone.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.avvisa_tallone)}";
         btnOk.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.salva)}";
+        
 #else
         Title = "Options";
         opNomeCpu.Text="CPU Name: ";
         opNomeUtente.Text="Username: ";
-        Secondi.Text="Seconds during the which show the plays";
+        lbSecondi.Text="Seconds during the which show the plays";
+        lbLivello.Text = "The level is: ";
         lbCartaBriscola.Text="The card designating the trump suit can give points";
         lbAvvisaTallone.Text="Alerts when the deck ends";
         btnOk.Text="Save";
@@ -69,10 +77,11 @@ public partial class OpzioniPage : ContentPage
             return;
         }
         Preferences.Set("secondi", secondi);
+        Preferences.Set("livello", pkrlivello.SelectedIndex + 1);
 #if WINDOWS
         AppShellWindows.aggiorna = true;
 #else
-            AppShell.aggiorna = true;
+        AppShell.aggiorna = true;
 #endif
         await Shell.Current.GoToAsync("//Main");
     }

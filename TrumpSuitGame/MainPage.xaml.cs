@@ -13,24 +13,30 @@ public partial class MainPage : ContentPage
     private static UInt16 secondi = 5;
     private static bool avvisaTalloneFinito = true, briscolaDaPunti = false;
     private static IDispatcherTimer t;
-    private TapGestureRecognizer gesture;
-    private ElaboratoreCarteBriscola e;
-    private UInt16 level;
-    private GiocatoreHelperCpu helper;
-    CancellationTokenSource cancellationTokenSource;
+    private static TapGestureRecognizer gesture;
+    private static ElaboratoreCarteBriscola e;
+    private static GiocatoreHelperCpu helper;
+    private static CancellationTokenSource cancellationTokenSource;
+    public static MainPage main;
     public MainPage()
     {
         this.InitializeComponent();
+        main = this;
         cancellationTokenSource = new CancellationTokenSource();
         briscolaDaPunti = Preferences.Get("briscolaDaPunti", false);
         avvisaTalloneFinito = Preferences.Get("avvisaTalloneFinito", true);
         secondi = (UInt16)Preferences.Get("secondi", 5);
-        level = (UInt16)Preferences.Get("livello", 3);
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
         m = new Mazzo(e);
         Carta.Inizializza(40, CartaHelperBriscola.GetIstanza(e));
         g = new Giocatore(new GiocatoreHelperUtente(), Preferences.Get("nomeUtente", "numerone"), 3);
-        cpu = new Giocatore(helper=new GiocatoreHelperCpu(ElaboratoreCarteBriscola.GetCartaBriscola(), level), Preferences.Get("nomeCpu", "numerona"), 3);
+        switch (Preferences.Get("livello", 3))
+        {
+            case 1: helper = new GiocatoreHelperCpu0(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
+            case 2: helper = new GiocatoreHelperCpu1(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
+            default: helper = new GiocatoreHelperCpu2(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
+        }
+        cpu = new Giocatore(helper, Preferences.Get("nomeCpu", "numerona"), 3);
         primo = g;
         secondo = cpu;
         briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());
@@ -53,12 +59,13 @@ public partial class MainPage : ContentPage
         PuntiUtente.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_punti)}{g.GetNome()}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_punti)}: {g.GetPunteggio()}";
         NelMazzoRimangono.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_nel_mazzo_rimangono)}{m.GetNumeroCarte()}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_nel_mazzo_rimangono)}";
         CartaBriscola.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.il_seme_di_briscola_e)}: {briscola.GetSemeStr()}";
+        Level.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.level)}: {helper.GetLivello()}";
 #else
         PuntiCpu.Text = $"{cpu.GetNome()} points: {cpu.GetPunteggio()}";
         PuntiUtente.Text = $"{g.GetNome()} points: {g.GetPunteggio()}";
         NelMazzoRimangono.Text = $"There are still {m.GetNumeroCarte()} cards in the deck";
         CartaBriscola.Text = $"The trump suit is: {briscola.GetSemeStr()}";
-        Level.Text = $"The level is: {level}";
+        Level.Text = $"The level is: {helper.GetLivello()}";
 #endif
         VisualizzaImmagine(Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola()).GetID(), 4, 4, false);
 
@@ -181,14 +188,25 @@ public partial class MainPage : ContentPage
     private void NuovaPartita()
     {
         Image img;
+        UInt16 level = (UInt16) Preferences.Get("livello", 3);
         if (level != helper.GetLivello()) {
+#if ANDROID
+            Snackbar.Make(App.GetResource(TrumpSuitGame.Resource.String.new_level_is_starting)).Show(cancellationTokenSource.Token);
+#else
             Snackbar.Make("The level has changed, a new game is starting").Show(cancellationTokenSource.Token);
+#endif
         }
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
         m = new Mazzo(e);
         briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());
         g = new Giocatore(new GiocatoreHelperUtente(), g.GetNome(), 3);
-        cpu = new Giocatore(new GiocatoreHelperCpu(ElaboratoreCarteBriscola.GetCartaBriscola(), level), cpu.GetNome(), 3);
+        switch (level)
+        {
+            case 1: helper = new GiocatoreHelperCpu0(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
+            case 2: helper = new GiocatoreHelperCpu1(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
+            default: helper = new GiocatoreHelperCpu2(ElaboratoreCarteBriscola.GetCartaBriscola()); break;
+        }
+        cpu = new Giocatore(helper, cpu.GetNome(), 3);
         for (UInt16 i = 0; i < 40; i++)
         {
             img = (Image)this.FindByName(Carta.GetCarta(i).GetID());
@@ -212,12 +230,13 @@ public partial class MainPage : ContentPage
         PuntiUtente.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_punti)}{g.GetNome()}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_punti)}: {g.GetPunteggio()}";
         NelMazzoRimangono.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_nel_mazzo_rimangono)}{m.GetNumeroCarte()}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_nel_mazzo_rimangono)}";
         CartaBriscola.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.il_seme_di_briscola_e)}: {briscola.GetSemeStr()}";
+        Level.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.level)}: {helper.GetLivello()}";
 #else
         PuntiCpu.Text = $"{cpu.GetNome()} points: {cpu.GetPunteggio()}";
         PuntiUtente.Text = $"{g.GetNome()} points: {g.GetPunteggio()}";
         NelMazzoRimangono.Text = $"There are still {m.GetNumeroCarte()} cards in the deck";
         CartaBriscola.Text = $"The trump suit is: {briscola.GetSemeStr()}";
-        Level.Text = $"The level is: {level}";
+        Level.Text = $"The level is: {helper.GetLivello()}";
 #endif
         NelMazzoRimangono.IsVisible = true;
         CartaBriscola.IsVisible = true;
@@ -239,7 +258,7 @@ public partial class MainPage : ContentPage
         img1.IsVisible = false;
         VisualizzaImmagine(cpu.GetCartaGiocata().GetID(), 2, 2, false);
     }
-    private static bool AggiungiCarte()
+    private bool AggiungiCarte()
     {
         try
         {
@@ -262,8 +281,9 @@ public partial class MainPage : ContentPage
             GiocaCpu();
     }
 
-    public static void AggiornaOpzioni()
+    public void AggiornaOpzioni()
     {
+        UInt16 level = (UInt16)Preferences.Get("livello", 3);
         g.SetNome(Preferences.Get("nomeUtente", ""));
         cpu.SetNome(Preferences.Get("nomeCpu", ""));
         secondi = (UInt16)Preferences.Get("secondi", 5);
@@ -271,29 +291,9 @@ public partial class MainPage : ContentPage
         briscolaDaPunti = Preferences.Get("briscolaDaPunti", false);
         t.Interval = TimeSpan.FromSeconds(secondi);
         aggiornaNomi = true;
+        if ( level != helper.GetLivello())
+            NuovaPartita();
     }
-
-    private void level1_Click(object sender, EventArgs evt)
-    {
-        level = 1;
-        Preferences.Set("livello", 1);
-        NuovaPartita();
-    }
-
-    private void level2_Click(object sender, EventArgs evt)
-    {
-        level = 2;
-        Preferences.Set("livello", 2);
-        NuovaPartita();
-    }
-
-    private void level3_Click(object sender, EventArgs evt)
-    {
-        level = 3;
-        Preferences.Set("livello", 3);
-        NuovaPartita();
-    }
-
 
     private void OnNuovaPartita_Click(object sender, EventArgs evt)
     {

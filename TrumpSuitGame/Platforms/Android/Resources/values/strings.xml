@@ -40,4 +40,6 @@
 	<string name="is_finished" formatted="false">is%20finished</string>
 	<string name="at">at</string>
 	<string name="on_platform" formatted="false">on%20platfrom</string>
+	<string name="level">The level is</string>
+	<string name="new_level_is_starting">The level is changed: a new game is starting</string>
 </resources>

@@ -40,4 +40,6 @@
 	<string name="is_finished" formatted="false">è%20terminata</string>
 	<string name="at">a</string>
     <string name="on_platform" formatted="false">su%20piattaforma</string>
+	<string name="level">Il livello è</string>
+	<string name="new_level_is_starting">IL livello è cambiato. Una nuova partita sta cominciando.</string>
 </resources>

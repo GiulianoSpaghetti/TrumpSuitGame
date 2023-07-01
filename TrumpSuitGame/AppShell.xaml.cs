@@ -27,7 +27,7 @@ public partial class AppShell : Shell
     if (current is "//Main")
         if (aggiorna)
         {
-            MainPage.AggiornaOpzioni();
+            MainPage.main.AggiornaOpzioni();
             aggiorna = false;
         }
     base.OnNavigated(args);
