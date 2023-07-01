@@ -1,5 +1,10 @@
+
 # TrumpSuitGame
 A Trump Suit simulator with two players without multiplayer, written in maui.
+
+https://medal.tv/it/games/requested/clips/1fOVJKMmlQ0yOn/tM6txASrfeNR?invite=cr-MSw4VjIsMTkxOTM2NDQxL
+
+https://medal.tv/it/games/imported-clips/clips/1fU8F6GOIqE68h/gPbuyQ3R5AIj?invite=cr-MSxjaWIsMTkxOTM2NDQxLA
 
 # How download it
 
