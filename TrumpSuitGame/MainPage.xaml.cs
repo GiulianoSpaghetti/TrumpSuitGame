@@ -189,6 +189,7 @@ public partial class MainPage : ContentPage
     {
         Image img;
         UInt16 level = (UInt16) Preferences.Get("livello", 3);
+        bool primoUtente = primo == g;
         if (level != helper.GetLivello()) {
 #if ANDROID
             Snackbar.Make(App.GetResource(TrumpSuitGame.Resource.String.new_level_is_starting)).Show(cancellationTokenSource.Token);
@@ -240,8 +241,17 @@ public partial class MainPage : ContentPage
 #endif
         NelMazzoRimangono.IsVisible = true;
         CartaBriscola.IsVisible = true;
-        primo = g;
-        secondo = cpu;
+        primoUtente = !primoUtente;
+        if (primoUtente)
+        {
+            primo = g;
+            secondo = cpu;
+        } else
+        {
+            primo = cpu;
+            secondo = g;
+            GiocaCpu();
+        }
         VisualizzaImmagine(Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola()).GetID(), 4, 4, false);
         Applicazione.IsVisible = true;
     }
