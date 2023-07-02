@@ -6,6 +6,14 @@ https://medal.tv/it/games/requested/clips/1fOVJKMmlQ0yOn/tM6txASrfeNR?invite=cr-
 
 https://medal.tv/it/games/imported-clips/clips/1fU8F6GOIqE68h/gPbuyQ3R5AIj?invite=cr-MSxjaWIsMTkxOTM2NDQxLA
 
+# The patented algorithm
+
+Let me explain how the AI algorithm of levels 2 and 3 works, which is patented in the US Patent Office.
+The aces are 4 and are worth 11 points each, the 3 10 points, the 10 4 points the 9 3 points 3 the 8 2 points, therefore: 4x11+4x10+4x4+4x3+4x2=44+40+16+12+ 8=120
+The total points are 120 of which 84 from loads and 36 from other cards. To win you have to play to take the card with value, not the load, because to win you need 61 points and 81-61=20 points, this means that you have to leave only 2 loads alone.
+On the contrary, taking the 36 points of the value cards, another 25 points are needed to win, so 3 loads are enough.
+In general, in card games, the more cards you take, the more chances you have of scoring points, so as an algorithm for the first hand you choose to play the most difficult card to take, i.e. a 10 but not a trump.
+
 # How download it
 
 # How to install
