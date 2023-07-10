@@ -21,6 +21,7 @@ public partial class OpzioniPage : ContentPage
         cbAvvisaTallone.IsChecked = avvisaTalloneFinito;
         cbCartaBriscola.IsChecked = briscolaDaPunti;
         pkrlivello.SelectedIndex = livello - 1;
+        pkrMazzi.SelectedItem = Preferences.Get("mazzo", "Napoletano");
 #if ANDROID
         Title = App.GetResource(Resource.String.opzioni);
         opNomeCpu.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.nome_cpu)}: ";
@@ -30,7 +31,7 @@ public partial class OpzioniPage : ContentPage
         lbCartaBriscola.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.carta_briscola)}";
         lbAvvisaTallone.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.avvisa_tallone)}";
         btnOk.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.salva)}";
-        
+        LblMazzi.Text =$"{App.GetResource(TrumpSuitGame.Resource.String.mazzi)}";
 #else
         Title = "Options";
         opNomeCpu.Text="CPU Name: ";
@@ -40,6 +41,7 @@ public partial class OpzioniPage : ContentPage
         lbCartaBriscola.Text="The card designating the trump suit can give points";
         lbAvvisaTallone.Text="Alerts when the deck ends";
         btnOk.Text="Save";
+        LblMazzi.Text="Deck";
 #endif
     }
 
@@ -78,6 +80,7 @@ public partial class OpzioniPage : ContentPage
         }
         Preferences.Set("secondi", secondi);
         Preferences.Set("livello", pkrlivello.SelectedIndex + 1);
+        Preferences.Set("mazzo", pkrMazzi.SelectedItem.ToString());
 #if WINDOWS
         AppShellWindows.aggiorna = true;
 #else
@@ -85,4 +88,5 @@ public partial class OpzioniPage : ContentPage
 #endif
         await Shell.Current.GoToAsync("//Main");
     }
+
 }

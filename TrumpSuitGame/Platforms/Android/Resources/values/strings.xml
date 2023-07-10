@@ -42,4 +42,10 @@
 	<string name="on_platform" formatted="false">on%20platfrom</string>
 	<string name="level">The level is</string>
 	<string name="new_level_is_starting">The level is changed: a new game is starting</string>
+	<string name="mazzi">Deck</string>
+	<string name="fiori">flowers</string>
+	<string name="cuori">paintings</string>
+	<string name="quadri">hearts</string>
+	<string name="picche">spades</string>
+	<string name="impossibile_caricare_il_mazzo">Unable to load deck of cards, please select another one.</string>
 </resources>

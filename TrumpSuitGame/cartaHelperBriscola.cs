@@ -8,6 +8,7 @@
  */
 
 using System;
+using System.Xml.Linq;
 
 namespace org.altervista.numerone.framework
 {
@@ -40,22 +41,41 @@ namespace org.altervista.numerone.framework
 			}
 			return valore;
 		}
-		public string GetSemeStr(UInt16 Carta) {
+		public string GetSemeStr(UInt16 Carta)
+		{
 			string s = "a";
-			switch (Carta / 10) {
+			string mazzo = Preferences.Get("Mazzo", "Napoletano");
+			if (mazzo == "Bergamasco" || mazzo == "Bolognese" || mazzo == "Bresciano" || mazzo == "Napoletano" || mazzo == "Romagnolo" || mazzo == "Sardo" || mazzo == "Siciliano" || mazzo == "Trientino" || mazzo == "Trevigiano" || mazzo == "Trentino" || mazzo == "Triestino")
+				switch (Carta / 10)
+				{
 #if ANDROID
-				case 0: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.bastoni); break;
-                case 1: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.coppe); break;
-                case 2: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.denari); break;
-                case 3: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.spade); break;
+					case 0: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.bastoni); break;
+					case 1: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.coppe); break;
+					case 2: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.denari); break;
+					case 3: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.spade); break;
 #else
 				case 0: s = "batons"; break;
 				case 1: s = "cups"; break;
 				case 2: s = "denarii"; break;
 				case 3: s = "swords"; break;
 #endif
-			}
-            return s;
+				}
+			else
+				switch (Carta / 10)
+				{
+#if ANDROID
+					case 0: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.fiori); break;
+					case 1: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.quadri); break;
+					case 2: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.cuori); break;
+					case 3: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.picche); break;
+#else
+                case 0: s = "flowers"; break;
+				case 1: s = "paintings"; break;
+				case 2: s = "hearts"; break;
+				case 3: s = "spades"; break;
+#endif
+				}
+			return s;
 		}
 
 		public UInt16 GetNumero(UInt16 seme, UInt16 valore) {

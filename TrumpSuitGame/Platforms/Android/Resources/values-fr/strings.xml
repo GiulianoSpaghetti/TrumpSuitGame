@@ -42,4 +42,11 @@
 	<string name="on_platform" formatted="false">sur%20la%20plateforme</string>
 	<string name="level">Le niveau est</string>
 	<string name="new_level_is_starting">Le niveau a changé, une nouvelle partie commence</string>
+	<string name="mazzi">Paquet de cartes</string>
+	<string name="fiori">fleurs</string>
+	<string name="cuori">cadres</string>
+	<string name="quadri">cœurs</string>
+	<string name="picche">piques</string>
+	<string name="impossibile_caricare_il_mazzo">Impossible de sélectionner le jeu de cartes, chargez-en un autre.</string>
+
 </resources>

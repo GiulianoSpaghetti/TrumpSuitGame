@@ -42,4 +42,10 @@
     <string name="on_platform" formatted="false">su%20piattaforma</string>
 	<string name="level">Il livello è</string>
 	<string name="new_level_is_starting">IL livello è cambiato. Una nuova partita sta cominciando.</string>
+	<string name="mazzi">Mazzi</string>
+	<string name="fiori">fiori</string>
+	<string name="cuori">quadri</string>
+	<string name="quadri">cuori</string>
+	<string name="picche">picche</string>
+	<string name="impossibile_caricare_il_mazzo">Non è possibile caricare il mazzo di carte, selezionarne un altro.</string>
 </resources>
