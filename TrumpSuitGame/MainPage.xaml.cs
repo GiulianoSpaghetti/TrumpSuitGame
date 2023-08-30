@@ -29,8 +29,6 @@ public partial class MainPage : ContentPage
         secondi = (UInt16)Preferences.Get("secondi", 5);
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
         m = new Mazzo(e);
-        m.SetNome(Preferences.Get("Mazzo", "Napoletano"));
-        CaricaImmagini(m, 40);
         Carta.Inizializza(40, CartaHelperBriscola.GetIstanza(e));
         g = new Giocatore(new GiocatoreHelperUtente(), Preferences.Get("nomeUtente", "numerone"), 3);
         switch (Preferences.Get("livello", 3))
@@ -287,6 +285,8 @@ public partial class MainPage : ContentPage
 
     private void Image_Tapped(object Sender, EventArgs arg)
     {
+        if (t.IsRunning)
+            return;
         Image img = (Image)Sender;
         t.Start();
         GiocaUtente(img);
@@ -296,7 +296,6 @@ public partial class MainPage : ContentPage
 
     public void AggiornaOpzioni()
     {
-        String nome;
         UInt16 level = (UInt16)Preferences.Get("livello", 3);
         g.SetNome(Preferences.Get("nomeUtente", ""));
         cpu.SetNome(Preferences.Get("nomeCpu", ""));
@@ -305,12 +304,6 @@ public partial class MainPage : ContentPage
         briscolaDaPunti = Preferences.Get("briscolaDaPunti", false);
         t.Interval = TimeSpan.FromSeconds(secondi);
         aggiornaNomi = true;
-        nome = Preferences.Get("mazzo", "Napoletano");
-        if (m.GetNome() != nome)
-        {
-            m.SetNome(nome);
-            CaricaImmagini(m, 40);
-        }
         if (level != helper.GetLivello())
             NuovaPartita();
     }
@@ -333,37 +326,5 @@ public partial class MainPage : ContentPage
     private void OnCancelFp_Click(object sender, EventArgs e)
     {
         Application.Current.Quit();
-    }
-
-    public void CaricaImmagini(Mazzo m, ushort n)
-    {
-        Image img;
-        String loc = "http://numeronesoft.ddns.net/Mazzi/";
-        String s = $"{loc}{m.GetNome()}/0.png";
-        for (UInt16 i = 0; i < n; i++)
-        {
-            img = (Image)this.FindByName($"n{i}");
-            img.Source = new UriImageSource { CachingEnabled = false, Uri = new Uri($"{loc}{m.GetNome()}/{i}.png") };
-            if (img.Width == -1)
-            {
-#if ANDROID
-                Snackbar.Make(App.GetResource(TrumpSuitGame.Resource.String.impossibile_caricare_il_mazzo)).Show(cancellationTokenSource.Token);
-#else
-                Snackbar.Make("Unable to load the deck, please select another one.").Show(cancellationTokenSource.Token);
-#endif
-        return;
-            }
-        }
-        Cpu0.Source = new UriImageSource { CachingEnabled = false, Uri = new Uri($"{loc}{m.GetNome()}/retro-carte-pc.png") };
-        Cpu1.Source = new UriImageSource { CachingEnabled = false, Uri = new Uri($"{loc}{m.GetNome()}/retro-carte-pc.png") };
-        Cpu2.Source = new UriImageSource { CachingEnabled = false, Uri = new Uri($"{loc}{m.GetNome()}/retro-carte-pc.png") };
-        if (Cpu0.Width == -1 || Cpu1.Width == -1 || Cpu2.Width == -1) {
-#if ANDROID
-                Snackbar.Make(App.GetResource(TrumpSuitGame.Resource.String.impossibile_caricare_il_mazzo)).Show(cancellationTokenSource.Token);
-#else
-            Snackbar.Make("Unable to load the deck, please select another one.").Show(cancellationTokenSource.Token);
-#endif
-            return;
-        }
     }
 }

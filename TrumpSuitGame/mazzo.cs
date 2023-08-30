@@ -14,7 +14,6 @@ namespace org.altervista.numerone.framework
     {
         private UInt16[] carte;
         private UInt16 numeroCarte;
-        private String nome;
         private readonly ElaboratoreCarte elaboratore;
         private void Mischia()
         {
@@ -36,12 +35,5 @@ namespace org.altervista.numerone.framework
             UInt16 c = carte[--numeroCarte];
             return c;
         }
-
-        public void SetNome(String s)
-        {
-            nome = s;
-        }
-
-        public string GetNome() { return nome; }
     };
 }

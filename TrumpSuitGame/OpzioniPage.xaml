@@ -40,35 +40,6 @@
             <Entry x:Name="txtCpu" Grid.Row="1" Grid.Column="1" />
             <Label x:Name="lbSecondi" Grid.Row="2" Grid.Column="0" Text="" />
             <Entry x:Name="txtSecondi" Grid.Row="2" Grid.Column="1" Keyboard="Numeric" IsSpellCheckEnabled="False" />
-            <Label x:Name="LblMazzi" Grid.Row="3" Grid.Column="0">Mazzi</Label>
-            <Picker x:Name="pkrMazzi" Title="" Grid.Row="3" Grid.Column="1">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Belle_Epoque</x:String>
-                        <x:String>Bergamasco</x:String>
-                        <x:String>Binario</x:String>
-                        <x:String>Bolognese</x:String>
-                        <x:String>Bresciano</x:String>
-                        <x:String>Dr_Francy</x:String>
-                        <x:String>Fable3</x:String>
-                        <x:String>Gatti</x:String>
-                        <x:String>Genovese</x:String>
-                        <x:String>Lombardo</x:String>
-                        <x:String>Napoletano</x:String>
-                        <x:String>Piacentino</x:String>
-                        <x:String>Playing_Mario</x:String>
-                        <x:String>Poker_PinUp</x:String>
-                        <x:String>Romagnolo</x:String>
-                        <x:String>Sardo</x:String>
-                        <x:String>Siciliano</x:String>
-                        <x:String>Tomb_Raider_Anniversary</x:String>
-                        <x:String>Toscano</x:String>
-                        <x:String>Trentino</x:String>
-                        <x:String>Trevigiano</x:String>
-                        <x:String>Triestino</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
             <Label x:Name="lbLivello" Grid.Row="4" Grid.Column="0" Text="Livello" />
             <Picker x:Name="pkrlivello" Title="" Grid.Row="4" Grid.Column="1">
                 <Picker.ItemsSource>
