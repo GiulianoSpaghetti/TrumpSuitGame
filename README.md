@@ -4,6 +4,7 @@ IL gioco della briscola in maui
 # Video di presentazione
 
 https://youtu.be/u7VgmFBZi1w?si=9-DCA5pKzfeXM-U5
+https://youtu.be/TlF33cqHY_s
 
 # Screenshots
 # Windows
