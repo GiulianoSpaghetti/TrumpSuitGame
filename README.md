@@ -1,6 +1,10 @@
 # TrumpSuitGame
 IL gioco della briscola in maui
 
+# Video di presentazione
+
+https://youtu.be/u7VgmFBZi1w?si=9-DCA5pKzfeXM-U5
+
 # Screenshots
 # Windows
 ![Screenshot 2023-09-11 000159](https://github.com/numerunix/TrumpSuitGame/assets/49764967/e93cf046-0258-489b-ba9d-3800faf92577)
