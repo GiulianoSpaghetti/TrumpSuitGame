@@ -10,7 +10,7 @@ public partial class MainPage : ContentPage
     private static Giocatore g, cpu, primo, secondo, temp;
     private static Mazzo m;
     private static Carta c, c1, briscola;
-    private static bool aggiornaNomi = false;
+    private static bool aggiornaNomi = false, primoUtente=true;
     private static UInt16 secondi = 5;
     private static bool avvisaTalloneFinito = true, briscolaDaPunti = false;
     private static IDispatcherTimer t;
@@ -190,7 +190,6 @@ public partial class MainPage : ContentPage
     {
         Image img;
         UInt16 level = (UInt16)Preferences.Get("livello", 3);
-        bool primoUtente = primo == g;
         if (level != helper.GetLivello()) {
 #if ANDROID
             Snackbar.Make(App.GetResource(TrumpSuitGame.Resource.String.new_level_is_starting)).Show(cancellationTokenSource.Token);
