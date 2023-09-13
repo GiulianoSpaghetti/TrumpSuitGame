@@ -42,11 +42,4 @@
 	<string name="on_platform" formatted="false">auf%20der%20Plattform</string>
 	<string name="level">Das Niveau ist</string>
 	<string name="new_level_is_starting">Das Level hat sich geändert, ein neues Spiel beginnt</string>
-	<string name="mazzi">Kartendeck</string>
-	<string name="fiori">Blumen</string>
-	<string name="cuori">Gemälde</string>
-	<string name="quadri">Herzen</string>
-	<string name="picche">Spaten</string>
-	<string name="impossibile_caricare_il_mazzo">Der Kartenstapel kann nicht ausgewählt werden. Laden Sie einen anderen.</string>
-
 </resources>

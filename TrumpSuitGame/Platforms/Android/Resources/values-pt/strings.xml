@@ -18,7 +18,7 @@
 	<string name="il_mazzo_e_finito">O baralho está finalizado</string>
 	<string name="prefisso_cpu_gioca">A CPU jogou o&#160;</string>
 	<string name="suffisso_cpu_gioca">&#160;de&#160;</string>
-	<string name="briscola">Briscola</string>
+	<string name="briscola">trunfo</string>
 	<string name="salva">Salvar</string>
 	<string name="valore_non_valido">rvalue inválido</string>
 	<string name="valore_troppo_alto">valor muito alto</string>
@@ -26,7 +26,7 @@
 	<string name="hai_vinto">Você ganhou</string>
 	<string name="hai_perso">Você perdeu</string>
 	<string name="per">por</string>
-	<string name="punti">pontos.</string>
+	<string name="punti">.</string>
 	<string name="gioco_finito">A partida acabou.</string>
 	<string name="nuovo_gioco">Você quer começar um novo jogo?</string>
 	<string name="no">Não</string>
@@ -42,10 +42,4 @@
 	<string name="on_platform" formatted="false">na%20platfroma</string>
 	<string name="level">O nível é</string>
 	<string name="new_level_is_starting">O nível mudou, um novo jogo está começando</string>
-	<string name="mazzi">Baralho de cartas</string>
-	<string name="fiori">flores</string>
-	<string name="cuori">pinturas</string>
-	<string name="quadri">corações</string>
-	<string name="picche">espadas</string>
-	<string name="impossibile_caricare_il_mazzo">Não é possível selecionar o baralho de cartas, carregue outro.</string>
 </resources>
