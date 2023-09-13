@@ -9,6 +9,7 @@
 
 using System;
 using System.Xml.Linq;
+using TrumpSuitGame;
 
 namespace org.altervista.numerone.framework
 {
@@ -52,10 +53,10 @@ namespace org.altervista.numerone.framework
 					case 2: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.denari); break;
 					case 3: s = TrumpSuitGame.App.GetResource(TrumpSuitGame.Resource.String.spade); break;
 #else
-				case 0: s = "batons"; break;
-				case 1: s = "cups"; break;
-				case 2: s = "denarii"; break;
-				case 3: s = "swords"; break;
+				case 0: s = $"{App.d["bastoni"]}"; break;
+				case 1: s = $"{App.d["coppe"]}"; break;
+				case 2: s = $"{App.d["denari"]}"; break;
+				case 3: s = $"{App.d["spade"]}"; break;
 #endif
 			}
 			return s;

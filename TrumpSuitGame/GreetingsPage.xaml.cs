@@ -11,7 +11,7 @@ public partial class GreetingsPage : ContentPage
 #if ANDROID
         Title = App.GetResource(Resource.String.gioco_finito);
 #else
-        Title = "Game over";
+        Title = $"{App.d["PartitaFinita"]}";
 #endif
         String s;
         this.g = g;
@@ -20,7 +20,7 @@ public partial class GreetingsPage : ContentPage
 #if ANDROID
             s = App.GetResource(TrumpSuitGame.Resource.String.gioco_pareggiato);
 #else
-            s = "Game is drown";
+            s = $"{App.d["PartitaPatta"]}";
 #endif
         else
         {
@@ -28,7 +28,7 @@ public partial class GreetingsPage : ContentPage
 #if ANDROID
                 s = App.GetResource(TrumpSuitGame.Resource.String.hai_vinto);
 #else
-                s = "You won";
+                s = $"{App.d["HaiVinto"]}";
 #endif
             else
 #if ANDROID
@@ -39,12 +39,12 @@ public partial class GreetingsPage : ContentPage
         btnNo.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.no)}";
         btnShare.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.condividi)}";
 #else
-                s = "You loose";
-            s = $"{s} for {Math.Abs(g.GetPunteggio() - cpu.GetPunteggio())} points";
+                s = $"{App.d["HaiPerso"]}";
+            s = $"{s} {App.d["per"]} {Math.Abs(g.GetPunteggio() - cpu.GetPunteggio())} {App.d["punti"]}";
         }
-        fpRisultrato.Text = $"The game is over. {s} Do you want to play again?";
-        btnNo.Text = "No";
-        btnShare.Text = "Share";
+        fpRisultrato.Text = $"{App.d["PartitaFinita"]}. {s} {App.d["EffettuaNuovaPartita"]}";
+        btnNo.Text = $"{App.d["No"]}";
+        btnShare.Text = $"{App.d["Condividi"]}";
 #endif
         btnShare.IsEnabled = helper.GetLivello() == 3;
 
@@ -56,7 +56,7 @@ public partial class GreetingsPage : ContentPage
 #if ANDROID
         await Launcher.Default.OpenAsync(new Uri($"https://twitter.com/intent/tweet?text={App.GetResource(TrumpSuitGame.Resource.String.with_the_game)}{g.GetNome()}%20{App.GetResource(TrumpSuitGame.Resource.String.versus)}%20{cpu.GetNome()}%20{App.GetResource(TrumpSuitGame.Resource.String.is_finished)}%20{g.GetPunteggio()}%20{App.GetResource(TrumpSuitGame.Resource.String.at)}%20{cpu.GetPunteggio()}%20{App.GetResource(TrumpSuitGame.Resource.String.on_platform)}%20{App.piattaforma}&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2FTrumpSuitGame"));
 #else
-        await Launcher.Default.OpenAsync(new Uri($"https://twitter.com/intent/tweet?text=With%20the%20game%20Trump%20Suit%20Game%20the%20match%20{g.GetNome()}%20versus%20{cpu.GetNome()}%20is%20finished%20{g.GetPunteggio()}%20at%20{cpu.GetPunteggio()}%20on%20platform%20{App.piattaforma}&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2FTrumpSuitGame"));
+        await Launcher.Default.OpenAsync(new Uri($"https://twitter.com/intent/tweet?text={App.d["ColGioco"]}%20{g.GetNome()}%20{App.d["contro"]}%20{cpu.GetNome()}%20{App.d["efinito"]}%20{g.GetPunteggio()}%20at%20{cpu.GetPunteggio()}%20{App.d["piattaforma"]}%20{App.piattaforma}&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2FTrumpSuitGame"));
 #endif
         btnShare.IsEnabled = false;
     }

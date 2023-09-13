@@ -8,14 +8,14 @@ public partial class OpzioniPage : ContentPage
     private static bool avvisaTalloneFinito;
     private static UInt16 secondi;
     private static UInt16 livello;
-	public OpzioniPage()
-	{
-		InitializeComponent();
+    public OpzioniPage()
+    {
+        InitializeComponent();
         livello = (UInt16)Preferences.Get("livello", 3);
         txtNomeUtente.Text = Preferences.Get("nomeUtente", "numerone");
         txtCpu.Text = Preferences.Get("nomeCpu", "numerona");
-        secondi = (UInt16) Preferences.Get("secondi", 5);
-        txtSecondi.Text=secondi.ToString();
+        secondi = (UInt16)Preferences.Get("secondi", 5);
+        txtSecondi.Text = secondi.ToString();
         briscolaDaPunti = Preferences.Get("briscolaDaPunti", false);
         avvisaTalloneFinito = Preferences.Get("avvisaTalloneFinito", true);
         cbAvvisaTallone.IsChecked = avvisaTalloneFinito;
@@ -31,14 +31,14 @@ public partial class OpzioniPage : ContentPage
         lbAvvisaTallone.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.avvisa_tallone)}";
         btnOk.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.salva)}";
 #else
-        Title = "Options";
-        opNomeCpu.Text="CPU Name: ";
-        opNomeUtente.Text="Username: ";
-        lbSecondi.Text="Seconds during the which show the plays";
-        lbLivello.Text = "The level is: ";
-        lbCartaBriscola.Text="The card designating the trump suit can give points";
-        lbAvvisaTallone.Text="Alerts when the deck ends";
-        btnOk.Text="Save";
+        Title = $"{App.d["Opzioni"]}";
+        opNomeCpu.Text = $"{App.d["NomeCpu"]}: ";
+        opNomeUtente.Text= $"{App.d["NomeUtente"]}: ";
+        lbSecondi.Text= $"{App.d["secondi"]}";
+        lbLivello.Text = $"{App.d["IlLivelloE"]}";
+        lbCartaBriscola.Text= $"{App.d["BriscolaDaPunti"]}";
+        lbAvvisaTallone.Text= $"{App.d["AvvisaTallone"]}";
+        btnOk.Text= $"{App.d["Salva"]}";
 #endif
     }
 
@@ -71,7 +71,7 @@ public partial class OpzioniPage : ContentPage
         {
             txtSecondi.Text = App.GetResource(TrumpSuitGame.Resource.String.valore_troppo_alto);
 #else
-            txtSecondi.Text="Invalid rvalue";
+            txtSecondi.Text= $"{App.d["ValoreNonValido"]}";
 #endif
             return;
         }

@@ -8,7 +8,7 @@ public partial class InfoPage : ContentPage
 #if ANDROID
         Title = App.GetResource(Resource.String.informazioni);
 #else
-        Title = "Informations";
+        Title = $"{App.d["Informazioni"]}";
 #endif
     }
     private async void OnSito_Click(object sender, EventArgs e)
