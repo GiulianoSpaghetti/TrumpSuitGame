@@ -12,6 +12,13 @@ https://youtu.be/TlF33cqHY_s
 ![Screenshot 2023-09-11 000159](https://github.com/numerunix/TrumpSuitGame/assets/49764967/e93cf046-0258-489b-ba9d-3800faf92577)
 ![Screenshot 2023-09-11 000243](https://github.com/numerunix/TrumpSuitGame/assets/49764967/d51bbe87-a38f-4e48-a654-daa4a7829fb3)
 
+# Come installare
+
+# Su Android
+
+[![google](https://play.google.com/intl/it_it/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=org.altervista.numerone.trumpsuitgame)
+
+
 # Come funziona
 Per festeggiare, vi spiego come funziona il mio algoritmo brevettato:
 i punti in totale sono 120, ossia 4 assi che valgono 11 punti ciascuno, 4 3 che valgono 10 punti ciascuno, 4 10 che valgono 4 punti ciascuno, 4 9 che valgono 3 punti ciascuno, 4 8 che valgono 2 punti ciascuno.
