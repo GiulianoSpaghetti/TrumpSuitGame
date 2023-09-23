@@ -1,7 +1,17 @@
 # TrumpSuitGame
-IL gioco della briscola in maui
+Il gioco della briscola in maui, internazionalizzato in inglese, francese, spagnolo, tedesco, italiano e portoghese.
+Nell'ultima versione per windows il primo di mano é deciso non più sull'ultimo che gioca, come mostra il video, ma sul primo di mano della partita precedente.
+Su windows per cambiare il dialetto é sufficente modificare le impostazioni di sistema, su android bisogna disinstallare e reinstallare il programma.
 
-# Video di presentazione
+# Screenshots su windows (Aggiornati)
+
+![Screenshot 2023-09-23 171833](https://github.com/numerunix/TrumpSuitGame/assets/49764967/559630eb-abe3-4891-83f0-693bd594b1ab)
+![Screenshot 2023-09-23 171547](https://github.com/numerunix/TrumpSuitGame/assets/49764967/22d25a30-13d8-4e27-b355-e0f7f55b4b94)
+![Screenshot 2023-09-23 171539](https://github.com/numerunix/TrumpSuitGame/assets/49764967/edb7f890-7ed7-4276-9222-5e930ea57e21)
+![Screenshot 2023-09-23 171459](https://github.com/numerunix/TrumpSuitGame/assets/49764967/25f20420-10ac-4359-ab22-c16af3fa7079)
+
+
+# Video di presentazione (non aggiornati, serve per dare una idea di come procedere)
 
 https://youtu.be/u7VgmFBZi1w?si=9-DCA5pKzfeXM-U5
 
@@ -35,8 +45,6 @@ basandosi solo sui carichi si rischia di perdere, perché
 84-61=23, bisogna prenderli quasi tutti e lasciare solo 23 punti di carichi
 
 60-36=24, prendendo tutte le altre carte bastano solo 3 carichi per vincere.
-
-Per cui non metto i livelli, ma vi lascio imparare la teoria delle carte a lungo, da me inventata a 18 anni, con la wxbriscola, che mi ha portato l'amore di Francesca. 
 
 # Donazioni
 
