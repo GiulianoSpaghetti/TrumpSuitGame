@@ -2,6 +2,7 @@
 Il gioco della briscola in maui, internazionalizzato in inglese, francese, spagnolo, tedesco, italiano e portoghese.
 Nell'ultima versione per windows il primo di mano é deciso non più sull'ultimo che gioca, come mostra il video, ma sul primo di mano della partita precedente.
 Su windows per cambiare il dialetto é sufficente modificare le impostazioni di sistema, su android bisogna disinstallare e reinstallare il programma.
+Personalmente lo sto provando sul mio pro x (ARM64) con windows 22h2 italiano, e funziona senza troppi problemi, con la slim pen. Una goduria.
 
 # Screenshots su windows (Aggiornati)
 
