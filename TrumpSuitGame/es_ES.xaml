@@ -7,7 +7,7 @@
     <system:String x:Key="PuntiDiSuffisso">&#160;</system:String>
     <system:String x:Key="NelMazzoRimangono">Quedan&#160;</system:String>
     <system:String x:Key="carte">&#160;cartas en la baraja</system:String>
-    <system:String x:Key="IlSemeDiBriscolaE">>El palo de triunfo es</system:String>
+    <system:String x:Key="IlSemeDiBriscolaE">El palo de triunfo es</system:String>
     <system:String x:Key="BriscolaDaPunti">La carta que designa el palo de triunfo puede sumar puntos</system:String>
     <system:String x:Key="AvvisaTallone">Alertas cuando termina el mazo</system:String>
     <system:String x:Key="NomeUtente">Nombre de usuario</system:String>
