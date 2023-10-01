@@ -26,10 +26,10 @@
     <system:String x:Key="ValoreNonValido">Invalid rvalue</system:String>
     <system:String x:Key="No">No</system:String>
     <system:String x:Key="Condividi">Share</system:String>
-    <system:String x:Key="bastoni">Batons</system:String>
-    <system:String x:Key="coppe">Cups</system:String>
-    <system:String x:Key="denari">Denarii</system:String>
-    <system:String x:Key="spade">Sword</system:String>
+    <system:String x:Key="bastoni">Clubs</system:String>
+    <system:String x:Key="coppe">Diamonds</system:String>
+    <system:String x:Key="denari">Hearts</system:String>
+    <system:String x:Key="spade">Spades</system:String>
     <system:String x:Key="di">of</system:String>
     <system:String x:Key="IlTalloneEFinito">The deck is finished</system:String>
     <system:String x:Key="LaCpuHaGiocatoIl">The CPU has gamed the</system:String>
@@ -46,4 +46,6 @@
     <system:String x:Key="efinito">is%20finished</system:String>
     <system:String x:Key="a">at</system:String>
     <system:String x:Key="piattaforma">on%20platform</system:String>
+    <system:String x:Key="mazzo">with%20deck</system:String>
+    <system:String x:Key="dedica">Dedicated to Numerone's Francesca, who must abandon the wxbriscola because it is old</system:String>
 </ResourceDictionary>

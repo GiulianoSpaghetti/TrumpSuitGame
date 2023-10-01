@@ -26,10 +26,10 @@
     <system:String x:Key="ValoreNonValido">Ungültiger rvalue</system:String>
     <system:String x:Key="No">NEIN</system:String>
     <system:String x:Key="Condividi">Aktie</system:String>
-    <system:String x:Key="bastoni">Sticks</system:String>
-    <system:String x:Key="coppe">Cups</system:String>
-    <system:String x:Key="denari">Denier</system:String>
-    <system:String x:Key="spade">Schwerter</system:String>
+    <system:String x:Key="bastoni">Kreuz</system:String>
+    <system:String x:Key="coppe">Karo</system:String>
+    <system:String x:Key="denari">Herz</system:String>
+    <system:String x:Key="spade">Pik</system:String>
     <system:String x:Key="di">&#160;</system:String>
     <system:String x:Key="IlTalloneEFinito">Das Deck ist fertig</system:String>
     <system:String x:Key="LaCpuHaGiocatoIl">Die CPU hat die gespielt&#160;</system:String>
@@ -46,4 +46,6 @@
     <system:String x:Key="efinito">beendet</system:String>
     <system:String x:Key="a">zu</system:String>
     <system:String x:Key="piattaforma">auf%20der%20Plattform</system:String>
+    <system:String x:Key="mazzo">mit%20Deck</system:String>
+    <system:String x:Key="dedica">Numerones Francesca gewidmet, die die Wxbriscola verlassen muss, weil sie alt ist</system:String>
 </ResourceDictionary>

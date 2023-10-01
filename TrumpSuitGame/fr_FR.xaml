@@ -26,10 +26,10 @@
     <system:String x:Key="ValoreNonValido">rvalue invalide</system:String>
     <system:String x:Key="No">No</system:String>
     <system:String x:Key="Condividi">Partager</system:String>
-    <system:String x:Key="bastoni">Bâtons</system:String>
-    <system:String x:Key="coppe">Coupes</system:String>
-    <system:String x:Key="denari">Denier</system:String>
-    <system:String x:Key="spade">Épées</system:String>
+    <system:String x:Key="bastoni">Trèfles</system:String>
+    <system:String x:Key="coppe">Diamants</system:String>
+    <system:String x:Key="denari">Coeurs</system:String>
+    <system:String x:Key="spade">Piques</system:String>
     <system:String x:Key="di">&#160;de&#160;</system:String>
     <system:String x:Key="IlTalloneEFinito">Le plateau est terminé</system:String>
     <system:String x:Key="LaCpuHaGiocatoIl">Le CPU a joué le&#160;</system:String>
@@ -46,4 +46,6 @@
     <system:String x:Key="efinito">ça%20a%20fini</system:String>
     <system:String x:Key="a">-</system:String>
     <system:String x:Key="piattaforma">sur%20la%20plateforme</system:String>
+    <system:String x:Key="mazzo">avec%20pont</system:String>
+    <system:String x:Key="dedica">Dédié à Francesca de Numérone, qui doit abandonner la wxbriscola parce qu'elle est vieille</system:String>
 </ResourceDictionary>

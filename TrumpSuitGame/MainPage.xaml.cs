@@ -25,11 +25,12 @@ public partial class MainPage : ContentPage
         this.InitializeComponent();
         main = this;
         cancellationTokenSource = new CancellationTokenSource();
-        briscolaDaPunti = Preferences.Get("briscolaDaPunti", false);
+        briscolaDaPunti = Preferences.Get("briscolaDaPunti", true);
         avvisaTalloneFinito = Preferences.Get("avvisaTalloneFinito", true);
         secondi = (UInt16)Preferences.Get("secondi", 5);
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
         m = new Mazzo(e);
+        m.SetNome("Dr Francy");
         Carta.Inizializza(40, CartaHelperBriscola.GetIstanza(e));
         g = new Giocatore(new GiocatoreHelperUtente(), Preferences.Get("nomeUtente", "numerone"), 3);
         switch (Preferences.Get("livello", 3))
@@ -159,7 +160,7 @@ public partial class MainPage : ContentPage
             }
             else
             {
-                Navigation.PushAsync(new GreetingsPage(g, cpu, helper));
+                Navigation.PushAsync(new GreetingsPage(g, cpu, helper, m));
                 NuovaPartita();
             }
             t.Stop();
@@ -206,6 +207,7 @@ public partial class MainPage : ContentPage
         }
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
         m = new Mazzo(e);
+        m.SetNome("Dr Francy");
         briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());
         g = new Giocatore(new GiocatoreHelperUtente(), g.GetNome(), 3);
         switch (level)

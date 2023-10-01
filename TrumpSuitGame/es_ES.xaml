@@ -26,9 +26,9 @@
     <system:String x:Key="ValoreNonValido">Valor no válido</system:String>
     <system:String x:Key="No">No</system:String>
     <system:String x:Key="Condividi">Compartir</system:String>
-    <system:String x:Key="bastoni">Palos</system:String>
-    <system:String x:Key="coppe">Tazas</system:String>
-    <system:String x:Key="denari">Negador</system:String>
+    <system:String x:Key="bastoni">Tréboles</system:String>
+    <system:String x:Key="coppe">Diamantes</system:String>
+    <system:String x:Key="denari">Corazones</system:String>
     <system:String x:Key="spade">Espadas</system:String>
     <system:String x:Key="di">&#160;de&#160;</system:String>
     <system:String x:Key="IlTalloneEFinito">La baraja está terminada</system:String>
@@ -46,4 +46,6 @@
     <system:String x:Key="efinito">està%20terminado</system:String>
     <system:String x:Key="a">a</system:String>
     <system:String x:Key="piattaforma">en%20plataforma</system:String>
+    <system:String x:Key="mazzo">con%20baraja</system:String>
+    <system:String x:Key="dedica">Dedicado a Francesca de Numerone, que debe abandonar la wxbriscola porque es vieja</system:String>
 </ResourceDictionary>

@@ -26,10 +26,10 @@
     <system:String x:Key="ValoreNonValido">Valore non valido</system:String>
     <system:String x:Key="No">No</system:String>
     <system:String x:Key="Condividi">Condividi</system:String>
-    <system:String x:Key="bastoni">Bastoni</system:String>
-    <system:String x:Key="coppe">Coppe</system:String>
-    <system:String x:Key="denari">denari</system:String>
-    <system:String x:Key="spade">Spade</system:String>
+    <system:String x:Key="bastoni">Fiori</system:String>
+    <system:String x:Key="coppe">Quadri</system:String>
+    <system:String x:Key="denari">Cuori</system:String>
+    <system:String x:Key="spade">Picche</system:String>
     <system:String x:Key="di">di</system:String>
     <system:String x:Key="IlTalloneEFinito">Il tallone è finito</system:String>
     <system:String x:Key="LaCpuHaGiocatoIl">La CPU ha giocato il</system:String>
@@ -46,4 +46,6 @@
     <system:String x:Key="efinito">è%20finito</system:String>
     <system:String x:Key="a">a</system:String>
     <system:String x:Key="piattaforma">su%20piattaforma</system:String>
+    <system:String x:Key="mazzo">con%20mazzo</system:String>
+    <system:String x:Key="dedica">Dedicato alla Francesca di numerone, che deve abbandonare la wxbriscola perché vecchia</system:String>
 </ResourceDictionary>
