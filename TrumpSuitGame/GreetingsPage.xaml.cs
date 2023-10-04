@@ -53,7 +53,7 @@ public partial class GreetingsPage : ContentPage
             s1 = App.d["EffettuaSecondaPartita"] as string;
             btnShare.IsVisible = false;
         }
-        fpRisultrato.Text = $"{App.d["PartitaFinita"]}. {s}. {s1}";
+        fpRisultrato.Text = $"{App.d["PartitaFinita"]}. {s}. {s1}?";
         btnNo.Text = $"{App.d["No"]}";
         btnShare.Text = $"{App.d["Condividi"]}";
 #endif
@@ -67,7 +67,7 @@ public partial class GreetingsPage : ContentPage
 #if ANDROID
         await Launcher.Default.OpenAsync(new Uri($"https://twitter.com/intent/tweet?text={App.GetResource(TrumpSuitGame.Resource.String.with_the_game)}{g.GetNome()}%20{App.GetResource(TrumpSuitGame.Resource.String.versus)}%20{cpu.GetNome()}%20{App.GetResource(TrumpSuitGame.Resource.String.is_finished)}%20{g.GetPunteggio()}%20{App.GetResource(TrumpSuitGame.Resource.String.at)}%20{cpu.GetPunteggio()}%20{App.GetResource(TrumpSuitGame.Resource.String.on_platform)}%20{App.piattaforma}&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2FTrumpSuitGame"));
 #else
-        await Launcher.Default.OpenAsync(new Uri($"https://twitter.com/intent/tweet?text={App.d["ColGioco"]}%20{partite}%20{g.GetNome()}%20{App.d["contro"]}%20{cpu.GetNome()}%20{App.d["efinito"]}%20{g.GetPunteggio()}%20{App.d["a"]}%20{cpu.GetPunteggio()}%20{App.d["piattaforma"]}%20{App.piattaforma}%20{App.d["mazzo"]}%20{m.GetNome()}&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2FTrumpSuitGame"));
+        await Launcher.Default.OpenAsync(new Uri($"https://twitter.com/intent/tweet?text={App.d["ColGioco"]}%20{partite+1}%20{g.GetNome()}%20{App.d["contro"]}%20{cpu.GetNome()}%20{App.d["efinito"]}%20{g.GetPunteggio()}%20{App.d["a"]}%20{cpu.GetPunteggio()}%20{App.d["piattaforma"]}%20{App.piattaforma}%20{App.d["mazzo"]}%20{m.GetNome()}&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2FTrumpSuitGame"));
 #endif
         btnShare.IsEnabled = false;
     }
