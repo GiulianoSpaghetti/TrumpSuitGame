@@ -6,7 +6,7 @@ public partial class GreetingsPage : ContentPage
 {
     private Giocatore g, cpu;
     private Mazzo m;
-	public GreetingsPage(Giocatore g, Giocatore cpu, GiocatoreHelperCpu helper, Mazzo mazzo)
+	public GreetingsPage(Giocatore g, Giocatore cpu, GiocatoreHelperCpu helper, Mazzo mazzo, UInt16 vecchiPuntiUtente, UInt16 vecchiPuntiCpu, UInt128 NumeroPartite)
 	{
 		InitializeComponent();
 #if ANDROID
@@ -14,7 +14,7 @@ public partial class GreetingsPage : ContentPage
 #else
         Title = $"{App.d["PartitaFinita"]}";
 #endif
-        String s;
+        String s, s1;
         this.g = g;
         this.cpu= cpu;
         m = mazzo;
@@ -42,9 +42,16 @@ public partial class GreetingsPage : ContentPage
         btnShare.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.condividi)}";
 #else
                 s = $"{App.d["HaiPerso"]}";
-            s = $"{s} {App.d["per"]} {Math.Abs(g.GetPunteggio() - cpu.GetPunteggio())} {App.d["punti"]}";
+            s = $"{s} {App.d["per"]} {Math.Abs(g.GetPunteggio()+vecchiPuntiUtente - cpu.GetPunteggio())-vecchiPuntiCpu} {App.d["punti"]}";
         }
-        fpRisultrato.Text = $"{App.d["PartitaFinita"]}. {s} {App.d["EffettuaNuovaPartita"]}";
+        if (NumeroPartite % 2 == 1)
+            s1 = App.d["EffettuaNuovaPartita"] as string;
+        else
+        {
+            s1 = App.d["EffettuaSecondaPartita"] as string;
+            btnShare.IsVisible = false;
+        }
+        fpRisultrato.Text = $"{App.d["PartitaFinita"]}. {s}. {s1}";
         btnNo.Text = $"{App.d["No"]}";
         btnShare.Text = $"{App.d["Condividi"]}";
 #endif

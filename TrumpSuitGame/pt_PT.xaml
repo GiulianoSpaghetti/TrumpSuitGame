@@ -48,4 +48,5 @@
     <system:String x:Key="piattaforma">na%20platfroma</system:String>
     <system:String x:Key="mazzo">com%20deck</system:String>
     <system:String x:Key="dedica">Dedicado à Francesca de Numerone, que deve abandonar a wxbriscola porque está velha</system:String>
+    <system:String x:Key="EdffettuaSecondaPartita">ele joga um segundo jogo</system:String>
 </ResourceDictionary>

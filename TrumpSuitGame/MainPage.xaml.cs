@@ -12,7 +12,7 @@ public partial class MainPage : ContentPage
     private static Mazzo m;
     private static Carta c, c1, briscola;
     private static bool aggiornaNomi = false, primoUtente=true;
-    private static UInt16 secondi = 5;
+    private static UInt16 secondi = 5, numeroPartite=0, vecchiPuntiUtente=0, vecchiPuntiCPU=0;
     private static bool avvisaTalloneFinito = true, briscolaDaPunti = false;
     private static IDispatcherTimer t;
     private static TapGestureRecognizer gesture;
@@ -160,7 +160,18 @@ public partial class MainPage : ContentPage
             }
             else
             {
-                Navigation.PushAsync(new GreetingsPage(g, cpu, helper, m));
+                Navigation.PushAsync(new GreetingsPage(g, cpu, helper, m, vecchiPuntiUtente, vecchiPuntiCPU, numeroPartite));
+                if (numeroPartite % 2 == 1)
+                {
+                    vecchiPuntiUtente = 0;
+                    vecchiPuntiCPU = 0;
+                }
+                else
+                {
+                    vecchiPuntiUtente = g.GetPunteggio();
+                    vecchiPuntiCPU = cpu.GetPunteggio();
+                }
+                numeroPartite++;
                 NuovaPartita();
             }
             t.Stop();
@@ -203,6 +214,7 @@ public partial class MainPage : ContentPage
             Snackbar.Make(App.GetResource(TrumpSuitGame.Resource.String.new_level_is_starting)).Show(cancellationTokenSource.Token);
 #else
             Snackbar.Make($"{App.d["NuovaPartitaPerLivello"]}").Show(cancellationTokenSource.Token);
+            numeroPartite = 0;
 #endif
         }
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
@@ -318,6 +330,12 @@ public partial class MainPage : ContentPage
 
     private void OnNuovaPartita_Click(object sender, EventArgs evt)
     {
+        if (numeroPartite % 2 == 1)
+            numeroPartite++;
+        else
+            numeroPartite += 2;
+        vecchiPuntiUtente = 0;
+        vecchiPuntiCPU = 0;
         NuovaPartita();
     }
     private void OnInfo_Click(object sender, EventArgs e)
