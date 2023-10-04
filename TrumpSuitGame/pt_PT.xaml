@@ -41,7 +41,7 @@
     <system:String x:Key="NuovaPartitaPerLivello">>O nível mudou, um novo jogo está começando</system:String>
     <system:String x:Key="Salva">Salvar</system:String>
     <system:String x:Key="NuovaPartita">Nova partida</system:String>
-    <system:String x:Key="ColGioco">Com%20o%20jogo%20Trump%20Suit%20Game%20o%20jogo%20</system:String>
+    <system:String x:Key="ColGioco">Com%20o%20jogo%20Trump%20Suit%20Game%20o%20número%20do%20jogo</system:String>
     <system:String x:Key="contro">contra</system:String>
     <system:String x:Key="efinito">està%20terminado</system:String>
     <system:String x:Key="a">a</system:String>
