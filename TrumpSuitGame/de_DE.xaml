@@ -41,7 +41,7 @@
     <system:String x:Key="NuovaPartitaPerLivello">Das Level hat sich geändert, ein neues Spiel beginnt</system:String>
     <system:String x:Key="Salva">Speichern</system:String>
     <system:String x:Key="NuovaPartita">Neues Spiel</system:String>
-    <system:String x:Key="ColGioco">Mit%20dem%20Trump%20suit%20game%20wird%20das%20Spiel</system:String>
+    <system:String x:Key="ColGioco">Mit%20dem%20Trump%20suit%20special%20edition%20game%20wird%20das%20Spiel</system:String>
     <system:String x:Key="contro">gegen</system:String>
     <system:String x:Key="efinito">beendet</system:String>
     <system:String x:Key="a">zu</system:String>

@@ -30,7 +30,7 @@ public partial class MainPage : ContentPage
         secondi = (UInt16)Preferences.Get("secondi", 5);
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
         m = new Mazzo(e);
-        m.SetNome("Dr Francy");
+        m.SetNome("Dr_Francy");
         Carta.Inizializza(40, CartaHelperBriscola.GetIstanza(e));
         g = new Giocatore(new GiocatoreHelperUtente(), Preferences.Get("nomeUtente", "numerone"), 3);
         switch (Preferences.Get("livello", 3))

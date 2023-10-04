@@ -41,7 +41,7 @@
     <system:String x:Key="NuovaPartitaPerLivello">The level has changed, a new game will be started</system:String>
     <system:String x:Key="Salva">Save</system:String>
     <system:String x:Key="NuovaPartita">New Game</system:String>
-    <system:String x:Key="ColGioco">With%20the%20Trump%20Suit%20Game%20the%20match%number</system:String>
+    <system:String x:Key="ColGioco">With%20the%20Trump%20Suit%20Game%20special%20edition%20the%20match%number</system:String>
     <system:String x:Key="contro">versus</system:String>
     <system:String x:Key="efinito">is%20finished</system:String>
     <system:String x:Key="a">at</system:String>

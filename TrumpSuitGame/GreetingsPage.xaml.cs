@@ -7,7 +7,7 @@ public partial class GreetingsPage : ContentPage
     private static Giocatore g, cpu;
     private static Mazzo m;
     private static UInt128 partite;
-	public GreetingsPage(Giocatore g, Giocatore cpu, GiocatoreHelperCpu helper, Mazzo mazzo, UInt16 vecchiPuntiUtente, UInt16 vecchiPuntiCpu, UInt128 NumeroPartite)
+	public GreetingsPage(Giocatore gi, Giocatore cp, GiocatoreHelperCpu helper, Mazzo mazzo, UInt16 vecchiPuntiUtente, UInt16 vecchiPuntiCpu, UInt128 NumeroPartite)
 	{
 		InitializeComponent();
 #if ANDROID
@@ -16,8 +16,8 @@ public partial class GreetingsPage : ContentPage
         Title = $"{App.d["PartitaFinita"]}";
 #endif
         String s, s1;
-        g = g;
-        cpu= cpu;
+        g = gi;
+        cpu= cp;
         m = mazzo;
         partite = NumeroPartite;
         if (g.GetPunteggio() == cpu.GetPunteggio())
