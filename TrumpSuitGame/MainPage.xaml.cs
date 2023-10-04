@@ -12,7 +12,8 @@ public partial class MainPage : ContentPage
     private static Mazzo m;
     private static Carta c, c1, briscola;
     private static bool aggiornaNomi = false, primoUtente=true;
-    private static UInt16 secondi = 5, numeroPartite=0, vecchiPuntiUtente=0, vecchiPuntiCPU=0;
+    private static UInt16 secondi = 5, vecchiPuntiUtente=0, vecchiPuntiCPU=0;
+    private static UInt128 numeroPartite=0;
     private static bool avvisaTalloneFinito = true, briscolaDaPunti = false;
     private static IDispatcherTimer t;
     private static TapGestureRecognizer gesture;
@@ -170,8 +171,16 @@ public partial class MainPage : ContentPage
                     vecchiPuntiUtente = g.GetPunteggio();
                     vecchiPuntiCPU = cpu.GetPunteggio();
                 }
-                numeroPartite++;
-                NuovaPartita();
+                if (numeroPartite == UInt128.MaxValue)
+                {
+                    Snackbar.Make("Non hai giocato abbastanza per oggi?").Show(cancellationTokenSource.Token);
+                    Application.Current.Quit();
+                }
+                else
+                {
+                    numeroPartite++;
+                    NuovaPartita();
+                }
             }
             t.Stop();
         };
@@ -328,13 +337,22 @@ public partial class MainPage : ContentPage
 
     private void OnNuovaPartita_Click(object sender, EventArgs evt)
     {
-        if (numeroPartite % 2 == 1)
-            numeroPartite++;
+        if (numeroPartite > UInt128.MaxValue - 2)
+        {
+            Snackbar.Make("Non hai giocato abbastanza per oggi?").Show(cancellationTokenSource.Token);
+            Application.Current.Quit();
+        }
         else
-            numeroPartite += 2;
-        vecchiPuntiUtente = 0;
-        vecchiPuntiCPU = 0;
-        NuovaPartita();
+        {
+
+            if (numeroPartite % 2 == 1)
+                numeroPartite++;
+            else
+                numeroPartite += 2;
+            vecchiPuntiUtente = 0;
+            vecchiPuntiCPU = 0;
+            NuovaPartita();
+        }
     }
     private void OnInfo_Click(object sender, EventArgs e)
     {
