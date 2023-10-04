@@ -7,6 +7,7 @@ public partial class GreetingsPage : ContentPage
     private static Giocatore g, cpu;
     private static Mazzo m;
     private static UInt128 partite;
+    private static UInt16 puntiUtente, puntiCpu;
 	public GreetingsPage(Giocatore gi, Giocatore cp, GiocatoreHelperCpu helper, Mazzo mazzo, UInt16 vecchiPuntiUtente, UInt16 vecchiPuntiCpu, UInt128 NumeroPartite)
 	{
 		InitializeComponent();
@@ -20,6 +21,8 @@ public partial class GreetingsPage : ContentPage
         cpu= cp;
         m = mazzo;
         partite = NumeroPartite;
+        puntiUtente=vecchiPuntiUtente;
+        puntiCpu=vecchiPuntiCpu;
         if (g.GetPunteggio() == cpu.GetPunteggio())
 #if ANDROID
             s = App.GetResource(TrumpSuitGame.Resource.String.gioco_pareggiato);
@@ -67,7 +70,7 @@ public partial class GreetingsPage : ContentPage
 #if ANDROID
         await Launcher.Default.OpenAsync(new Uri($"https://twitter.com/intent/tweet?text={App.GetResource(TrumpSuitGame.Resource.String.with_the_game)}{g.GetNome()}%20{App.GetResource(TrumpSuitGame.Resource.String.versus)}%20{cpu.GetNome()}%20{App.GetResource(TrumpSuitGame.Resource.String.is_finished)}%20{g.GetPunteggio()}%20{App.GetResource(TrumpSuitGame.Resource.String.at)}%20{cpu.GetPunteggio()}%20{App.GetResource(TrumpSuitGame.Resource.String.on_platform)}%20{App.piattaforma}&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2FTrumpSuitGame"));
 #else
-        await Launcher.Default.OpenAsync(new Uri($"https://twitter.com/intent/tweet?text={App.d["ColGioco"]}%20{partite+1}%20{g.GetNome()}%20{App.d["contro"]}%20{cpu.GetNome()}%20{App.d["efinito"]}%20{g.GetPunteggio()}%20{App.d["a"]}%20{cpu.GetPunteggio()}%20{App.d["piattaforma"]}%20{App.piattaforma}%20{App.d["mazzo"]}%20{m.GetNome()}&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2FTrumpSuitGame"));
+        await Launcher.Default.OpenAsync(new Uri($"https://twitter.com/intent/tweet?text={App.d["ColGioco"]}%20{partite+1}%20{g.GetNome()}%20{App.d["contro"]}%20{cpu.GetNome()}%20{App.d["efinito"]}%20{g.GetPunteggio()+puntiUtente}%20{App.d["a"]}%20{cpu.GetPunteggio()+puntiCpu}%20{App.d["piattaforma"]}%20{App.piattaforma}%20{App.d["mazzo"]}%20{m.GetNome()}&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2FTrumpSuitGame"));
 #endif
         btnShare.IsEnabled = false;
     }
