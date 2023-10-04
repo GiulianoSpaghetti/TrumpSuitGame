@@ -26,9 +26,9 @@
     <system:String x:Key="ValoreNonValido">Valor no válido</system:String>
     <system:String x:Key="No">No</system:String>
     <system:String x:Key="Condividi">Compartir</system:String>
-    <system:String x:Key="bastoni">Tréboles</system:String>
-    <system:String x:Key="coppe">Diamantes</system:String>
-    <system:String x:Key="denari">Corazones</system:String>
+    <system:String x:Key="bastoni">Palos</system:String>
+    <system:String x:Key="coppe">Tazas</system:String>
+    <system:String x:Key="denari">Dinero</system:String>
     <system:String x:Key="spade">Espadas</system:String>
     <system:String x:Key="di">&#160;de&#160;</system:String>
     <system:String x:Key="IlTalloneEFinito">La baraja está terminada</system:String>
@@ -41,7 +41,7 @@
     <system:String x:Key="NuovaPartitaPerLivello">El nivel ha cambiado, un nuevo juego está comenzando.</system:String>
     <system:String x:Key="Salva">Ahorrar</system:String>
     <system:String x:Key="NuovaPartita">Nuevo partido</system:String>
-    <system:String x:Key="ColGioco">>Con%20el%20juego%20Trump%20Suit%20Game%20special%20edition%20el%20número%20de%20juego</system:String>
+    <system:String x:Key="ColGioco">>Con%20el%20juego%20Trump%20Suit%20Game%20el%20número%20de%20juego</system:String>
     <system:String x:Key="contro">versus</system:String>
     <system:String x:Key="efinito">està%20terminado</system:String>
     <system:String x:Key="a">a</system:String>

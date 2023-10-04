@@ -35,17 +35,12 @@
 	<string name="coppe">Coppe</string>
 	<string name="denari">Denari</string>
 	<string name="spade">Spade</string>
-	<string name="with_the_game" formatted="false">Con%20la%20CBriscola%20la%20partita%20</string>
+	<string name="with_the_game" formatted="false">Con%20la%20CBriscola%20la%20partita%20numero</string>
 	<string name="versus">contro</string>
 	<string name="is_finished" formatted="false">è%20terminata</string>
 	<string name="at">a</string>
     <string name="on_platform" formatted="false">su%20piattaforma</string>
 	<string name="level">Il livello è</string>
-	<string name="new_level_is_starting">IL livello è cambiato. Una nuova partita sta cominciando.</string>
-	<string name="mazzi">Mazzi</string>
-	<string name="fiori">fiori</string>
-	<string name="cuori">quadri</string>
-	<string name="quadri">cuori</string>
-	<string name="picche">picche</string>
-	<string name="impossibile_caricare_il_mazzo">Non è possibile caricare il mazzo di carte, selezionarne un altro.</string>
+	<string name="new_level_is_starting">Il livello è cambiato. Una nuova partita sta cominciando.</string>
+	<string name="start_second_game">Vuoi effettuare la seconda partita</string>
 </resources>

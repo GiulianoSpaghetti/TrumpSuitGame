@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TrumpSuitGame.OpzioniPage"
              Title="Options"
-             BackgroundImageSource="background.jpg">
+             Background="green">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Label">
