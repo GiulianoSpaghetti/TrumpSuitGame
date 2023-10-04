@@ -307,8 +307,8 @@ public partial class MainPage : ContentPage
     {
         if (t.IsRunning)
             return;
-        Image img = (Image)Sender;
         t.Start();
+        Image img = (Image)Sender;
         GiocaUtente(img);
         if (secondo == cpu)
             GiocaCpu();

@@ -47,7 +47,7 @@ public partial class GreetingsPage : ContentPage
         btnShare.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.condividi)}";
 #else
                 s = $"{App.d["HaiPerso"]}";
-            s = $"{s} {App.d["per"]} {Math.Abs(g.GetPunteggio()+vecchiPuntiUtente - cpu.GetPunteggio())-vecchiPuntiCpu} {App.d["punti"]}";
+            s = $"{s} {App.d["per"]} {Math.Abs(g.GetPunteggio()+vecchiPuntiUtente - cpu.GetPunteggio()-vecchiPuntiCpu)} {App.d["punti"]}";
         }
         if (NumeroPartite % 2 == 1)
             s1 = App.d["EffettuaNuovaPartita"] as string;
