@@ -48,5 +48,5 @@
     <system:String x:Key="piattaforma">auf%20der%20Plattform</system:String>
     <system:String x:Key="mazzo">mit%20Deck</system:String>
     <system:String x:Key="dedica">Numerones Francesca gewidmet, die die Wxbriscola verlassen muss, weil sie alt ist</system:String>
-    <system:String x:Key="Spielt er ein zweites Spiel?">Spielt er ein zweites Spiel</system:String>
+    <system:String x:Key="EffettuaSecondaPartita">Spielt er ein zweites Spiel</system:String>
 </ResourceDictionary>
