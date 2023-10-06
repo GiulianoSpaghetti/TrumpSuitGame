@@ -1,10 +1,10 @@
-# TrumpSuitGame
+## TrumpSuitGame
 Il gioco della briscola in maui, internazionalizzato in inglese, francese, spagnolo, tedesco, italiano e portoghese.
 Nell'ultima versione per windows il primo di mano é deciso non più sull'ultimo che gioca, come mostra il video, ma sul primo di mano della partita precedente.
 Su windows per cambiare il dialetto é sufficente modificare le impostazioni di sistema, su android bisogna disinstallare e reinstallare il programma.
 Personalmente lo sto provando sul mio pro x (ARM64) con windows 22h2 italiano, e funziona senza troppi problemi, con la slim pen. Una goduria.
 
-# Screenshots su windows (Aggiornati)
+## Screenshots su windows
 
 ![Screenshot 2023-09-23 171833](https://github.com/numerunix/TrumpSuitGame/assets/49764967/559630eb-abe3-4891-83f0-693bd594b1ab)
 ![Screenshot 2023-09-23 171547](https://github.com/numerunix/TrumpSuitGame/assets/49764967/22d25a30-13d8-4e27-b355-e0f7f55b4b94)
@@ -12,20 +12,20 @@ Personalmente lo sto provando sul mio pro x (ARM64) con windows 22h2 italiano, e
 ![Screenshot 2023-09-23 171459](https://github.com/numerunix/TrumpSuitGame/assets/49764967/25f20420-10ac-4359-ab22-c16af3fa7079)
 
 
-# Video di presentazione (non aggiornati, serve per dare una idea di come procedere)
+## Video di presentazione
 
-https://youtu.be/u7VgmFBZi1w?si=9-DCA5pKzfeXM-U5
+https://youtube.com/live/uCWf9m9dbwg
 
 https://youtu.be/TlF33cqHY_s
 
-# Come installare
+## Come installare
 
-# Su Android
+## Su Android
 
 [![google](https://play.google.com/intl/it_it/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=org.altervista.numerone.trumpsuitgame)
 
 
-# Come funziona
+## Come funziona
 Per festeggiare, vi spiego come funziona il mio algoritmo brevettato:
 i punti in totale sono 120, ossia 4 assi che valgono 11 punti ciascuno, 4 3 che valgono 10 punti ciascuno, 4 10 che valgono 4 punti ciascuno, 4 9 che valgono 3 punti ciascuno, 4 8 che valgono 2 punti ciascuno.
 Dal momento che la matematica non è una opinione:
@@ -42,6 +42,6 @@ basandosi solo sui carichi si rischia di perdere, perché
 
 60-36=24, prendendo tutte le altre carte bastano solo 3 carichi per vincere.
 
-# Donazioni
+## Donazioni
 
 http://numerone.altervista.org/donazioni.php
