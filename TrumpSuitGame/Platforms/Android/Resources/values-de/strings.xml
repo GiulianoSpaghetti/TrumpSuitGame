@@ -35,12 +35,11 @@
 	<string name="coppe">Cups</string>
 	<string name="denari">Denier</string>
 	<string name="spade">Schwerter</string>
-	<string name="with_the_game" formatted="false">Mit%20dem%20Trump%20suit%20game%20wird%2das%20Spiel%20das%20Nummer-eins-Match</string>
+	<string name="with_the_game" formatted="false">Mit%20dem%20Trump%20suit%20game%20wird%2das%20Spiel</string>
 	<string name="versus">gegen</string>
 	<string name="is_finished">beendet</string>
 	<string name="at">zu</string>
 	<string name="on_platform" formatted="false">auf%20der%20Plattform</string>
 	<string name="level">Das Niveau ist</string>
 	<string name="new_level_is_starting">Das Level hat sich geändert, ein neues Spiel beginnt</string>
-	<string name="start_second_game">Spielt er ein zweites Spiel</string>
 </resources>
