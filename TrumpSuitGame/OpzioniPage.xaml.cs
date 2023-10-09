@@ -1,4 +1,6 @@
+using CommunityToolkit.Maui.Alerts;
 using org.altervista.numerone.framework;
+using System.Threading;
 
 namespace TrumpSuitGame;
 
@@ -64,14 +66,14 @@ public partial class OpzioniPage : ContentPage
         catch (FormatException ex)
         {
 #if ANDROID
-            txtSecondi.Text = App.GetResource(TrumpSuitGame.Resource.String.valore_non_valido);
+            Snackbar.Make(App.GetResource(TrumpSuitGame.Resource.String.valore_non_valido)).Show(App.cancellationTokenSource.Token);
             return;
         }
         if (secondi > 10)
         {
-            txtSecondi.Text = App.GetResource(TrumpSuitGame.Resource.String.valore_troppo_alto);
+            Snackbar.Make(App.GetResource(TrumpSuitGame.Resource.String.valore_troppo_alto)).Show(App.cancellationTokenSource.Token);
 #else
-            txtSecondi.Text= $"{App.d["ValoreNonValido"]}";
+            Snackbar.Make($"{App.d["ValoreNonValido"]}").Show(App.cancellationTokenSource.Token);
 #endif
             return;
         }

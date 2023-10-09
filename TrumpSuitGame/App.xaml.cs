@@ -6,6 +6,7 @@ public partial class App : Application
 {
     public static string piattaforma;
     public static ResourceDictionary d;
+    public static readonly CancellationTokenSource cancellationTokenSource= new CancellationTokenSource();
 
     public App()
     {

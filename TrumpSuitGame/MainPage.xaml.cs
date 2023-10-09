@@ -19,13 +19,11 @@ public partial class MainPage : ContentPage
     private static TapGestureRecognizer gesture;
     private static ElaboratoreCarteBriscola e;
     private static GiocatoreHelperCpu helper;
-    private static CancellationTokenSource cancellationTokenSource;
     public static MainPage main;
     public MainPage()
     {
         this.InitializeComponent();
         main = this;
-        cancellationTokenSource = new CancellationTokenSource();
         briscolaDaPunti = Preferences.Get("briscolaDaPunti", true);
         avvisaTalloneFinito = Preferences.Get("avvisaTalloneFinito", true);
         secondi = (UInt16)Preferences.Get("secondi", 5);
@@ -154,7 +152,7 @@ public partial class MainPage : ContentPage
                         snack += $"{App.d["LaCpuHaGiocatoIl"]} {cpu.GetCartaGiocata().GetValore() + 1} {App.d["di"]} {cpu.GetCartaGiocata().GetSemeStr()}\n";
 #endif
                     if (snack != "")
-                        Snackbar.Make(snack).Show(cancellationTokenSource.Token);
+                        Snackbar.Make(snack).Show(App.cancellationTokenSource.Token);
                 }
 
             }
@@ -173,7 +171,7 @@ public partial class MainPage : ContentPage
                 }
                 if (numeroPartite == UInt128.MaxValue)
                 {
-                    Snackbar.Make("Non hai giocato abbastanza per oggi?").Show(cancellationTokenSource.Token);
+                    Snackbar.Make("Non hai giocato abbastanza per oggi?").Show(App.cancellationTokenSource.Token);
                     Application.Current.Quit();
                 }
                 else
@@ -219,9 +217,9 @@ public partial class MainPage : ContentPage
         UInt16 level = (UInt16)Preferences.Get("livello", 3);
         if (level != helper.GetLivello()) {
 #if ANDROID
-            Snackbar.Make(App.GetResource(TrumpSuitGame.Resource.String.new_level_is_starting)).Show(cancellationTokenSource.Token);
+            Snackbar.Make(App.GetResource(TrumpSuitGame.Resource.String.new_level_is_starting)).Show(App.cancellationTokenSource.Token);
 #else
-            Snackbar.Make($"{App.d["NuovaPartitaPerLivello"]}").Show(cancellationTokenSource.Token);
+            Snackbar.Make($"{App.d["NuovaPartitaPerLivello"]}").Show(App.cancellationTokenSource.Token);
             numeroPartite = 0;
 #endif
         }
@@ -339,7 +337,7 @@ public partial class MainPage : ContentPage
     {
         if (numeroPartite > UInt128.MaxValue - 2)
         {
-            Snackbar.Make("Non hai giocato abbastanza per oggi?").Show(cancellationTokenSource.Token);
+            Snackbar.Make("Non hai giocato abbastanza per oggi?").Show(App.cancellationTokenSource.Token);
             Application.Current.Quit();
         }
         else
