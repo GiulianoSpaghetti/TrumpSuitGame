@@ -32,14 +32,15 @@
 	<string name="no">No</string>
 	<string name="condividi">Partager</string>
 	<string name="bastoni">Bâtons</string>
-	<string name="coppe">Coupes</string>
-	<string name="denari">Denier</string>
+	<string name="coppe">Tasses</string>
+	<string name="denari">Argent</string>
 	<string name="spade">Épées</string>
-	<string name="with_the_game" formatted="false">Avec%20le%20jeu%20Trump%20Suit%20Game%20le%20jeu%20</string>
+	<string name="with_the_game" formatted="false">Avec%20le%20jeu%20Trump%20Suit%20Game%20le%20numéro%de%jeu</string>
 	<string name="versus">contre</string>
 	<string name="is_finished" formatted="false">ça%20a%20fini</string>
 	<string name="at">-</string>
 	<string name="on_platform" formatted="false">sur%20la%20plateforme</string>
 	<string name="level">Le niveau est</string>
 	<string name="new_level_is_starting">Le niveau a changé, une nouvelle partie commence</string>
+	<string name="start_second_game">>Est-ce qu'il joue un deuxième jeu</string>
 </resources>

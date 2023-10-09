@@ -33,13 +33,14 @@
 	<string name="condividi">Compartir</string>
 	<string name="bastoni">Palos</string>
 	<string name="coppe">Tazas</string>
-	<string name="denari">Negador</string>
+	<string name="denari">Dinero</string>
 	<string name="spade">Espadas</string>
-	<string name="with_the_game" formatted="false">Con%20el%20juego%20Trump%20Suit%20Game%20el%20juego%20</string>
+	<string name="with_the_game" formatted="false">Con%20el%20juego%20Trump%20Suit%20Game%20%20el%20número%20de%20juego</string>
 	<string name="versus">versus</string>
 	<string name="is_finished" formatted="false">està%20terminado</string>
 	<string name="at">a</string>
 	<string name="on_platform" formatted="false">en%20plataforma</string>
 	<string name="level">El nivel es</string>
 	<string name="new_level_is_starting">El nivel ha cambiado, un nuevo juego está comenzando.</string>
+	<string name="start_second_game">¿Hace un segundo juego</string>
 </resources>

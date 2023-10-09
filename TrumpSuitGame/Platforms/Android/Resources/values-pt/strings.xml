@@ -31,15 +31,16 @@
 	<string name="nuovo_gioco">Você quer começar um novo jogo?</string>
 	<string name="no">Não</string>
 	<string name="condividi">Compartilhar</string>
-	<string name="bastoni">Gravetos</string>
-	<string name="coppe">Copas</string>
-	<string name="denari">Negador</string>
-	<string name="spade">espadas</string>
-	<string name="with_the_game" formatted="false">Com%20o%20jogo%20Trump%20Suit%20Game%20o%20jogo%20</string>
+	<string name="bastoni">Bastões</string>
+	<string name="coppe">Copos</string>
+	<string name="denari">Dinheoro</string>
+	<string name="spade">Espadas</string>
+	<string name="with_the_game" formatted="false">Com%20o%20jogo%20Trump%20Suit%20Game%20o%20número%20do%20jogo</string>
 	<string name="versus">contra</string>
 	<string name="is_finished" formatted="false">està%20terminado</string>
 	<string name="at">a</string>
 	<string name="on_platform" formatted="false">na%20platfroma</string>
 	<string name="level">O nível é</string>
 	<string name="new_level_is_starting">O nível mudou, um novo jogo está começando</string>
+	<string name="start_second_game">Ele joga um segundo jogo</string>
 </resources>

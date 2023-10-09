@@ -26,7 +26,7 @@
     <system:String x:Key="ValoreNonValido">rvalue inválido</system:String>
     <system:String x:Key="No">Não</system:String>
     <system:String x:Key="Condividi">Compartilhar</system:String>
-    <system:String x:Key="bastoni">Varas</system:String>
+    <system:String x:Key="bastoni">Bastões</system:String>
     <system:String x:Key="coppe">Copos</system:String>
     <system:String x:Key="denari">Dinheiro</system:String>
     <system:String x:Key="spade">Espadas</system:String>
