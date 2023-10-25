@@ -3,7 +3,5 @@
 ################################################################################
 
 /.vs
-/TrumpSuitGame/.vs/ProjectEvaluation
 /TrumpSuitGame/bin
 /TrumpSuitGame/obj
-/TrumpSuitGame/Properties/PublishProfiles
