@@ -1,9 +1,12 @@
+# ATTENZIONE: LA TRADUZIONE ITALIANA E' STATA COMPRATA DA TUTTI QUANTI E MESSA SOTTO COPYRIGHT, PER CUI IL SUO UTILIZZO NEI PROGETTI DI TERZE PARTI E' ILLEGALE.
+
 ## TrumpSuitGame
 Il gioco della briscola in maui, internazionalizzato in inglese, francese, spagnolo, tedesco, italiano e portoghese.
 Nell'ultima versione per windows il primo di mano é deciso non più sull'ultimo che gioca, come mostra il video, ma sul primo di mano della partita precedente.
 Su windows per cambiare il dialetto é sufficente modificare le impostazioni di sistema, su android bisogna disinstallare e reinstallare il programma.
 Personalmente lo sto provando sul mio pro x (ARM64) con windows 22h2 italiano, e funziona senza troppi problemi, con la slim pen.
 Vi segnalo che questa app è stata utilizzata da google per una campagna pubblicitaria contro la ludopatia.
+
 
 ## La campagna pubblicitaria di google
 
