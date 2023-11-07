@@ -5,7 +5,6 @@
              x:Class="TrumpSuitGame.App">
     <Application.Resources>
         <ResourceDictionary>
-            <ResourceDictionary x:Key="it" Source="it_IT.xaml" />
             <ResourceDictionary x:Key="en" Source="en_US.xaml" />
             <ResourceDictionary x:Key="es" Source="es_ES.xaml" />
             <ResourceDictionary x:Key="fr" Source="fr_FR.xaml" />
