@@ -1,6 +1,3 @@
-## La difficile situazione Napoletana
-Vi consiglio di connettervi al server enum del ballantine perché stanno vagliando i dati, ma rimarrete di stucco nel capire tutto quanto. Lo sciopero rientra ufficialmente.
-
 ## TrumpSuitGame
 Il gioco della briscola in maui, internazionalizzato in inglese, francese, spagnolo, tedesco, italiano e portoghese.
 Nell'ultima versione per windows il primo di mano é deciso non più sull'ultimo che gioca, come mostra il video, ma sul primo di mano della partita precedente.
