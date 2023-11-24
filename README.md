@@ -1,7 +1,5 @@
-## La difficile situazione italiana
-Ho capito che google italia non vuole collaborare e quindi può volerci molto tempo per ottenere l'aggiornamento del software in italiano, per cui lo sciopero rientra, sperando che capiate che traduzione va pagata, ma anche scrittura di codice, progettazione e debugging.
-E che non basta ricompilare una sola volta, perché esistono i "twilight hack" che possono incenerirvi i cellulari.
-Buone giocate a tutti.
+## La difficile situazione Napoletana
+Vi consiglio di connettervi al server enum del ballantine perché stanno vagliando i dati, ma rimarrete di stucco nel capire tutto quanto. Lo sciopero rientra ufficialmente.
 
 ## TrumpSuitGame
 Il gioco della briscola in maui, internazionalizzato in inglese, francese, spagnolo, tedesco, italiano e portoghese.
