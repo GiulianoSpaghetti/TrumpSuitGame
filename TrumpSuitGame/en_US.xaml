@@ -13,7 +13,7 @@
     <system:String x:Key="NomeUtente">User name</system:String>
     <system:String x:Key="NomeCpu">CPU name</system:String>
     <system:String x:Key="secondi">Seconds during the which showing the plays</system:String>
-    <system:String x:Key="Applicazione">>Application</system:String>
+    <system:String x:Key="Applicazione">Application</system:String>
     <system:String x:Key="Informazioni">Informations</system:String>
     <system:String x:Key="Opzioni">Options</system:String>
     <system:String x:Key="PartitaPatta">The game is drown</system:String>
@@ -22,7 +22,7 @@
     <system:String x:Key="per">for</system:String>
     <system:String x:Key="punti">points</system:String>
     <system:String x:Key="PartitaFinita">Game over</system:String>
-    <system:String x:Key="EffettuaNuovaPartita">Do you wantto play again?</system:String>
+    <system:String x:Key="EffettuaNuovaPartita">Do you want to play again?</system:String>
     <system:String x:Key="ValoreNonValido">Invalid rvalue</system:String>
     <system:String x:Key="No">No</system:String>
     <system:String x:Key="Condividi">Share</system:String>
@@ -33,7 +33,7 @@
     <system:String x:Key="di">of</system:String>
     <system:String x:Key="IlTalloneEFinito">The deck is finished</system:String>
     <system:String x:Key="LaCpuHaGiocatoIl">The CPU has gamed the</system:String>
-    <system:String x:Key="DiBriscola">pf Trump</system:String>
+    <system:String x:Key="Briscola">Trump</system:String>
     <system:String x:Key="Esci">Exit</system:String>
     <system:String x:Key="File">File</system:String>
     <system:String x:Key="Info">?</system:String>
