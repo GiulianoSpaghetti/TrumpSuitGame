@@ -1,22 +1,16 @@
 ﻿using System.Globalization;
 
-namespace TrumpSuitGame;
+namespace TrumpSuitGameGeordi;
 
 public partial class App : Application
 {
     public static string piattaforma;
-#if ANDROID
-#else
     public static ResourceDictionary d;
-#endif
     public static readonly CancellationTokenSource cancellationTokenSource= new CancellationTokenSource();
 
     public App()
     {
         InitializeComponent();
-#if ANDROID
-        MainPage = new AppShell();
-#else
         try
         {
             d = Resources[CultureInfo.CurrentCulture.TwoLetterISOLanguageName] as ResourceDictionary;
@@ -26,19 +20,12 @@ public partial class App : Application
         {
             d = Resources["en"] as ResourceDictionary;
         }
-        MainPage = new AppShellWindows();
-#endif
+        MainPage = new AppShell();
+
         piattaforma = DeviceInfo.Current.Model;
         if (piattaforma == "System Product Name")
             piattaforma = "Windows " + DeviceInfo.Current.VersionString;
 
     }
 
-#if ANDROID
-    public static System.String GetResource(int id)
-    {
-        return Android.App.Application.Context.Resources.GetString(id);
-
-    }
-#endif
 }

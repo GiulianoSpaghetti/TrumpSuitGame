@@ -1,4 +1,4 @@
-namespace TrumpSuitGame;
+namespace TrumpSuitGameGeordi;
 
 public partial class fr_FR : ResourceDictionary
 {
