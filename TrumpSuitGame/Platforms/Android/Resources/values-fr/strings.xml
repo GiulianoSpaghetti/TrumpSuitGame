@@ -35,7 +35,7 @@
 	<string name="coppe">Tasses</string>
 	<string name="denari">Argent</string>
 	<string name="spade">Épées</string>
-	<string name="with_the_game" formatted="false">Avec%20le%20jeu%20Trump%20Suit%20Game%20le%20numéro%de%jeu</string>
+	<string name="with_the_game" formatted="false">Avec%20le%20jeu%20Trump%20Suit%20Game%20le%20numéro20%de%20jeu</string>
 	<string name="versus">contre</string>
 	<string name="is_finished" formatted="false">ça%20a%20fini</string>
 	<string name="at">-</string>
