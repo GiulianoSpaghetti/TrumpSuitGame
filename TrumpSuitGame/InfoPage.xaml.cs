@@ -9,7 +9,6 @@ public partial class InfoPage : ContentPage
         Title = App.GetResource(Resource.String.informazioni);
 #else
         Title = $"{App.d["Informazioni"]}";
-        dedica.Text=$"{App.d["dedica"]}";
 #endif
     }
     private async void OnSito_Click(object sender, EventArgs e)
