@@ -1,11 +1,11 @@
 ﻿using System.Globalization;
 
-namespace TrumpSuitGameGeordi;
+namespace TrumpSuitGame;
 
 public partial class App : Application
 {
     public static string piattaforma;
-    public static ResourceDictionary d;
+    public static ResourceDictionary d=null;
     public static readonly CancellationTokenSource cancellationTokenSource= new CancellationTokenSource();
 
     public App()
@@ -20,12 +20,14 @@ public partial class App : Application
         {
             d = Resources["en"] as ResourceDictionary;
         }
-        MainPage = new AppShell();
-
         piattaforma = DeviceInfo.Current.Model;
         if (piattaforma == "System Product Name")
             piattaforma = "Windows " + DeviceInfo.Current.VersionString;
 
+#if ANDROID
+        MainPage = new AppShell();
+#else
+        MainPage = new AppShellWindows();
+#endif
     }
-
 }

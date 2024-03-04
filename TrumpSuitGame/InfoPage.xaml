@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class=" TrumpSuitGameGeordi.InfoPage"
-            BackgroundImageSource="background.jpg">
+             x:Class="TrumpSuitGame.InfoPage"
+             Background="green">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Label">
@@ -21,12 +21,12 @@
                 <RowDefinition />
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <Label Text="The Trump Suit Game Special Edition" Grid.Row="0" />
+            <Label Text="The Trump Suit Game 3.3" Grid.Row="0" />
             <Label Text="Two player trump game simulator without multiplayer"  Grid.Row="1"/>
-            <Label Text="ⓒ Giulio Sorrentino 2024, some right reserved" Grid.Row="2" />
+            <Label Text="ⓒ Giulio Sorrentino 2023, some right reserved" Grid.Row="2" />
             <Label Text="License: GPLv3 or, in your humble opinion, any later version" Grid.Row="3"/>
             <Label x:Name="dedica" Grid.Row="4" />
-            <Label Text="Card images are the property of Giulio Sorrentino, Background Image is property of Giulio Sorrentino, .NET and MAUI are properties of Microsoft Corporation" Grid.Row="5" />
+            <Label Text="Card images are the property of Modiano, .NET and MAUI are properties of Microsoft Corporation" Grid.Row="5" />
             <Button Text="More Informations" Clicked="OnSito_Click" Grid.Row="6" />
         </Grid>
     </ContentPage.Content>

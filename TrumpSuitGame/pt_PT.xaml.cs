@@ -1,4 +1,4 @@
-namespace TrumpSuitGameGeordi;
+namespace TrumpSuitGame;
 
 public partial class pt_PT : ResourceDictionary
 {
