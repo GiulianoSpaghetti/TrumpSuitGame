@@ -30,11 +30,7 @@ public partial class MainPage : ContentPage
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
         m = new Mazzo(e);
         Carta.Inizializza(40, new CartaHelperBriscola(e.GetCartaBriscola()),
-#if ANDROID
-            App.GetResource(TrumpSuitGame.Resource.String.bastoni), App.GetResource(TrumpSuitGame.Resource.String.coppe), App.GetResource(TrumpSuitGame.Resource.String.denari), App.GetResource(TrumpSuitGame.Resource.String.spade)
-#else
 App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string, App.d["spade"] as string
-#endif
 );
         g = new Giocatore(new GiocatoreHelperUtente(), Preferences.Get("nomeUtente", "numerone"), 3);
         switch (Preferences.Get("livello", 3))
@@ -61,13 +57,6 @@ App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string,
 
         NomeUtente.Text = g.GetNome();
         NomeCpu.Text = cpu.GetNome();
-#if ANDROID
-        PuntiCpu.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_punti)}{cpu.GetNome()}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_punti)}: {cpu.GetPunteggio()}";
-        PuntiUtente.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_punti)}{g.GetNome()}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_punti)}: {g.GetPunteggio()}";
-        NelMazzoRimangono.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_nel_mazzo_rimangono)}{m.GetNumeroCarte()}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_nel_mazzo_rimangono)}";
-        CartaBriscola.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.il_seme_di_briscola_e)}: {briscola.GetSemeStr()}";
-        Level.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.level)}: {helper.GetLivello()}";
-#else
         PuntiCpu.Text = $"{App.d["PuntiDiPrefisso"]} {cpu.GetNome()} {App.d["PuntiDiSuffisso"]}: {cpu.GetPunteggio()}";
         PuntiUtente.Text = $"{App.d["PuntiDiPrefisso"]} {g.GetNome()} {App.d["PuntiDiSuffisso"]}: {g.GetPunteggio()}";
         NelMazzoRimangono.Text = $"{App.d["NelMazzoRimangono"]} {m.GetNumeroCarte()} {App.d["carte"]}"; 
@@ -79,7 +68,6 @@ App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string,
         OpzioniMenu.Text = $"{App.d["Opzioni"]}";
         EsciMenu.Text = $"{App.d["Esci"]}";
         InfoMenu.Text = $"{App.d["Informazioni"]}";
-#endif
         VisualizzaImmagine(Carta.GetCarta(e.GetCartaBriscola()).GetID(), 4, 4, false);
 
         t = Dispatcher.CreateTimer();
@@ -105,32 +93,18 @@ App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string,
             }
 
             primo.AggiornaPunteggio(secondo);
-#if ANDROID
-            PuntiCpu.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_punti)}{cpu.GetNome()}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_punti)}: {cpu.GetPunteggio()}";
-            PuntiUtente.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_punti)}{g.GetNome()}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_punti)}: {g.GetPunteggio()}";
-#else
             PuntiCpu.Text = $"{App.d["PuntiDiPrefisso"]} {cpu.GetNome()} {App.d["PuntiDiSuffisso"]}: {cpu.GetPunteggio()}";
             PuntiUtente.Text = $"{App.d["PuntiDiPrefisso"]} {g.GetNome()} {App.d["PuntiDiSuffisso"]}: {g.GetPunteggio()}";
-#endif
             if (AggiungiCarte())
             {
-#if ANDROID
-                NelMazzoRimangono.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_nel_mazzo_rimangono)}{m.GetNumeroCarte()}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_nel_mazzo_rimangono)}";
-                CartaBriscola.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.il_seme_di_briscola_e)}: {briscola.GetSemeStr()}";
-#else
                 NelMazzoRimangono.Text = $"{App.d["NelMazzoRimangono"]} {m.GetNumeroCarte()} {App.d["carte"]}";
                 CartaBriscola.Text = $"{App.d["IlSemeDiBriscolaE"]}: {briscola.GetSemeStr()}";
-#endif
                 if (m.GetNumeroCarte() == 0)
                 {
                     ((Image)this.FindByName(Carta.GetCarta(e.GetCartaBriscola()).GetID())).IsVisible = false;
                     NelMazzoRimangono.IsVisible = false;
                     if (avvisaTalloneFinito)
-#if ANDROID
-                        snack += $"{App.GetResource(TrumpSuitGame.Resource.String.il_mazzo_e_finito)}\n";
-#else
                         snack += App.d["IlTalloneEFinito"];
-#endif
                 }
                 for (UInt16 i = 0; i < g.GetNumeroCarte(); i++)
                 {
@@ -146,17 +120,9 @@ App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string,
                 {
                     GiocaCpu();
                     if (cpu.GetCartaGiocata().StessoSeme(briscola))
-#if ANDROID
-                        snack += $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_cpu_gioca)}{cpu.GetCartaGiocata().GetValore() + 1}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_cpu_gioca)}{App.GetResource(TrumpSuitGame.Resource.String.briscola)}\n";
-#else
                         snack += $"{App.d["LaCpuHaGiocatoIl"]} {cpu.GetCartaGiocata().GetValore() + 1} {App.d["di"]} {App.d["Briscola"]}\n";
-#endif
                     else if (cpu.GetCartaGiocata().GetPunteggio() > 0)
-#if ANDROID
-                        snack += $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_cpu_gioca)}{cpu.GetCartaGiocata().GetValore() + 1}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_cpu_gioca)}{cpu.GetCartaGiocata().GetSemeStr()}\n";
-#else
                         snack += $"{App.d["LaCpuHaGiocatoIl"]} {cpu.GetCartaGiocata().GetValore() + 1} {App.d["di"]} {cpu.GetCartaGiocata().GetSemeStr()}\n";
-#endif
                     if (snack != "")
                         Snackbar.Make(snack).Show(App.cancellationTokenSource.Token);
                 }
@@ -222,12 +188,8 @@ App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string,
         Image img;
         UInt16 level = (UInt16)Preferences.Get("livello", 3);
         if (level != helper.GetLivello()) {
-#if ANDROID
-            Snackbar.Make(App.GetResource(TrumpSuitGame.Resource.String.new_level_is_starting)).Show(App.cancellationTokenSource.Token);
-#else
             Snackbar.Make($"{App.d["NuovaPartitaPerLivello"]}").Show(App.cancellationTokenSource.Token);
             numeroPartite = 0;
-#endif
         }
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
         m = new Mazzo(e);
@@ -259,19 +221,11 @@ App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string,
         Cpu1.IsVisible = true;
         Cpu2.IsVisible = true;
 
-#if ANDROID
-        PuntiCpu.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_punti)}{cpu.GetNome()}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_punti)}: {cpu.GetPunteggio()}";
-        PuntiUtente.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_punti)}{g.GetNome()}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_punti)}: {g.GetPunteggio()}";
-        NelMazzoRimangono.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.prefisso_nel_mazzo_rimangono)}{m.GetNumeroCarte()}{App.GetResource(TrumpSuitGame.Resource.String.suffisso_nel_mazzo_rimangono)}";
-        CartaBriscola.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.il_seme_di_briscola_e)}: {briscola.GetSemeStr()}";
-        Level.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.level)}: {helper.GetLivello()}";
-#else
         PuntiCpu.Text = $"{App.d["PuntiDiPrefisso"]} {cpu.GetNome()}  {App.d["PuntiDiSuffisso"]}: {cpu.GetPunteggio()}";
         PuntiUtente.Text = $"{App.d["PuntiDiPrefisso"]} {g.GetNome()} {App.d["PuntiDiSuffisso"]}: {g.GetPunteggio()}";
         NelMazzoRimangono.Text = $"{App.d["NelMazzoRimangono"]} {m.GetNumeroCarte()} {App.d["carte"]}";
         CartaBriscola.Text = $"{App.d["IlSemeDiBriscolaE"]}: {briscola.GetSemeStr()}";
         Level.Text = $"{App.d["IlLivelloE"]}: {helper.GetLivello()}";
-#endif
         NelMazzoRimangono.IsVisible = true;
         CartaBriscola.IsVisible = true;
         primoUtente = !primoUtente;

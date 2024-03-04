@@ -23,16 +23,6 @@ public partial class OpzioniPage : ContentPage
         cbAvvisaTallone.IsChecked = avvisaTalloneFinito;
         cbCartaBriscola.IsChecked = briscolaDaPunti;
         pkrlivello.SelectedIndex = livello - 1;
-#if ANDROID
-        Title = App.GetResource(Resource.String.opzioni);
-        opNomeCpu.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.nome_cpu)}: ";
-        opNomeUtente.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.nome_utente)}: ";
-        lbSecondi.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.secondi)}";
-        lbLivello.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.level)}: ";
-        lbCartaBriscola.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.carta_briscola)}";
-        lbAvvisaTallone.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.avvisa_tallone)}";
-        btnOk.Text = $"{App.GetResource(TrumpSuitGame.Resource.String.salva)}";
-#else
         Title = $"{App.d["Opzioni"]}";
         opNomeCpu.Text = $"{App.d["NomeCpu"]}: ";
         opNomeUtente.Text= $"{App.d["NomeUtente"]}: ";
@@ -41,7 +31,6 @@ public partial class OpzioniPage : ContentPage
         lbCartaBriscola.Text= $"{App.d["BriscolaDaPunti"]}";
         lbAvvisaTallone.Text= $"{App.d["AvvisaTallone"]}";
         btnOk.Text= $"{App.d["Salva"]}";
-#endif
     }
 
     public async void OnOk_Click(Object source, EventArgs evt)
@@ -65,24 +54,20 @@ public partial class OpzioniPage : ContentPage
         }
         catch (FormatException ex)
         {
-#if ANDROID
-            Snackbar.Make(App.GetResource(TrumpSuitGame.Resource.String.valore_non_valido)).Show(App.cancellationTokenSource.Token);
+            Snackbar.Make($"{App.d["ValoreNonValido"]}").Show(App.cancellationTokenSource.Token);
             return;
         }
         if (secondi > 10)
         {
-            Snackbar.Make(App.GetResource(TrumpSuitGame.Resource.String.valore_troppo_alto)).Show(App.cancellationTokenSource.Token);
-#else
             Snackbar.Make($"{App.d["ValoreNonValido"]}").Show(App.cancellationTokenSource.Token);
-#endif
             return;
         }
         Preferences.Set("secondi", secondi);
         Preferences.Set("livello", pkrlivello.SelectedIndex + 1);
-#if WINDOWS
-        AppShellWindows.aggiorna = true;
-#else
+#if ANDROID
         AppShell.aggiorna = true;
+#else
+        AppShellWindows.aggiorna = true;
 #endif
         await Shell.Current.GoToAsync("//Main");
     }
