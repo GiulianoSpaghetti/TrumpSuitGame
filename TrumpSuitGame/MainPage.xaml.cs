@@ -1,10 +1,7 @@
-﻿using CommunityToolkit.Maui.Alerts;
-using org.altervista.numerone.framework;
-using System.Globalization;
-using System.Reflection;
+﻿using org.altervista.numerone.framework;
 using Snackbar = CommunityToolkit.Maui.Alerts.Snackbar;
 
-namespace TrumpSuitGame;
+namespace TrumpSuitGameGeordi;
 
 public partial class MainPage : ContentPage
 {
@@ -29,9 +26,7 @@ public partial class MainPage : ContentPage
         secondi = (UInt16)Preferences.Get("secondi", 5);
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
         m = new Mazzo(e);
-        Carta.Inizializza(40, new CartaHelperBriscola(e.GetCartaBriscola()),
-App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string, App.d["spade"] as string
-);
+        Carta.Inizializza(40, new CartaHelperBriscola(e.GetCartaBriscola()), App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string, App.d["spade"] as string);
         g = new Giocatore(new GiocatoreHelperUtente(), Preferences.Get("nomeUtente", "numerone"), 3);
         switch (Preferences.Get("livello", 3))
         {
@@ -72,7 +67,7 @@ App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string,
 
         t = Dispatcher.CreateTimer();
         t.Interval = TimeSpan.FromSeconds(secondi);
-        t.Tick += (s, ex) =>
+        t.Tick += (s, evt) =>
         {
             string snack = "";
             if (aggiornaNomi)
@@ -120,7 +115,7 @@ App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string,
                 {
                     GiocaCpu();
                     if (cpu.GetCartaGiocata().StessoSeme(briscola))
-                        snack += $"{App.d["LaCpuHaGiocatoIl"]} {cpu.GetCartaGiocata().GetValore() + 1} {App.d["di"]} {App.d["Briscola"]}\n";
+                        snack += $"{App.d["LaCpuHaGiocatoIl"]} {cpu.GetCartaGiocata().GetValore() + 1} {App.d["DiBriscola"]}\n";
                     else if (cpu.GetCartaGiocata().GetPunteggio() > 0)
                         snack += $"{App.d["LaCpuHaGiocatoIl"]} {cpu.GetCartaGiocata().GetValore() + 1} {App.d["di"]} {cpu.GetCartaGiocata().GetSemeStr()}\n";
                     if (snack != "")
@@ -195,6 +190,7 @@ App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string,
         m = new Mazzo(e);
         Carta.SetHelper(new CartaHelperBriscola(e.GetCartaBriscola()));
         briscola = Carta.GetCarta(e.GetCartaBriscola());
+        Carta.SetHelper(new CartaHelperBriscola(e.GetCartaBriscola()));
         g = new Giocatore(new GiocatoreHelperUtente(), g.GetNome(), 3);
         switch (level)
         {
@@ -226,6 +222,7 @@ App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string,
         NelMazzoRimangono.Text = $"{App.d["NelMazzoRimangono"]} {m.GetNumeroCarte()} {App.d["carte"]}";
         CartaBriscola.Text = $"{App.d["IlSemeDiBriscolaE"]}: {briscola.GetSemeStr()}";
         Level.Text = $"{App.d["IlLivelloE"]}: {helper.GetLivello()}";
+
         NelMazzoRimangono.IsVisible = true;
         CartaBriscola.IsVisible = true;
         primoUtente = !primoUtente;

@@ -1,8 +1,6 @@
 using CommunityToolkit.Maui.Alerts;
-using org.altervista.numerone.framework;
-using System.Threading;
 
-namespace TrumpSuitGame;
+namespace TrumpSuitGameGeordi;
 
 public partial class OpzioniPage : ContentPage
 {
@@ -57,18 +55,9 @@ public partial class OpzioniPage : ContentPage
             Snackbar.Make($"{App.d["ValoreNonValido"]}").Show(App.cancellationTokenSource.Token);
             return;
         }
-        if (secondi > 10)
-        {
-            Snackbar.Make($"{App.d["ValoreNonValido"]}").Show(App.cancellationTokenSource.Token);
-            return;
-        }
         Preferences.Set("secondi", secondi);
         Preferences.Set("livello", pkrlivello.SelectedIndex + 1);
-#if ANDROID
         AppShell.aggiorna = true;
-#else
-        AppShellWindows.aggiorna = true;
-#endif
         await Shell.Current.GoToAsync("//Main");
     }
 

@@ -1,4 +1,4 @@
-﻿namespace TrumpSuitGame;
+﻿namespace TrumpSuitGameGeordi;
 
 public partial class AppShell : Shell
 {
@@ -7,10 +7,7 @@ public partial class AppShell : Shell
     public static Boolean aggiorna = false;
     public AppShell()
     {
-    InitializeComponent();
-        scapplicazione.Title=App.d["Applicazione"] as string;
-        scopzioni.Title=App.d["Opzioni"] as string;
-        scinformazioni.Title=App.d["Informazioni"] as string;
+        InitializeComponent();
     }
 
     protected override void OnNavigated(ShellNavigatedEventArgs args)

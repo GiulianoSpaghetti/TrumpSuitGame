@@ -1,7 +1,6 @@
 ﻿using CommunityToolkit.Maui;
-using Microsoft.Extensions.Logging;
 
-namespace TrumpSuitGame
+namespace TrumpSuitGameGeordi
 {
     public static class MauiProgram
     {

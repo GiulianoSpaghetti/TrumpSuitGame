@@ -2,7 +2,7 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
-             x:Class="TrumpSuitGame.pt_PT">
+             x:Class="TrumpSuitGameGeordi.pt_PT">
     <system:String x:Key="PuntiDiPrefisso">Pontos de&#160;</system:String>
     <system:String x:Key="PuntiDiSuffisso">&#160;</system:String>
     <system:String x:Key="NelMazzoRimangono">Restam&#160;</system:String>
@@ -26,9 +26,9 @@
     <system:String x:Key="ValoreNonValido">rvalue inválido</system:String>
     <system:String x:Key="No">Não</system:String>
     <system:String x:Key="Condividi">Compartilhar</system:String>
-    <system:String x:Key="bastoni">Bastões</system:String>
-    <system:String x:Key="coppe">Copos</system:String>
-    <system:String x:Key="denari">Dinheiro</system:String>
+    <system:String x:Key="bastoni">Clubes</system:String>
+    <system:String x:Key="coppe">Diamantes</system:String>
+    <system:String x:Key="denari">Corações</system:String>
     <system:String x:Key="spade">Espadas</system:String>
     <system:String x:Key="di">&#160;de&#160;</system:String>
     <system:String x:Key="IlTalloneEFinito">O baralho está finalizado</system:String>
@@ -41,12 +41,11 @@
     <system:String x:Key="NuovaPartitaPerLivello">>O nível mudou, um novo jogo está começando</system:String>
     <system:String x:Key="Salva">Salvar</system:String>
     <system:String x:Key="NuovaPartita">Nova partida</system:String>
-    <system:String x:Key="ColGioco">Com%20o%20jogo%20Trump%20Suit%20Game%20o%20número%20do%20jogo</system:String>
+    <system:String x:Key="ColGioco">Com%20o%20jogo%20Trump%20Suit%20Game%20Geordi%20Edition%20o%20número%20do%20jogo</system:String>
     <system:String x:Key="contro">contra</system:String>
     <system:String x:Key="efinito">està%20terminado</system:String>
     <system:String x:Key="a">a</system:String>
     <system:String x:Key="piattaforma">na%20platfroma</system:String>
-    <system:String x:Key="mazzo">com%20deck</system:String>
-    <system:String x:Key="dedica">Dedicado à Francesca de Numerone, que deve abandonar a wxbriscola porque está velha</system:String>
+    <system:String x:Key="dedica">Dedicado a Annachiara, Francesca, Giovanna, meu sobrinho que parece se chamar Giovanni, e meu gato Geordi que morreu e foi morto por desordeiros.</system:String>
     <system:String x:Key="EdffettuaSecondaPartita">Ele joga um segundo jogo</system:String>
 </ResourceDictionary>

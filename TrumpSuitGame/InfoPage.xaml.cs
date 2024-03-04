@@ -1,11 +1,12 @@
-namespace TrumpSuitGame;
+namespace TrumpSuitGameGeordi;
 
 public partial class InfoPage : ContentPage
 {
-	public InfoPage()
-	{
-		InitializeComponent();
+    public InfoPage()
+    {
+        InitializeComponent();
         Title = $"{App.d["Informazioni"]}";
+        dedica.Text = $"{App.d["dedica"]}";
     }
     private async void OnSito_Click(object sender, EventArgs e)
     {

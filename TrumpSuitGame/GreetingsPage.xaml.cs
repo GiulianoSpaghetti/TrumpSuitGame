@@ -1,6 +1,5 @@
 using org.altervista.numerone.framework;
-
-namespace TrumpSuitGame;
+namespace TrumpSuitGameGeordi;
 
 public partial class GreetingsPage : ContentPage
 {
