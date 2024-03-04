@@ -5,10 +5,7 @@ namespace TrumpSuitGame;
 public partial class App : Application
 {
     public static string piattaforma;
-#if ANDROID
-#else
-    public static ResourceDictionary d;
-#endif
+    public static ResourceDictionary d=null;
     public static readonly CancellationTokenSource cancellationTokenSource= new CancellationTokenSource();
 
     public App()
