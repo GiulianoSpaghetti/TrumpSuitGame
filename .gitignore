@@ -3,5 +3,5 @@
 ################################################################################
 
 /.vs
-/TrumpSuitGame/bin
+/TrumpSuitGame/bin/Debug/net8.0-android34.0
 /TrumpSuitGame/obj
