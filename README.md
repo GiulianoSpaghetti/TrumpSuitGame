@@ -1,4 +1,4 @@
-:it: Made in Italy
+:it: Made in Italy. Il primo prodotto maui ad utilizzare i Resource Dictionary nel mondo.
 
 ## TrumpSuitGame
 Il gioco della briscola in maui, internazionalizzato in inglese, francese, spagnolo, tedesco, italiano e portoghese.
