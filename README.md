@@ -51,20 +51,6 @@ Per cui es_MX (messico) è es, ma anche es_ES (spagna) è es.
 Poi si legge il resourcedictionary relativo alla denominazione a due caratteri del linguaggio di sistema, ed è fatta. Se la risorsa c'è si carica, se no si carica quella di default.
 
 
-## Tramite android
-Mi sono ritrovato un software maui internazionalizzato per android sul pc e l'ho studiato. Quello che è uscito è che il maui non ha un sistema standard, né intende averlo, per cui nella directory Platform/Android/Resources va creato un nome values seguito da "-" e dalla denominazione a due caratteri del linguaggio (semplicemente values è quella di default, per convenzione en).
-All'interno di quella cartella bisogna creare un files chiamato strings.xml e seguire la nomenclatura di android studio per la creazione di tale file e poi bisogna usare i wrapper maui di android, io mi sono creato una funzione in app statica che dovrebbe essere inline che dice         
-
-# return Android.App.Application.Context.Resources.GetString(id);
-
-che dice usa il wrapper di android e recupera la stringa che ha quell'id.
-
-L'id ha nomeclatura
-
-# Namespace.Resources.String.valore
-
-dove valore è definito in strings.xml secondo la nomenclatura android studio.
-
 ## Come funziona
 Per festeggiare, vi spiego come funziona il mio algoritmo brevettato:
 i punti in totale sono 120, ossia 4 assi che valgono 11 punti ciascuno, 4 3 che valgono 10 punti ciascuno, 4 10 che valgono 4 punti ciascuno, 4 9 che valgono 3 punti ciascuno, 4 8 che valgono 2 punti ciascuno.
