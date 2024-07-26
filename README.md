@@ -71,3 +71,7 @@ basandosi solo sui carichi si rischia di perdere, perché
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
+
+## Bibliogrzafia
+
+https://github.com/GiulianoSpaghetti/TrumpSuitGame
