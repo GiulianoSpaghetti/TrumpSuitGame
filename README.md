@@ -30,9 +30,7 @@ Vi sfido a fare di meglio.
 
 ## Video di presentazione
 
-https://youtube.com/live/uCWf9m9dbwg
-
-https://youtu.be/TlF33cqHY_s
+https://1drv.ms/u/s!ApmOB0x2yBN0k5QhMlcaOk024Ev_1A
 
 ## Come installare
 
