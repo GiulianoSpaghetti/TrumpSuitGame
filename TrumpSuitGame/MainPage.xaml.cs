@@ -29,7 +29,7 @@ public partial class MainPage : ContentPage
         secondi = (UInt16)Preferences.Get("secondi", 5);
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
         m = new Mazzo(e);
-        Carta.Inizializza(40, new CartaHelperBriscola(e.GetCartaBriscola()),
+        Carta.Inizializza(40, new org.altervista.numerone.framework.briscola.CartaHelper(e.GetCartaBriscola()),
 App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string, App.d["spade"] as string
 );
         g = new Giocatore(new GiocatoreHelperUtente(), Preferences.Get("nomeUtente", "numerone"), 3);
@@ -124,7 +124,7 @@ App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string,
                     else if (cpu.GetCartaGiocata().GetPunteggio() > 0)
                         snack += $"{App.d["LaCpuHaGiocatoIl"]} {cpu.GetCartaGiocata().GetValore() + 1} {App.d["di"]} {cpu.GetCartaGiocata().GetSemeStr()}\n";
                     if (snack != "")
-                        Snackbar.Make(snack).Show(App.cancellationTokenSource.Token);
+                        Avviso(snack);
                 }
 
             }
@@ -143,7 +143,7 @@ App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string,
                 }
                 if (numeroPartite == UInt128.MaxValue)
                 {
-                    Snackbar.Make("Non hai giocato abbastanza per oggi?").Show(App.cancellationTokenSource.Token);
+                    Avviso("Non hai giocato abbastanza per oggi?");
                     Application.Current.Quit();
                 }
                 else
@@ -156,6 +156,10 @@ App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string,
         };
     }
 
+    private async void Avviso(String s)
+    {
+        await Snackbar.Make(s).Show(App.cancellationTokenSource.Token);
+    }
     private void VisualizzaImmagine(String id, UInt16 i, UInt16 j, bool abilitaGesture)
     {
         Image img;
@@ -188,12 +192,12 @@ App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string,
         Image img;
         UInt16 level = (UInt16)Preferences.Get("livello", 3);
         if (level != helper.GetLivello()) {
-            Snackbar.Make($"{App.d["NuovaPartitaPerLivello"]}").Show(App.cancellationTokenSource.Token);
+            Avviso($"{App.d["NuovaPartitaPerLivello"]}");
             numeroPartite = 0;
         }
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
         m = new Mazzo(e);
-        Carta.SetHelper(new CartaHelperBriscola(e.GetCartaBriscola()));
+        Carta.SetHelper(new org.altervista.numerone.framework.briscola.CartaHelper(e.GetCartaBriscola()));
         briscola = Carta.GetCarta(e.GetCartaBriscola());
         g = new Giocatore(new GiocatoreHelperUtente(), g.GetNome(), 3);
         switch (level)
@@ -298,7 +302,7 @@ App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string,
     {
         if (numeroPartite > UInt128.MaxValue - 2)
         {
-            Snackbar.Make("Non hai giocato abbastanza per oggi?").Show(App.cancellationTokenSource.Token);
+            Avviso("Non hai giocato abbastanza per oggi?");
             Application.Current.Quit();
         }
         else

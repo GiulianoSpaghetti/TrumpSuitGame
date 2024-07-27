@@ -8,7 +8,7 @@
     <system:String x:Key="NelMazzoRimangono">Restam&#160;</system:String>
     <system:String x:Key="carte">&#160;cartas no baralho</system:String>
     <system:String x:Key="IlSemeDiBriscolaE">O naipe de trunfo é</system:String>
-    <system:String x:Key="BriscolaDaPunti">A Carta que designa o naipe de trunfo pode marcar pontos</system:String>
+    <system:String x:Key="BriscolaDaPunti">A cartão que designa o naipe de trunfo pode ter um peso</system:String>
     <system:String x:Key="AvvisaTallone">Alertas quando o baralho termina</system:String>
     <system:String x:Key="NomeUtente">Nome de usuário</system:String>
     <system:String x:Key="NomeCpu">nome da CPU</system:String>
@@ -33,7 +33,7 @@
     <system:String x:Key="di">&#160;de&#160;</system:String>
     <system:String x:Key="IlTalloneEFinito">O baralho está finalizado</system:String>
     <system:String x:Key="LaCpuHaGiocatoIl">A CPU jogou o&#160;</system:String>
-    <system:String x:Key="DiBriscola">de trunfo</system:String>
+    <system:String x:Key="Briscola">trunfo</system:String>
     <system:String x:Key="Esci">Saia</system:String>
     <system:String x:Key="File">Arquivo</system:String>
     <system:String x:Key="Info">?</system:String>
@@ -46,7 +46,5 @@
     <system:String x:Key="efinito">està%20terminado</system:String>
     <system:String x:Key="a">a</system:String>
     <system:String x:Key="piattaforma">na%20platfroma</system:String>
-    <system:String x:Key="mazzo">com%20deck</system:String>
-    <system:String x:Key="dedica">Dedicado à Francesca de Numerone, que deve abandonar a wxbriscola porque está velha</system:String>
     <system:String x:Key="EdffettuaSecondaPartita">Ele joga um segundo jogo</system:String>
 </ResourceDictionary>

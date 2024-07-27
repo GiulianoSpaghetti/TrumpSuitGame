@@ -8,7 +8,7 @@
     <system:String x:Key="NelMazzoRimangono">Es sind noch&#160;</system:String>
     <system:String x:Key="carte">&#160;Karten im Stapel</system:String>
     <system:String x:Key="IlSemeDiBriscolaE">Der Trumpfanzug ist</system:String>
-    <system:String x:Key="BriscolaDaPunti">Die Karte mit der Trumpffarbe kann punkten</system:String>
+    <system:String x:Key="BriscolaDaPunti">Die Karte, die den Trumpf bezeichnet, kann ein Gewicht haben</system:String>
     <system:String x:Key="AvvisaTallone">Warnungen, wenn das Deck endet</system:String>
     <system:String x:Key="NomeUtente">Nutzername</system:String>
     <system:String x:Key="NomeCpu">CPU-Name</system:String>
@@ -30,10 +30,10 @@
     <system:String x:Key="coppe">Tassen</system:String>
     <system:String x:Key="denari">Geld</system:String>
     <system:String x:Key="spade">Schwerter</system:String>
-    <system:String x:Key="di">&#160;</system:String>
+    <system:String x:Key="di">der</system:String>
     <system:String x:Key="IlTalloneEFinito">Das Deck ist fertig</system:String>
     <system:String x:Key="LaCpuHaGiocatoIl">Die CPU hat die gespielt&#160;</system:String>
-    <system:String x:Key="DiBriscola">der Briscola</system:String>
+    <system:String x:Key="Briscola">Briscola</system:String>
     <system:String x:Key="Esci">Beenden Sie das Programm</system:String>
     <system:String x:Key="File">Datei</system:String>
     <system:String x:Key="Info">?</system:String>

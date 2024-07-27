@@ -11,9 +11,6 @@ public partial class App : Application
     public App()
     {
         InitializeComponent();
-#if ANDROID
-        MainPage = new AppShell();
-#else
         try
         {
             d = Resources[CultureInfo.CurrentCulture.TwoLetterISOLanguageName] as ResourceDictionary;
@@ -23,6 +20,9 @@ public partial class App : Application
         {
             d = Resources["en"] as ResourceDictionary;
         }
+#if ANDROID
+        MainPage = new AppShell();
+#else
         MainPage = new AppShellWindows();
 #endif
         piattaforma = DeviceInfo.Current.Model;

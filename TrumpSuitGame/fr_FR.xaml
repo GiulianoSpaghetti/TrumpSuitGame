@@ -8,7 +8,7 @@
     <system:String x:Key="NelMazzoRimangono">Il reste</system:String>
     <system:String x:Key="carte">&#160;cartes dans le jeu</system:String>
     <system:String x:Key="IlSemeDiBriscolaE">Le costume d'atout est</system:String>
-    <system:String x:Key="BriscolaDaPunti">La Carte désignant la couleur d'atout peut marquer des points</system:String>
+    <system:String x:Key="BriscolaDaPunti">La carte désignant l'atout peut avoir un poids</system:String>
     <system:String x:Key="AvvisaTallone">Alertes lorsque le jeu se termine</system:String>
     <system:String x:Key="NomeUtente">Nom d'utilisateur</system:String>
     <system:String x:Key="NomeCpu">Nom du processeur</system:String>
@@ -33,7 +33,7 @@
     <system:String x:Key="di">&#160;de&#160;</system:String>
     <system:String x:Key="IlTalloneEFinito">Le plateau est terminé</system:String>
     <system:String x:Key="LaCpuHaGiocatoIl">Le CPU a joué le&#160;</system:String>
-    <system:String x:Key="DiBriscola">d'atout</system:String>
+    <system:String x:Key="Briscola">atout</system:String>
     <system:String x:Key="Esci">Quitter</system:String>
     <system:String x:Key="File">Archive</system:String>
     <system:String x:Key="Info">?</system:String>
@@ -46,7 +46,5 @@
     <system:String x:Key="efinito">ça%20a%20fini</system:String>
     <system:String x:Key="a">-</system:String>
     <system:String x:Key="piattaforma">sur%20la%20plateforme</system:String>
-    <system:String x:Key="mazzo">avec%20pont</system:String>
-    <system:String x:Key="dedica">Dédié à Francesca de Numérone, qui doit abandonner la wxbriscola parce qu'elle est vieille</system:String>
     <system:String x:Key="EffettuaSecondaPartita">Est-ce qu'il joue un deuxième jeu</system:String>
 </ResourceDictionary>
