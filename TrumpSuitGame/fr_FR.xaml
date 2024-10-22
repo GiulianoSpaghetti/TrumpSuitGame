@@ -8,7 +8,7 @@
     <system:String x:Key="NelMazzoRimangono">Il reste</system:String>
     <system:String x:Key="carte">&#160;cartes dans le jeu</system:String>
     <system:String x:Key="IlSemeDiBriscolaE">Le costume d'atout est</system:String>
-    <system:String x:Key="BriscolaDaPunti">La Carte désignant la couleur d'atout peut marquer des points</system:String>
+    <system:String x:Key="BriscolaDaPunti">La Carte désignant la couleur d'atout peut avoir du poids</system:String>
     <system:String x:Key="AvvisaTallone">Alertes lorsque le jeu se termine</system:String>
     <system:String x:Key="NomeUtente">Nom d'utilisateur</system:String>
     <system:String x:Key="NomeCpu">Nom du processeur</system:String>
@@ -46,6 +46,6 @@
     <system:String x:Key="efinito">ça%20a%20fini</system:String>
     <system:String x:Key="a">-</system:String>
     <system:String x:Key="piattaforma">sur%20la%20plateforme</system:String>
-    <system:String x:Key="dedica">Dédié à Annachiara, Francesca, Giovanna, mon neveu qui semble s'appeler Giovanni, et mon chat Geordi qui est mort et a été tué par des fauteurs de troubles.</system:String>
+    <system:String x:Key="dedica">Dédié à Giovanna, mon neveu qui semble s'appeler Giuseppino, et mon chat Geordi qui est mort et a été tué par des fauteurs de troubles.</system:String>
     <system:String x:Key="EffettuaSecondaPartita">Est-ce qu'il joue un deuxième jeu</system:String>
 </ResourceDictionary>

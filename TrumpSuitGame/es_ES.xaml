@@ -8,7 +8,7 @@
     <system:String x:Key="NelMazzoRimangono">Quedan&#160;</system:String>
     <system:String x:Key="carte">&#160;cartas en la baraja</system:String>
     <system:String x:Key="IlSemeDiBriscolaE">El palo de triunfo es</system:String>
-    <system:String x:Key="BriscolaDaPunti">La carta que designa el palo de triunfo puede sumar puntos</system:String>
+    <system:String x:Key="BriscolaDaPunti">La tarjeta que designa el palo de triunfo puede tener peso</system:String>
     <system:String x:Key="AvvisaTallone">Alertas cuando termina el mazo</system:String>
     <system:String x:Key="NomeUtente">Nombre de usuario</system:String>
     <system:String x:Key="NomeCpu">Nombre de la CPU</system:String>
@@ -46,6 +46,6 @@
     <system:String x:Key="efinito">està%20terminado</system:String>
     <system:String x:Key="a">a</system:String>
     <system:String x:Key="piattaforma">en%20plataforma</system:String>
-    <system:String x:Key="dedica">Dedicado a Annachiara, Francesca, Giovanna, mi sobrino que parece llamarse Giovanni y mi gato Geordi que murió y fue asesinado por alborotadores.</system:String>
+    <system:String x:Key="dedica">Dedicado Giovanna, mi sobrino que parece llamarse Giuseppino y mi gato Geordi que murió y fue asesinado por alborotadores.</system:String>
     <system:String x:Key="EffettuaSecondaPartita">¿Hace un segundo juego</system:String>
 </ResourceDictionary>

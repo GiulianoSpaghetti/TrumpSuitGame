@@ -1,25 +1,23 @@
-﻿namespace TrumpSuitGameGeordi;
-
-public partial class AppShell : Shell
+﻿namespace TrumpSuitGameGeordi
 {
-
-
-    public static Boolean aggiorna = false;
-    public AppShell()
+    public partial class AppShell : Shell
     {
-        InitializeComponent();
-    }
-
-    protected override void OnNavigated(ShellNavigatedEventArgs args)
-{
-    string current = args.Current.Location.ToString();
-    if (current is "//Main")
-        if (aggiorna)
+        public static Boolean aggiorna = false;
+        public AppShell()
         {
-            MainPage.main.AggiornaOpzioni();
-            aggiorna = false;
+            InitializeComponent();
         }
-    base.OnNavigated(args);
+        protected override void OnNavigated(ShellNavigatedEventArgs args)
+        {
+            string current = args.Current.Location.ToString();
+            if (current is "//Main")
+                if (aggiorna)
+                {
+                    MainPage.main.AggiornaOpzioni();
+                    aggiorna = false;
+                }
+            base.OnNavigated(args);
 
-}
+        }
+    }
 }

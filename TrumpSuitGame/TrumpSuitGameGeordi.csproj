@@ -36,14 +36,6 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.19041.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.19041.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
-		<GenerateAppInstallerFile>False</GenerateAppInstallerFile>
-		<AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
-		<PackageCertificateThumbprint>E22847D127A5C0863C706EA265B7FDB85142A6EA</PackageCertificateThumbprint>
-		<AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
-		<AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
-		<AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
-		<GenerateTestArtifacts>True</GenerateTestArtifacts>
-		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -65,11 +57,68 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CommunityToolkit.Maui" Version="7.0.1" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.7" />
-		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.7" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
-		<PackageReference Include="CardFramework.maui" Version="1.1.4" />
+	  <None Remove="Resources\Images\g0.png" />
+	  <None Remove="Resources\Images\g1.png" />
+	  <None Remove="Resources\Images\g10.png" />
+	  <None Remove="Resources\Images\g11.png" />
+	  <None Remove="Resources\Images\g12.png" />
+	  <None Remove="Resources\Images\g13.png" />
+	  <None Remove="Resources\Images\g14.png" />
+	  <None Remove="Resources\Images\g15.png" />
+	  <None Remove="Resources\Images\g16.png" />
+	  <None Remove="Resources\Images\g17.png" />
+	  <None Remove="Resources\Images\g18.png" />
+	  <None Remove="Resources\Images\g19.png" />
+	  <None Remove="Resources\Images\g2.png" />
+	  <None Remove="Resources\Images\g20.png" />
+	  <None Remove="Resources\Images\g21.png" />
+	  <None Remove="Resources\Images\g22.png" />
+	  <None Remove="Resources\Images\g23.png" />
+	  <None Remove="Resources\Images\g24.png" />
+	  <None Remove="Resources\Images\g25.png" />
+	  <None Remove="Resources\Images\g26.png" />
+	  <None Remove="Resources\Images\g27.png" />
+	  <None Remove="Resources\Images\g28.png" />
+	  <None Remove="Resources\Images\g29.png" />
+	  <None Remove="Resources\Images\g3.png" />
+	  <None Remove="Resources\Images\g30.png" />
+	  <None Remove="Resources\Images\g31.png" />
+	  <None Remove="Resources\Images\g32.png" />
+	  <None Remove="Resources\Images\g33.png" />
+	  <None Remove="Resources\Images\g34.png" />
+	  <None Remove="Resources\Images\g35.png" />
+	  <None Remove="Resources\Images\g36.png" />
+	  <None Remove="Resources\Images\g37.png" />
+	  <None Remove="Resources\Images\g38.png" />
+	  <None Remove="Resources\Images\g39.png" />
+	  <None Remove="Resources\Images\g4.png" />
+	  <None Remove="Resources\Images\g5.png" />
+	  <None Remove="Resources\Images\g6.png" />
+	  <None Remove="Resources\Images\g7.png" />
+	  <None Remove="Resources\Images\g8.png" />
+	  <None Remove="Resources\Images\g9.png" />
+	  <None Remove="Resources\Images\gretro_carte_mazzo.png" />
+	  <None Remove="Resources\Images\gretro_carte_pc.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="9.1.0" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.92" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.92" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.1" />
+		<PackageReference Include="CardFramework.maui" Version="1.3.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="it_IT.xaml.cs">
+	    <DependentUpon>it_IT.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="it_IT.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 

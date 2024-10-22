@@ -8,7 +8,7 @@
     <system:String x:Key="NelMazzoRimangono">Restam&#160;</system:String>
     <system:String x:Key="carte">&#160;cartas no baralho</system:String>
     <system:String x:Key="IlSemeDiBriscolaE">O naipe de trunfo é</system:String>
-    <system:String x:Key="BriscolaDaPunti">A Carta que designa o naipe de trunfo pode marcar pontos</system:String>
+    <system:String x:Key="BriscolaDaPunti">A Carta que designa o naipe de trunfo pode tem peso</system:String>
     <system:String x:Key="AvvisaTallone">Alertas quando o baralho termina</system:String>
     <system:String x:Key="NomeUtente">Nome de usuário</system:String>
     <system:String x:Key="NomeCpu">nome da CPU</system:String>
@@ -46,6 +46,6 @@
     <system:String x:Key="efinito">està%20terminado</system:String>
     <system:String x:Key="a">a</system:String>
     <system:String x:Key="piattaforma">na%20platfroma</system:String>
-    <system:String x:Key="dedica">Dedicado a Annachiara, Francesca, Giovanna, meu sobrinho que parece se chamar Giovanni, e meu gato Geordi que morreu e foi morto por desordeiros.</system:String>
+    <system:String x:Key="dedica">Dedicado a Giovanna, meu sobrinho que parece se chamar Giuseppino, e meu gato Geordi que morreu e foi morto por desordeiros.</system:String>
     <system:String x:Key="EdffettuaSecondaPartita">Ele joga um segundo jogo</system:String>
 </ResourceDictionary>

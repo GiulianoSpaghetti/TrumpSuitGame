@@ -26,7 +26,7 @@ public partial class MainPage : ContentPage
         secondi = (UInt16)Preferences.Get("secondi", 5);
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
         m = new Mazzo(e);
-        Carta.Inizializza(40, new CartaHelperBriscola(e.GetCartaBriscola()), App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string, App.d["spade"] as string);
+        Carta.Inizializza(40, new org.altervista.numerone.framework.briscola.CartaHelper(e.GetCartaBriscola()), App.d["bastoni"] as string, App.d["coppe"] as string, App.d["denari"] as string, App.d["spade"] as string);
         g = new Giocatore(new GiocatoreHelperUtente(), Preferences.Get("nomeUtente", "numerone"), 3);
         switch (Preferences.Get("livello", 3))
         {
@@ -188,9 +188,8 @@ public partial class MainPage : ContentPage
         }
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
         m = new Mazzo(e);
-        Carta.SetHelper(new CartaHelperBriscola(e.GetCartaBriscola()));
+        Carta.SetHelper(new org.altervista.numerone.framework.briscola.CartaHelper(e.GetCartaBriscola()));
         briscola = Carta.GetCarta(e.GetCartaBriscola());
-        Carta.SetHelper(new CartaHelperBriscola(e.GetCartaBriscola()));
         g = new Giocatore(new GiocatoreHelperUtente(), g.GetNome(), 3);
         switch (level)
         {
