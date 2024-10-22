@@ -8,7 +8,10 @@ namespace TrumpSuitGameGeordi
         {
             var builder = MauiApp.CreateBuilder();
             builder
-                .UseMauiApp<App>().UseMauiCommunityToolkit()
+                .UseMauiApp<App>().UseMauiCommunityToolkit(options =>
+                {
+                    options.SetShouldEnableSnackbarOnWindows(true);
+                })
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
