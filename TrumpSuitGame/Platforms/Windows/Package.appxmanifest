@@ -3,18 +3,18 @@
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
-  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
   xmlns:com="http://schemas.microsoft.com/appx/manifest/com/windows10"
   xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
-  IgnorableNamespaces="uap rescap com desktop"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  IgnorableNamespaces="uap rescap com desktop">
 
-  <Identity Name="21961GiulioSorrentino.Thetrumpsuitgame" Publisher="CN=Giulio Sorrentino" Version="3.1.0.0" />
+  <Identity Name="maui-package-name-placeholder" Publisher="CN=User Name" Version="0.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="88c20632-6829-4386-a42c-749f1e503477" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="CABC8E7B-6C8E-4204-B32A-BC4C0218FA03" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>The trump suit game</DisplayName>
-    <PublisherDisplayName>Giulio Sorrentino</PublisherDisplayName>
+    <DisplayName>$placeholder$</DisplayName>
+    <PublisherDisplayName>User Name</PublisherDisplayName>
     <Logo>$placeholder$.png</Logo>
   </Properties>
 
@@ -30,7 +30,7 @@
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="The trump suit game"
+        DisplayName="$placeholder$"
         Description="$placeholder$"
         Square150x150Logo="$placeholder$.png"
         Square44x44Logo="$placeholder$.png"
@@ -38,24 +38,23 @@
         <uap:DefaultTile Square71x71Logo="$placeholder$.png" Wide310x150Logo="$placeholder$.png" Square310x310Logo="$placeholder$.png" />
         <uap:SplashScreen Image="$placeholder$.png" />
       </uap:VisualElements>
-		<Extensions>
+  <Extensions>
 
-			<!-- Specify which CLSID to activate when notification is clicked -->
-			<desktop:Extension Category="windows.toastNotificationActivation">
-				<desktop:ToastNotificationActivation ToastActivatorCLSID="6e919706-2634-4d97-a93c-2213b2acc334" />
-			</desktop:Extension>
+   <!-- Specify which CLSID to activate when notification is clicked -->
+   <desktop:Extension Category="windows.toastNotificationActivation">
+       <desktop:ToastNotificationActivation ToastActivatorCLSID="6e919706-2634-4d97-a93c-2213b2acc334" />
+   </desktop:Extension>
 
-			<!-- Register COM CLSID -->
-			<com:Extension Category="windows.comServer">
-				<com:ComServer>
-					<com:ExeServer Executable="TrumpSuitGame\TrumpSuitGameGeordi.exe" DisplayName="$targetnametoken$" Arguments="----AppNotificationActivated:">
-						<!-- Example path to executable: CommunityToolkit.Maui.Sample\CommunityToolkit.Maui.Sample.exe -->
-						<com:Class Id="6e919706-2634-4d97-a93c-2213b2acc334" />
-					</com:ExeServer>
-				</com:ComServer>
-			</com:Extension>
+   <!-- Register COM CLSID -->
+   <com:Extension Category="windows.comServer">
+       <com:ComServer>
+           <com:ExeServer Executable="TrumpSuitGameGeordi\TrumpSuitGameGeordi.exe" DisplayName="$targetnametoken$" Arguments="----AppNotificationActivated:"> <!-- Example path to executable: CommunityToolkit.Maui.Sample\CommunityToolkit.Maui.Sample.exe -->
+               <com:Class Id="6e919706-2634-4d97-a93c-2213b2acc334" />
+           </com:ExeServer>
+       </com:ComServer>
+   </com:Extension>
 
-		</Extensions>
+</Extensions>
     </Application>
   </Applications>
 
