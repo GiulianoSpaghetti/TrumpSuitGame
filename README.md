@@ -20,10 +20,11 @@ Vi sfido a fare di meglio.
 
 ## Screenshots su windows
 
-![Screenshot 2023-09-23 171833](https://github.com/numerunix/TrumpSuitGame/assets/49764967/559630eb-abe3-4891-83f0-693bd594b1ab)
-![Screenshot 2023-09-23 171547](https://github.com/numerunix/TrumpSuitGame/assets/49764967/22d25a30-13d8-4e27-b355-e0f7f55b4b94)
-![Screenshot 2023-09-23 171539](https://github.com/numerunix/TrumpSuitGame/assets/49764967/edb7f890-7ed7-4276-9222-5e930ea57e21)
-![Screenshot 2023-09-23 171459](https://github.com/numerunix/TrumpSuitGame/assets/49764967/25f20420-10ac-4359-ab22-c16af3fa7079)
+![Screenshot 2024-10-25 015619](https://github.com/user-attachments/assets/5656666e-8ea0-4dec-a008-7e02745ddaa5)
+![Screenshot 2024-10-25 015337](https://github.com/user-attachments/assets/db4de058-f882-4cfb-84ad-ac0bd99f815f)
+![Screenshot 2024-10-25 015325](https://github.com/user-attachments/assets/16fba492-dc81-47ac-a575-686c389d2c45)
+![Screenshot 2024-10-25 015304](https://github.com/user-attachments/assets/70f771f5-9485-4672-86ad-cab488c07bbe)
+
 
 
 ## Video di presentazione
