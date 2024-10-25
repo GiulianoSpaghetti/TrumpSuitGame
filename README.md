@@ -3,6 +3,7 @@
 ## TrumpSuitGame
 Il gioco della briscola in maui, internazionalizzato in inglese, francese, spagnolo, tedesco, italiano e portoghese.
 Su windows per cambiare il dialetto é sufficente modificare le impostazioni di sistema, su android 14 e 15 pure, sui precedenti bisogna disinstallare e reinstallare il programma.
+Il gioco èpiù godibile sui tablet in modalità portrait, non landscape.
 Vi segnalo che questa app è stata utilizzata da google per una campagna pubblicitaria contro la ludopatia.
 
 
@@ -64,6 +65,9 @@ basandosi solo sui carichi si rischia di perdere, perché
 84-61=23, bisogna prenderli quasi tutti e lasciare solo 23 punti di carichi
 
 60-36=24, prendendo tutte le altre carte bastano solo 3 carichi per vincere.
+
+## Bug noti
+Il programma accetta anche valore 0 e negativi come tempo di risposta. In caso di valore 0 non si può giocare, in caso di valori negativi il programma crasha.
 
 ## Donazioni
 
