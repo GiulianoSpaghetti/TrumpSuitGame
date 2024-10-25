@@ -49,6 +49,16 @@ public partial class OpzioniPage : ContentPage
             Snackbar.Make($"{App.d["ValoreNonValido"]}").Show(App.cancellationTokenSource.Token);
             return;
         }
+        catch (OverflowException ex)
+        {
+            await Snackbar.Make($"{App.d["ValoreNonValido"]}").Show(App.cancellationTokenSource.Token);
+            return;
+        }
+        if (secondi <1 || secondi > 10)
+        {
+            await Snackbar.Make($"{App.d["ValoreNonValido"]}").Show(App.cancellationTokenSource.Token);
+            return;
+        }
         Preferences.Set("secondi", secondi);
         Preferences.Set("livello", pkrlivello.SelectedIndex + 1);
         AppShell.aggiorna = true;
