@@ -56,6 +56,8 @@ public partial class OpzioniPage : ContentPage
         }
         if (secondi <1 || secondi > 10)
         {
+            secondi = (UInt16) Preferences.Get("secondi", 5);
+            txtSecondi.Text = secondi.ToString();
             await Snackbar.Make($"{App.d["ValoreNonValido"]}").Show(App.cancellationTokenSource.Token);
             return;
         }

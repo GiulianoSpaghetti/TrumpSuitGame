@@ -94,22 +94,31 @@ public partial class MainPage : ContentPage
             {
                 NelMazzoRimangono.Text = $"{App.d["NelMazzoRimangono"]} {m.GetNumeroCarte()} {App.d["carte"]}";
                 CartaBriscola.Text = $"{App.d["IlSemeDiBriscolaE"]}: {briscola.GetSemeStr()}";
-                if (m.GetNumeroCarte() == 0)
+                switch(m.GetNumeroCarte())
                 {
-                    ((Image)this.FindByName(Carta.GetCarta(e.GetCartaBriscola()).GetID())).IsVisible = false;
-                    NelMazzoRimangono.IsVisible = false;
-                    if (avvisaTalloneFinito)
-                        snack += App.d["IlTalloneEFinito"];
+                    case 2:
+                        if (avvisaTalloneFinito)
+                            snack = $"{App.d["IlTalloneEFinito"]}\r\n";
+                        break;
+                    case 0:
+                        ((Image)this.FindByName(Carta.GetCarta(e.GetCartaBriscola()).GetID())).IsVisible = false;
+                        NelMazzoRimangono.IsVisible = false;
+                        break;
                 }
                 for (UInt16 i = 0; i < g.GetNumeroCarte(); i++)
                 {
                     VisualizzaImmagine(g.GetID(i), 1, i, true);
                     ((Image)this.FindByName("Cpu" + i)).IsVisible = true;
                 }
-                if (cpu.GetNumeroCarte() == 2)
-                    Cpu2.IsVisible = false;
-                if (cpu.GetNumeroCarte() == 1)
-                    Cpu1.IsVisible = false;
+                switch (cpu.GetNumeroCarte())
+                {
+                    case 2:
+                        Cpu2.IsVisible = false;
+                        break;
+                    case 1:
+                        Cpu1.IsVisible = false;
+                        break;
+                }
 
                 if (primo == cpu)
                 {
@@ -119,7 +128,7 @@ public partial class MainPage : ContentPage
                     else if (cpu.GetCartaGiocata().GetPunteggio() > 0)
                         snack += $"{App.d["LaCpuHaGiocatoIl"]} {cpu.GetCartaGiocata().GetValore() + 1} {App.d["di"]} {cpu.GetCartaGiocata().GetSemeStr()}\n";
                     if (snack != "")
-                        Snackbar.Make(snack).Show(App.cancellationTokenSource.Token);
+                        Snackbar.Make(snack.Trim()).Show(App.cancellationTokenSource.Token);
                 }
 
             }
