@@ -72,7 +72,3 @@ Il programma accetta anche valore 0 e negativi come tempo di risposta. In caso d
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
-
-## Bibliografia
-
-https://github.com/GiulianoSpaghetti/TrumpSuitGame
