@@ -67,7 +67,7 @@ basandosi solo sui carichi si rischia di perdere, perché
 60-36=24, prendendo tutte le altre carte bastano solo 3 carichi per vincere.
 
 ## Bug noti
-Il programma accetta anche valore 0 e negativi come tempo di risposta. In caso di valore 0 non si può giocare, in caso di valori negativi il programma crasha.
+Se il cellulare finisce sotto un tram risulta impossibile avviare il software xD
 
 ## Donazioni
 
