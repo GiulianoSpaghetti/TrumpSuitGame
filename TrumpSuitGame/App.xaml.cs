@@ -19,10 +19,13 @@ namespace TrumpSuitGameGeordi
             {
                 d = Resources["en"] as ResourceDictionary;
             }
-            MainPage = new AppShell();
             piattaforma = DeviceInfo.Current.Model;
             if (piattaforma == "System Product Name")
                 piattaforma = "Windows " + DeviceInfo.Current.VersionString;
+        }
+        protected override Window CreateWindow(IActivationState? activationState)
+        {
+            return new Window(new AppShell());
         }
     }
 }

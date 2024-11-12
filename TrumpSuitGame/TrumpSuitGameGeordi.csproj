@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
-		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.22621.0</TargetFrameworks>
+		<TargetFrameworks>net9.0-android;net9.0-ios;net9.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net9.0-windows10.0.26100.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
-		<!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net9.0-tizen</TargetFrameworks> -->
 
 		<!-- Note for MacCatalyst:
 		The default runtime is maccatalyst-x64, except in Release config, in which case the default is maccatalyst-x64;maccatalyst-arm64.
@@ -30,8 +30,11 @@
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
 
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
+		<!-- To develop, package, and publish an app to the Microsoft Store, see: https://aka.ms/MauiTemplateUnpackaged -->
+		<WindowsPackageType>None</WindowsPackageType>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.19041.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.19041.0</TargetPlatformMinVersion>
@@ -57,69 +60,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\g0.png" />
-	  <None Remove="Resources\Images\g1.png" />
-	  <None Remove="Resources\Images\g10.png" />
-	  <None Remove="Resources\Images\g11.png" />
-	  <None Remove="Resources\Images\g12.png" />
-	  <None Remove="Resources\Images\g13.png" />
-	  <None Remove="Resources\Images\g14.png" />
-	  <None Remove="Resources\Images\g15.png" />
-	  <None Remove="Resources\Images\g16.png" />
-	  <None Remove="Resources\Images\g17.png" />
-	  <None Remove="Resources\Images\g18.png" />
-	  <None Remove="Resources\Images\g19.png" />
-	  <None Remove="Resources\Images\g2.png" />
-	  <None Remove="Resources\Images\g20.png" />
-	  <None Remove="Resources\Images\g21.png" />
-	  <None Remove="Resources\Images\g22.png" />
-	  <None Remove="Resources\Images\g23.png" />
-	  <None Remove="Resources\Images\g24.png" />
-	  <None Remove="Resources\Images\g25.png" />
-	  <None Remove="Resources\Images\g26.png" />
-	  <None Remove="Resources\Images\g27.png" />
-	  <None Remove="Resources\Images\g28.png" />
-	  <None Remove="Resources\Images\g29.png" />
-	  <None Remove="Resources\Images\g3.png" />
-	  <None Remove="Resources\Images\g30.png" />
-	  <None Remove="Resources\Images\g31.png" />
-	  <None Remove="Resources\Images\g32.png" />
-	  <None Remove="Resources\Images\g33.png" />
-	  <None Remove="Resources\Images\g34.png" />
-	  <None Remove="Resources\Images\g35.png" />
-	  <None Remove="Resources\Images\g36.png" />
-	  <None Remove="Resources\Images\g37.png" />
-	  <None Remove="Resources\Images\g38.png" />
-	  <None Remove="Resources\Images\g39.png" />
-	  <None Remove="Resources\Images\g4.png" />
-	  <None Remove="Resources\Images\g5.png" />
-	  <None Remove="Resources\Images\g6.png" />
-	  <None Remove="Resources\Images\g7.png" />
-	  <None Remove="Resources\Images\g8.png" />
-	  <None Remove="Resources\Images\g9.png" />
-	  <None Remove="Resources\Images\gretro_carte_mazzo.png" />
-	  <None Remove="Resources\Images\gretro_carte_pc.png" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="9.1.1" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
+		<PackageReference Include="CardFramework.Maui" Version="1.4.0" />
 	</ItemGroup>
-
-	<ItemGroup>
-		<PackageReference Include="CommunityToolkit.Maui" Version="9.1.0" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.92" />
-		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.92" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.1" />
-		<PackageReference Include="CardFramework.maui" Version="1.3.7" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Compile Update="it_IT.xaml.cs">
-	    <DependentUpon>it_IT.xaml</DependentUpon>
-	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiXaml Update="it_IT.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	</ItemGroup>
-
 
 </Project>
