@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package
-  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
-  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
-  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+    xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+    xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+    xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
     xmlns:com="http://schemas.microsoft.com/appx/manifest/com/windows10"
-     xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
-     IgnorableNamespaces="uap rescap com desktop">
-  <Identity Name="maui-package-name-placeholder" Publisher="CN=Giulio Sorrentino" Version="3.4.0.0" />
+    xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
+    IgnorableNamespaces="uap rescap com desktop">
 
-  <mp:PhoneIdentity PhoneProductId="B04248C1-BF78-4965-A95E-8F01D7487D48" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Identity Name="maui-package-name-placeholder" Publisher="CN=Giulio Sorrentino" Version="3.8.2.0" />
 
   <Properties>
     <DisplayName>$placeholder$</DisplayName>
@@ -37,24 +36,21 @@
         <uap:DefaultTile Square71x71Logo="$placeholder$.png" Wide310x150Logo="$placeholder$.png" Square310x310Logo="$placeholder$.png" />
         <uap:SplashScreen Image="$placeholder$.png" />
       </uap:VisualElements>
-		<Extensions>
+   <Extensions>
 
-			<!-- Specify which CLSID to activate when notification is clicked -->
-			<desktop:Extension Category="windows.toastNotificationActivation">
-				<desktop:ToastNotificationActivation ToastActivatorCLSID="6e919706-2634-4d97-a93c-2213b2acc334" />
-			</desktop:Extension>
+               <desktop:Extension Category="windows.toastNotificationActivation">
+                   <desktop:ToastNotificationActivation ToastActivatorCLSID="6e919706-2634-4d97-a93c-2213b2acc334" />
+               </desktop:Extension>
 
-			<!-- Register COM CLSID -->
-			<com:Extension Category="windows.comServer">
-				<com:ComServer>
-					<com:ExeServer Executable="TrumpSuitGame\TrumpSuitGame.exe" DisplayName="$targetnametoken$" Arguments="----AppNotificationActivated:">
-						<!-- Example path to executable: CommunityToolkit.Maui.Sample\CommunityToolkit.Maui.Sample.exe -->
-						<com:Class Id="6e919706-2634-4d97-a93c-2213b2acc334" />
-					</com:ExeServer>
-				</com:ComServer>
-			</com:Extension>
+               <com:Extension Category="windows.comServer">
+                   <com:ComServer>
+                       <com:ExeServer Executable="TrumpSuitGame\TrumpSuitGame.exe" DisplayName="$targetnametoken$" Arguments="----AppNotificationActivated:"> <!-- Example path to executable: CommunityToolkit.Maui.Sample\CommunityToolkit.Maui.Sample.exe -->
+                           <com:Class Id="6e919706-2634-4d97-a93c-2213b2acc334" />
+                        </com:ExeServer>
+                    </com:ComServer>
+                </com:Extension>
 
-		</Extensions>
+            </Extensions>
     </Application>
   </Applications>
 
