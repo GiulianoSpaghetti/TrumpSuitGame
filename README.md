@@ -74,6 +74,10 @@ basandosi solo sui carichi si rischia di perdere, perché
 
 60-36=24, prendendo tutte le altre carte bastano solo 3 carichi per vincere.
 
+## Aggiornamenti
+
+Per windows i package msix sono platform indepedent ed in IL, per cui è sufficiente scaricarsi il nuovo dotnet framework runtime e reinstallarsi il pacchetto per ottenere il codice binario ottimizzato con le ultime patch.
+
 ## Bug noti
 Se il cellulare finisce sotto un tram risulta impossibile avviare il software xD
 
