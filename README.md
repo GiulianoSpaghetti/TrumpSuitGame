@@ -12,7 +12,7 @@ Questo gioco dimostra che la teoria dei giochi è vera: l'algorimo brevettato fu
 Quello che avete davanti non è il gioco della briscola come si intende oggi, perché oggi tutti i simulatori di briscola dicono "hai preso l'asso, bravo" e finisce lì. Quello che avete davanti è un simulatore equo e professionale, con punteggio aggiornato in tempo reale, in modo da poter decidere se "rischiare" o meno coscientemente, scritto in maui, internazionalizzato in inglese, francese, spagnolo, tedesco, italiano e portoghese.
 Su windows per cambiare il dialetto é sufficente modificare le impostazioni di sistema, su android 14 e 15 pure, sui precedenti bisogna disinstallare e reinstallare il programma.
 Il gioco è più godibile sui tablet in modalità portrait, non landscape.
-Sembra strano a dirsi, ma il gioco è hard core, perché consente di cambiare in ogni istante l'andamento della partita cosicentemente con le proprie scelte.
+Sembra strano a dirsi, ma il gioco è hard core (i vecchietti che urlano "Guarda che sto piombo a denari" mentre aspettano il pullman...), perché consente di cambiare in ogni istante l'andamento della partita cosicentemente con le proprie scelte.
 Vi segnalo che questa app è stata utilizzata da google per una campagna pubblicitaria contro la ludopatia.
 
 
