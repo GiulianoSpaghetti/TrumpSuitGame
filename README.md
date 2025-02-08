@@ -33,7 +33,7 @@ Vi sfido a fare di meglio.
 Ormai i giochi di carte sono vecchi e vengono fatti da pochissime persone. Vi immaginate il nonno che si compra il cellulare da 150 euro, con 5 euro la briscola e si mette a giocare aspettando il pullman o la metropolitana?
 
 Nella mia briscola può capitare che il computer abbia il 3 e l'asso di briscola, facciamo denari, e che esca un carico, a quel punto da primo di mano gioca il carico.
-IL nonnino non ha né denari né come sopratagliare, non può prendere. Capita la prima volta, capita la seconda volta consecutiva, carica la terza volta consecutiva, a quel punto urla "Sto piombo a denari!".
+Il nonnino secondo di mano non ha né denari né come sopratagliare, non può prendere. Capita la prima volta, capita la seconda volta consecutiva, carica la terza volta consecutiva, a quel punto urla "Sto piombo a denari!".
 E' questo il motto registrato, in entrambe le sue forme.
 Negli anni 2000 capitava a casa grazie alla wxbriscola, oggi può capitare per la strada.
 
