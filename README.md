@@ -12,7 +12,7 @@ Questo gioco dimostra che la teoria dei giochi è vera: l'algorimo brevettato fu
 Quello che avete davanti non è il gioco della briscola come si intende oggi, perché oggi tutti i simulatori di briscola dicono "hai preso l'asso, bravo" e finisce lì. Quello che avete davanti è un simulatore equo e professionale, con punteggio aggiornato in tempo reale, in modo da poter decidere se "rischiare" o meno coscientemente, scritto in maui, internazionalizzato in inglese, francese, spagnolo, tedesco, italiano e portoghese.
 Su windows per cambiare il dialetto é sufficente modificare le impostazioni di sistema, su android 14 e 15 pure, sui precedenti bisogna disinstallare e reinstallare il programma.
 Il gioco è più godibile sui tablet in modalità portrait, non landscape.
-Sembra strano a dirsi, ma il gioco è hard core (i vecchietti che urlano "Guarda che sto piombo a denari" mentre aspettano il pullman...), perché consente di cambiare in ogni istante l'andamento della partita cosicentemente con le proprie scelte.
+Sembra strano a dirsi, ma il gioco è hard core perché consente di cambiare in ogni istante l'andamento della partita cosicentemente con le proprie scelte.
 Vi segnalo che questa app è stata utilizzata da google per una campagna pubblicitaria contro la ludopatia.
 
 
@@ -27,6 +27,15 @@ I giochi di carte anche sono gratuiti, però si accoppiano le carte per vincere.
 La CBriscola Maui (Trump Suit Game internazionalizzato) sapete cosa promette? Per 5 euro LORDI ed UNA TANTUM promette un numero ben determinato e molto alto di partite al giorno, un gioco che segue ciecamente le regole della briscola classica (al meglio delle due partite), con un mazzo di carte semplice da capire ed una IA che cerca di prendere il maggior numero di carte, senza accoppiarsele, infatti il 3 può venire tranquillamente mangiato dall'asso ed AGGIORNAMENTI GRATUITI.
 
 Vi sfido a fare di meglio.
+
+## Lo use case
+
+Ormai i giochi di carte sono vecchi e vengono fatti da pochissime persone. Vi immaginate il nonno che si compra il cellulare da 150 euro, con 5 euro la briscola e si mette a giocare aspettando il pullman o la metropolitana?
+
+Nella mia briscola può capitare che il computer abbia il 3 e l'asso di briscola, facciamo denari, e che esca un carico, a quel punto da primo di mano gioca il carico.
+IL nonnino non ha né denari né come sopratagliare, non può prendere. Capita la prima volta, capita la seconda volta consecutiva, carica la terza volta consecutiva, a quel punto urla "Sto piombo a denari!".
+E' questo il motto registrato, in entrambe le sue forme.
+Negli anni 2000 capitava a casa grazie alla wxbriscola, oggi può capitare per la strada.
 
 ## Screenshots su windows
 
