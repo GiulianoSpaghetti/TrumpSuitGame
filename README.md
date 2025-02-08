@@ -48,7 +48,7 @@ Negli anni 2000 capitava a casa grazie alla wxbriscola, oggi può capitare per l
 
 ## Video di presentazione
 
-https://1drv.ms/u/s!ApmOB0x2yBN0k5QhMlcaOk024Ev_1A
+https://www.youtube.com/watch?v=mjKOcRQevEY
 
 ## Come installare
 
