@@ -20,8 +20,8 @@ public partial class OpzioniPage : ContentPage
         txtSecondi.Text = secondi.ToString();
         briscolaDaPunti = Preferences.Get("briscolaDaPunti", false);
         avvisaTalloneFinito = Preferences.Get("avvisaTalloneFinito", true);
-        cbAvvisaTallone.IsChecked = avvisaTalloneFinito;
-        cbCartaBriscola.IsChecked = briscolaDaPunti;
+        swAvvisaTallone.IsToggled = avvisaTalloneFinito;
+        swCartaBriscola.IsToggled = briscolaDaPunti;
         pkrlivello.SelectedIndex = livello - 1;
         Title = $"{App.d["Opzioni"]}";
         opNomeCpu.Text = $"{App.d["NomeCpu"]}: ";
@@ -35,33 +35,35 @@ public partial class OpzioniPage : ContentPage
 
     public async void OnOk_Click(Object source, EventArgs evt)
     {
+	UInt16 sec;
         Preferences.Set("nomeUtente", txtNomeUtente.Text);
         Preferences.Set("nomeCpu", txtCpu.Text);
-        if (cbCartaBriscola.IsChecked == false)
-            briscolaDaPunti = false;
-        else
-            briscolaDaPunti = true;
+        briscolaDaPunti = swCartaBriscola.IsToggled;
         Preferences.Set("briscolaDaPunti", briscolaDaPunti);
-        if (cbAvvisaTallone.IsChecked == false)
-            avvisaTalloneFinito = false;
-        else
-            avvisaTalloneFinito = true;
+        avvisaTalloneFinito = swAvvisaTallone.IsToggled;
         Preferences.Set("avvisaTalloneFinito", avvisaTalloneFinito);
 
         try
         {
-            secondi = UInt16.Parse(txtSecondi.Text);
+            sec = UInt16.Parse(txtSecondi.Text);
         }
         catch (FormatException ex)
         {
             await Snackbar.Make($"{App.d["ValoreNonValido"]}").Show(App.cancellationTokenSource.Token);
             return;
         }
-        if (secondi > 10)
+        catch (OverflowException ex)
         {
             await Snackbar.Make($"{App.d["ValoreNonValido"]}").Show(App.cancellationTokenSource.Token);
             return;
         }
+        if (sec <1 || sec > 10)
+        {
+            await Snackbar.Make($"{App.d["ValoreNonValido"]}").Show(App.cancellationTokenSource.Token);
+            txtSecondi.Text = ( (UInt16) Preferences.Get("secondi", 5)).ToString();
+            return;
+        }
+        secondi=sec;
         Preferences.Set("secondi", secondi);
         Preferences.Set("livello", pkrlivello.SelectedIndex + 1);
 #if ANDROID

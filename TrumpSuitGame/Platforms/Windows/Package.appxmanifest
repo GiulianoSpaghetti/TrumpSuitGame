@@ -5,14 +5,14 @@
     xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
     xmlns:com="http://schemas.microsoft.com/appx/manifest/com/windows10"
     xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
-    IgnorableNamespaces="uap rescap com desktop">
+    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+    IgnorableNamespaces="uap rescap com desktop mp">
 
-
-  <Identity Name="maui-package-name-placeholder" Publisher="CN=Giulio Sorrentino" Version="3.8.2.0" />
-
-  <Properties>
-    <DisplayName>$placeholder$</DisplayName>
-    <PublisherDisplayName>User Name</PublisherDisplayName>
+	<Identity Name="21961GiulioSorrentino.Thetrumpsuitgame" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="3.8.2.0" />
+	<mp:PhoneIdentity PhoneProductId="efb95638-9a51-42ae-8dcb-822775aecb46" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+	<Properties>
+    <DisplayName>The trump suit game</DisplayName>
+    <PublisherDisplayName>Giulio Sorrentino</PublisherDisplayName>
     <Logo>$placeholder$.png</Logo>
   </Properties>
 
@@ -28,7 +28,7 @@
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="$placeholder$"
+        DisplayName="The trump suit game"
         Description="$placeholder$"
         Square150x150Logo="$placeholder$.png"
         Square44x44Logo="$placeholder$.png"
@@ -44,18 +44,18 @@
 
                <com:Extension Category="windows.comServer">
                    <com:ComServer>
-                       <com:ExeServer Executable="TrumpSuitGame\TrumpSuitGame.exe" DisplayName="$targetnametoken$" Arguments="----AppNotificationActivated:"> <!-- Example path to executable: CommunityToolkit.Maui.Sample\CommunityToolkit.Maui.Sample.exe -->
+                       <com:ExeServer Executable="TrumpSuitGame\TrumpSuitGame.exe" DisplayName="$targetnametoken$" Arguments="----AppNotificationActivated:">
                            <com:Class Id="6e919706-2634-4d97-a93c-2213b2acc334" />
                         </com:ExeServer>
                     </com:ComServer>
                 </com:Extension>
-
             </Extensions>
     </Application>
   </Applications>
+	<Capabilities>
+		<rescap:Capability Name="runFullTrust" />
+	</Capabilities>
 
-  <Capabilities>
-    <rescap:Capability Name="runFullTrust" />
-  </Capabilities>
+
 
 </Package>

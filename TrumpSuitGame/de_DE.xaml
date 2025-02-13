@@ -2,13 +2,13 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
-             x:Class=" TrumpSuitGameGeordi.de_DE">
+             x:Class="TrumpSuitGame.de_DE">
     <system:String x:Key="PuntiDiPrefisso">&#160;</system:String>
     <system:String x:Key="PuntiDiSuffisso">-Punkte</system:String>
     <system:String x:Key="NelMazzoRimangono">Es sind noch&#160;</system:String>
     <system:String x:Key="carte">&#160;Karten im Stapel</system:String>
     <system:String x:Key="IlSemeDiBriscolaE">Der Trumpfanzug ist</system:String>
-    <system:String x:Key="BriscolaDaPunti">Die Karte mit der Trumpffarbe Gewicht haben</system:String>
+    <system:String x:Key="BriscolaDaPunti">Die Karte, die den Trumpf bezeichnet, kann ein Gewicht haben</system:String>
     <system:String x:Key="AvvisaTallone">Warnungen, wenn das Deck endet</system:String>
     <system:String x:Key="NomeUtente">Nutzername</system:String>
     <system:String x:Key="NomeCpu">CPU-Name</system:String>
@@ -26,14 +26,14 @@
     <system:String x:Key="ValoreNonValido">Ungültiger rvalue</system:String>
     <system:String x:Key="No">NEIN</system:String>
     <system:String x:Key="Condividi">Aktie</system:String>
-    <system:String x:Key="bastoni">Kreuz</system:String>
-    <system:String x:Key="coppe">Karo</system:String>
-    <system:String x:Key="denari">Herzen</system:String>
-    <system:String x:Key="spade">Pik</system:String>
-    <system:String x:Key="di">&#160;</system:String>
+    <system:String x:Key="bastoni">Stöcke</system:String>
+    <system:String x:Key="coppe">Tassen</system:String>
+    <system:String x:Key="denari">Geld</system:String>
+    <system:String x:Key="spade">Schwerter</system:String>
+    <system:String x:Key="di">der</system:String>
     <system:String x:Key="IlTalloneEFinito">Das Deck ist fertig</system:String>
     <system:String x:Key="LaCpuHaGiocatoIl">Die CPU hat die gespielt&#160;</system:String>
-    <system:String x:Key="DiBriscola">der Briscola</system:String>
+    <system:String x:Key="Briscola">Briscola</system:String>
     <system:String x:Key="Esci">Beenden Sie das Programm</system:String>
     <system:String x:Key="File">Datei</system:String>
     <system:String x:Key="Info">?</system:String>
@@ -41,11 +41,10 @@
     <system:String x:Key="NuovaPartitaPerLivello">Das Level hat sich geändert, ein neues Spiel beginnt</system:String>
     <system:String x:Key="Salva">Speichern</system:String>
     <system:String x:Key="NuovaPartita">Neues Spiel</system:String>
-    <system:String x:Key="ColGioco">Mit%20dem%20Trump%20suit%20game%20Geordi%20Edition%20wird%20das%20Spiel%20das%20Nummer-eins-Match</system:String>
+    <system:String x:Key="ColGioco">Mit%20dem%20Trump%20suit%20game%20wird%20das%20Spiel%20das%20Nummer-eins-Match</system:String>
     <system:String x:Key="contro">gegen</system:String>
     <system:String x:Key="efinito">beendet</system:String>
     <system:String x:Key="a">zu</system:String>
     <system:String x:Key="piattaforma">auf%20der%20Plattform</system:String>
-    <system:String x:Key="dedica">Gewidmet Giovanna, meinem Neffen, der Giuseppino zu heißen scheint, und meiner Katze Geordi, die starb und von Unruhestiftern getötet wurde.</system:String>
-    <system:String x:Key="EffettuaSecondaPartita">Spielt er ein zweites Spiel</system:String>
+    <system:String x:Key="EffettuaSecondaPartita">Spielt er ein zweites Spiel?</system:String>
 </ResourceDictionary>

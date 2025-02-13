@@ -5,7 +5,7 @@ namespace TrumpSuitGame;
 public partial class App : Application
 {
     public static string piattaforma;
-    public static ResourceDictionary d=null;
+    public static ResourceDictionary d;
     public static readonly CancellationTokenSource cancellationTokenSource= new CancellationTokenSource();
 
     public App()
@@ -20,11 +20,6 @@ public partial class App : Application
         {
             d = Resources["en"] as ResourceDictionary;
         }
-#if ANDROID
-        MainPage = new AppShell();
-#else
-        MainPage = new AppShellWindows();
-#endif
         piattaforma = DeviceInfo.Current.Model;
         if (piattaforma == "System Product Name")
             piattaforma = "Windows " + DeviceInfo.Current.VersionString;
@@ -32,10 +27,14 @@ public partial class App : Application
     }
 
 #if ANDROID
-    public static System.String GetResource(int id)
-    {
-        return Android.App.Application.Context.Resources.GetString(id);
-
-    }
+        protected override Window CreateWindow(IActivationState? activationState)
+        {
+            return new Window(new AppShell());
+        }
+#else        
+    protected override Window CreateWindow(IActivationState? activationState)
+        {
+            return new Window(new AppShellWindows());
+        }
 #endif
 }
