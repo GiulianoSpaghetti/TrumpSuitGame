@@ -72,7 +72,7 @@
 		<PackageReference Include="CommunityToolkit.Maui" Version="11.2.0" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.50" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.3" />
-		<PackageReference Include="CardFramework.Maui" Version="1.5.3" />
+		<PackageReference Include="CardFramework.Maui" Version="1.5.9" />
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.3" />
 	</ItemGroup>
 

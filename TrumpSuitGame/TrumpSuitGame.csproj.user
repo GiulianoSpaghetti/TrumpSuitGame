@@ -7,7 +7,7 @@
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
     <AppxShowAllApps>True</AppxShowAllApps>
     <UapAppxPackageBuildMode>StoreAndSideload</UapAppxPackageBuildMode>
-    <_LastSelectedProfileId>MSIX-win10-arm64.pubxml</_LastSelectedProfileId>
+    <_LastSelectedProfileId>MSIX-win10-x64.pubxml</_LastSelectedProfileId>
     <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
     <DefaultDevice>pixel_7_-_api_35</DefaultDevice>
   </PropertyGroup>
