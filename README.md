@@ -92,6 +92,8 @@ basandosi solo sui carichi si rischia di perdere, perché
 Per windows i package msix sono platform indepedent ed in IL, per cui è sufficiente scaricarsi il nuovo dotnet framework runtime e reinstallarsi il pacchetto per ottenere il codice binario ottimizzato con le ultime patch.
 
 ## Bug noti
+Su windows il linq non funziona granché bene. Potete trovarvi il vettore delle carte in mano downgradato senza motivo.
+
 Se il cellulare finisce sotto un tram risulta impossibile avviare il software xD
 
 ## Donazioni
