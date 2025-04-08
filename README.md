@@ -16,6 +16,7 @@ Su windows per cambiare il dialetto é sufficente modificare le impostazioni di 
 Il gioco è più godibile sui tablet in modalità portrait, non landscape.
 Sembra strano a dirsi, ma il gioco è hard core perché consente di cambiare in ogni istante l'andamento della partita cosicentemente con le proprie scelte.
 Vi segnalo che questa app è stata utilizzata da google per una campagna pubblicitaria contro la ludopatia.
+L'assembly su cui si basa usa il linq, su android funziona, su windows no, per via delle ottimizzazioni del framework.
 
 
 ## La campagna pubblicitaria di google
