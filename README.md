@@ -92,7 +92,7 @@ basandosi solo sui carichi si rischia di perdere, perché
 Per windows i package msix sono platform indepedent ed in IL, per cui è sufficiente scaricarsi il nuovo dotnet framework runtime e reinstallarsi il pacchetto per ottenere il codice binario ottimizzato con le ultime patch.
 
 ## Bug noti
-SPer windows serve il dotnet 9.0.4, perché è il primo su cui il linq funziona.
+Per windows serve il dotnet 9.0.4, perché è il primo su cui il linq funziona.
 
 Se buttate il computer dalla finestra potrebbe non aprirsi più il software xD
 
