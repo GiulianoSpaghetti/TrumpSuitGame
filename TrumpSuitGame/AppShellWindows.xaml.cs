@@ -17,7 +17,7 @@ public partial class AppShellWindows : Shell
         if (current is "//Main")
             if (aggiorna)
             {
-                MainPage.main.AggiornaOpzioni();
+                MainPage.MainPageInstance.AggiornaOpzioni();
                 aggiorna = false;
             }
 

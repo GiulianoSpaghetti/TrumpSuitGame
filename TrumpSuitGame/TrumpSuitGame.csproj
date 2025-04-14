@@ -29,7 +29,7 @@
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>3.8.6</ApplicationDisplayVersion>
-		<ApplicationVersion>104</ApplicationVersion>
+		<ApplicationVersion>107</ApplicationVersion>
 
 		<!-- To develop, package, and publish an app to the Microsoft Store, see: https://aka.ms/MauiTemplateUnpackaged -->
 		<WindowsPackageType>MSIX</WindowsPackageType>
@@ -71,7 +71,7 @@
 	<ItemGroup>
 		<PackageReference Include="CardFramework.Maui" Version="1.5.5" />
 		<PackageReference Include="CommunityToolkit.Maui" Version="11.2.0" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.50" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.60" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.4" />
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.4" />
 	</ItemGroup>
@@ -180,7 +180,7 @@
 		<PackageReference Include="Microsoft.Graphics.Win2D" Version="1.3.2" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.4" />
 		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742" />
-		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250310001" />
+		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250401001" />
 		<PackageReference Include="System.Speech" Version="9.0.4" />
 	</ItemGroup>
 
