@@ -7,6 +7,7 @@ public partial class AppShellWindows : Shell
     public AppShellWindows()
     {
         InitializeComponent();
+        pagina.Title = App.d["Applicazione"] as string;
     }
 
     protected override void OnNavigated(ShellNavigatedEventArgs args)

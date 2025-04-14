@@ -13,7 +13,7 @@
     <system:String x:Key="NomeUtente">Nome de usuário</system:String>
     <system:String x:Key="NomeCpu">nome da CPU</system:String>
     <system:String x:Key="secondi">Segundos durante os quais mostrar as jogadas</system:String>
-    <system:String x:Key="Applicazione">Aplicativo</system:String>
+    <system:String x:Key="Applicazione">jogo de trunfo</system:String>
     <system:String x:Key="Informazioni">Informações</system:String>
     <system:String x:Key="Opzioni">Opções</system:String>
     <system:String x:Key="PartitaPatta">O jogo esta empatado</system:String>
