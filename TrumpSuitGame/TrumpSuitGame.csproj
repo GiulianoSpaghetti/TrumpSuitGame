@@ -28,7 +28,7 @@
 		<ApplicationId>org.altervista.numerone.trumpsuitgame</ApplicationId>
 
 		<!-- Versions -->
-		<ApplicationDisplayVersion>3.8.5</ApplicationDisplayVersion>
+		<ApplicationDisplayVersion>3.8.6</ApplicationDisplayVersion>
 		<ApplicationVersion>104</ApplicationVersion>
 
 		<!-- To develop, package, and publish an app to the Microsoft Store, see: https://aka.ms/MauiTemplateUnpackaged -->
