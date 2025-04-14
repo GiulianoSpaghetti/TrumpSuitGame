@@ -4,6 +4,8 @@ Il secondo software in Maui che secondo Google non crasha.
 
 Questo gioco dimostra che la teoria dei giochi è vera: l'algorimo brevettato funziona su tutti i giochi di carte senza piatto.
 
+Il primo prodotto distribuito di terze parti ad usare il LINQ.
+
 ![Napoli-Logo](https://github.com/user-attachments/assets/8163c808-62d3-40d3-bce3-0957e57bc26a)
 ![made in parco grifeo](https://github.com/user-attachments/assets/fadbf046-aeae-4f11-bda4-eb332c701d56)
 
@@ -14,6 +16,7 @@ Su windows per cambiare il dialetto é sufficente modificare le impostazioni di 
 Il gioco è più godibile sui tablet in modalità portrait, non landscape.
 Sembra strano a dirsi, ma il gioco è hard core perché consente di cambiare in ogni istante l'andamento della partita cosicentemente con le proprie scelte.
 Vi segnalo che questa app è stata utilizzata da google per una campagna pubblicitaria contro la ludopatia.
+L'assembly su cui si basa usa il linq, su android funziona, su windows no, per via delle ottimizzazioni del framework.
 
 
 ## La campagna pubblicitaria di google
@@ -24,7 +27,7 @@ Sono gratuiti, però per passare la base dal livello 40 al livello 39 richiedono
 
 I giochi di carte anche sono gratuiti, però si accoppiano le carte per vincere. La briscola di nonno nanni non si capisce manco se è briscola, scopa o asso piglia tutto.
 
-La CBriscola Maui (Trump Suit Game internazionalizzato) sapete cosa promette? Per 5 euro LORDI ed UNA TANTUM promette un numero ben determinato e molto alto di partite al giorno, un gioco che segue ciecamente le regole della briscola classica (al meglio delle due partite), con un mazzo di carte semplice da capire ed una IA che cerca di prendere il maggior numero di carte, senza accoppiarsele, infatti il 3 può venire tranquillamente mangiato dall'asso ed AGGIORNAMENTI GRATUITI.
+La CBriscola Maui (Trump Suit Game internazionalizzato) sapete cosa promette? Per 5 euro LORDI ed UNA TANTUM promette un numero ben determinato e molto alto di partite a sessione, un gioco che segue ciecamente le regole della briscola classica (al meglio delle due partite), con un mazzo di carte semplice da capire ed una IA che cerca di prendere il maggior numero di carte, senza accoppiarsele, infatti il 3 può venire tranquillamente mangiato dall'asso ed AGGIORNAMENTI GRATUITI.
 
 Vi sfido a fare di meglio.
 
@@ -89,6 +92,10 @@ basandosi solo sui carichi si rischia di perdere, perché
 Per windows i package msix sono platform indepedent ed in IL, per cui è sufficiente scaricarsi il nuovo dotnet framework runtime e reinstallarsi il pacchetto per ottenere il codice binario ottimizzato con le ultime patch.
 
 ## Bug noti
+Per windows serve il dotnet 9.0.4, perché è il primo su cui il linq funziona.
+
+Se buttate il computer dalla finestra potrebbe non aprirsi più il software xD
+
 Se il cellulare finisce sotto un tram risulta impossibile avviare il software xD
 
 ## Donazioni
