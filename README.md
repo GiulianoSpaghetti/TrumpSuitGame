@@ -49,7 +49,9 @@ Negli anni 2000 capitava a casa grazie alla wxbriscola, oggi può capitare per l
 ![Screenshot 2025-04-15 212807](https://github.com/user-attachments/assets/a0be0e15-3631-4c1b-b350-5d206d3e1b90)
 ![Screenshot 2025-04-15 213714](https://github.com/user-attachments/assets/ce8d9945-f1bd-458d-808c-6f6f87ac020a)
 
+## Video di presentazione per Windows
 
+https://photos.app.goo.gl/XSXGfijr8NyLvFGr8
 
 
 ## Video di presentazione per android
