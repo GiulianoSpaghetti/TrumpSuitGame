@@ -47,7 +47,8 @@ Negli anni 2000 capitava a casa grazie alla wxbriscola, oggi può capitare per l
 ![Screenshot 2025-04-15 212906](https://github.com/user-attachments/assets/9e5d2f7d-ccc2-4cda-8cc6-740c75cf8754)
 ![Screenshot 2025-04-15 212840](https://github.com/user-attachments/assets/004fdcd6-d181-43bc-acc3-b041758ea288)
 ![Screenshot 2025-04-15 212807](https://github.com/user-attachments/assets/a0be0e15-3631-4c1b-b350-5d206d3e1b90)
-![Screenshot 2025-04-15 212638](https://github.com/user-attachments/assets/2b3951ca-017b-472d-847a-c925b952c417)
+![Screenshot 2025-04-15 213714](https://github.com/user-attachments/assets/ce8d9945-f1bd-458d-808c-6f6f87ac020a)
+
 
 
 
