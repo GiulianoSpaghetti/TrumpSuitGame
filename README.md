@@ -6,6 +6,8 @@ Questo gioco dimostra che la teoria dei giochi è vera: l'algorimo brevettato fu
 
 Il primo prodotto distribuito di terze parti ad usare il LINQ.
 
+IL primo software serio destinato al pubblico e non alle aziende ad utilizzare le Properties.
+
 ![Napoli-Logo](https://github.com/user-attachments/assets/8163c808-62d3-40d3-bce3-0957e57bc26a)
 ![made in parco grifeo](https://github.com/user-attachments/assets/fadbf046-aeae-4f11-bda4-eb332c701d56)
 
@@ -16,7 +18,7 @@ Su windows per cambiare il dialetto é sufficente modificare le impostazioni di 
 Il gioco è più godibile sui tablet in modalità portrait, non landscape.
 Sembra strano a dirsi, ma il gioco è hard core perché consente di cambiare in ogni istante l'andamento della partita cosicentemente con le proprie scelte.
 Vi segnalo che questa app è stata utilizzata da google per una campagna pubblicitaria contro la ludopatia.
-L'assembly su cui si basa usa il linq, su android funziona, su windows no, per via delle ottimizzazioni del framework.
+L'assembly su cui si basa usa il linq.
 
 
 ## La campagna pubblicitaria di google
