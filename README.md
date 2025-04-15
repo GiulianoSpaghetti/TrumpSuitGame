@@ -44,16 +44,16 @@ Negli anni 2000 capitava a casa grazie alla wxbriscola, oggi può capitare per l
 
 ## Screenshots su windows
 
-![Screenshot 2024-10-25 015619](https://github.com/user-attachments/assets/5656666e-8ea0-4dec-a008-7e02745ddaa5)
-![Screenshot 2024-10-25 015337](https://github.com/user-attachments/assets/db4de058-f882-4cfb-84ad-ac0bd99f815f)
-![Screenshot 2024-10-25 015325](https://github.com/user-attachments/assets/16fba492-dc81-47ac-a575-686c389d2c45)
-![Screenshot 2024-10-25 015304](https://github.com/user-attachments/assets/70f771f5-9485-4672-86ad-cab488c07bbe)
+![Screenshot 2025-04-15 212906](https://github.com/user-attachments/assets/9e5d2f7d-ccc2-4cda-8cc6-740c75cf8754)
+![Screenshot 2025-04-15 212840](https://github.com/user-attachments/assets/004fdcd6-d181-43bc-acc3-b041758ea288)
+![Screenshot 2025-04-15 212807](https://github.com/user-attachments/assets/a0be0e15-3631-4c1b-b350-5d206d3e1b90)
+![Screenshot 2025-04-15 212638](https://github.com/user-attachments/assets/2b3951ca-017b-472d-847a-c925b952c417)
 
 
 
-## Video di presentazione
+## Video di presentazione per android
 
-https://www.youtube.com/watch?v=mjKOcRQevEY
+[https://www.youtube.com/watch?v=mjKOcRQevEY](https://www.youtube.com/watch?v=aXZsPkHnOx4&t=56s)
 
 ## Come installare
 
