@@ -4,16 +4,8 @@ namespace TrumpSuitGame;
 
 public partial class App : Application
 {
-    private static string piattaforma;
-    public static string Piattaforma
-    {
-        get => piattaforma;
-    }
-    private static ResourceDictionary dic;
-    public static ResourceDictionary d
-    {
-        get => dic;
-    }
+    public static string Piattaforma { get; private set;  }
+    public static ResourceDictionary Dictionary { get; private set; }
     public static readonly CancellationTokenSource cancellationTokenSource= new CancellationTokenSource();
 
     public App()
@@ -21,16 +13,16 @@ public partial class App : Application
         InitializeComponent();
         try
         {
-            dic = Resources[CultureInfo.CurrentCulture.TwoLetterISOLanguageName] as ResourceDictionary;
+            Dictionary = Resources[CultureInfo.CurrentCulture.TwoLetterISOLanguageName] as ResourceDictionary;
 
         }
         catch (Exception ex)
         {
-            dic = Resources["en"] as ResourceDictionary;
+            Dictionary = Resources["en"] as ResourceDictionary;
         }
-        piattaforma = DeviceInfo.Current.Model;
-        if (piattaforma == "System Product Name")
-            piattaforma = "Windows " + DeviceInfo.Current.VersionString;
+        Piattaforma = DeviceInfo.Current.Model;
+        if (Piattaforma == "System Product Name")
+            Piattaforma = "Windows " + DeviceInfo.Current.VersionString;
 
     }
 
