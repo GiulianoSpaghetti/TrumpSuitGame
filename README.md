@@ -6,6 +6,8 @@ Questo gioco dimostra che la teoria dei giochi è vera: l'algorimo brevettato fu
 
 Il primo prodotto distribuito di terze parti ad usare il LINQ.
 
+Il primo software serio destinato al pubblico e non alle aziende ad utilizzare le Properties.
+
 ![Napoli-Logo](https://github.com/user-attachments/assets/8163c808-62d3-40d3-bce3-0957e57bc26a)
 ![made in parco grifeo](https://github.com/user-attachments/assets/fadbf046-aeae-4f11-bda4-eb332c701d56)
 
@@ -16,7 +18,7 @@ Su windows per cambiare il dialetto é sufficente modificare le impostazioni di 
 Il gioco è più godibile sui tablet in modalità portrait, non landscape.
 Sembra strano a dirsi, ma il gioco è hard core perché consente di cambiare in ogni istante l'andamento della partita cosicentemente con le proprie scelte.
 Vi segnalo che questa app è stata utilizzata da google per una campagna pubblicitaria contro la ludopatia.
-L'assembly su cui si basa usa il linq, su android funziona, su windows no, per via delle ottimizzazioni del framework.
+L'assembly su cui si basa usa il linq.
 
 
 ## La campagna pubblicitaria di google
@@ -42,16 +44,19 @@ Negli anni 2000 capitava a casa grazie alla wxbriscola, oggi può capitare per l
 
 ## Screenshots su windows
 
-![Screenshot 2024-10-25 015619](https://github.com/user-attachments/assets/5656666e-8ea0-4dec-a008-7e02745ddaa5)
-![Screenshot 2024-10-25 015337](https://github.com/user-attachments/assets/db4de058-f882-4cfb-84ad-ac0bd99f815f)
-![Screenshot 2024-10-25 015325](https://github.com/user-attachments/assets/16fba492-dc81-47ac-a575-686c389d2c45)
-![Screenshot 2024-10-25 015304](https://github.com/user-attachments/assets/70f771f5-9485-4672-86ad-cab488c07bbe)
+![Screenshot 2025-04-15 212906](https://github.com/user-attachments/assets/9e5d2f7d-ccc2-4cda-8cc6-740c75cf8754)
+![Screenshot 2025-04-15 212840](https://github.com/user-attachments/assets/004fdcd6-d181-43bc-acc3-b041758ea288)
+![Screenshot 2025-04-15 212807](https://github.com/user-attachments/assets/a0be0e15-3631-4c1b-b350-5d206d3e1b90)
+![Screenshot 2025-04-15 213714](https://github.com/user-attachments/assets/ce8d9945-f1bd-458d-808c-6f6f87ac020a)
+
+## Video di presentazione per Windows
+
+https://photos.app.goo.gl/XSXGfijr8NyLvFGr8
 
 
+## Video di presentazione per android
 
-## Video di presentazione
-
-https://www.youtube.com/watch?v=mjKOcRQevEY
+[https://www.youtube.com/watch?v=mjKOcRQevEY](https://www.youtube.com/watch?v=aXZsPkHnOx4&t=56s)
 
 ## Come installare
 
