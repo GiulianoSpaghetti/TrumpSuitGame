@@ -2,7 +2,7 @@ namespace TrumpSuitGame;
 
 public partial class InfoPage : ContentPage
 {
-    public static readonly Uri uri = new Uri("https://github.com/GiulianoSpaghetti/TrumpSuitGame");
+    public readonly Uri uri = new Uri("https://github.com/GiulianoSpaghetti/TrumpSuitGame");
 
     public InfoPage()
 	{
