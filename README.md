@@ -109,6 +109,8 @@ Dal punto di vista tecnico, usare sempre le stesse variabili static per salvare 
 
 Quello che è successo è che cugino bruno e amica francesca (non la mia "francesca"), hanno scoperto che utilizzando le variabili static il cellulare andava in out of memory dopo appena 7 partite consecutive, e la mia francesca ha capito che l'ottimizzazione static è stata bannata a partire da dotnet 8.0.4.
 
+Ora su android non va in out of memory, ma rallenta.
+
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
