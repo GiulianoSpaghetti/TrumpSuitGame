@@ -13,6 +13,9 @@ Il primo software serio destinato al pubblico e non alle aziende ad utilizzare l
 
 ![made-with-microsoft-maui](https://github.com/user-attachments/assets/2625f23d-ca78-4d34-901f-ea7936c2469d)
 [![forthebadge](https://forthebadge.com/images/badges/woo-new-release.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/works-on-my-machine.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-for-android.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://forthebadge.com)
 
 
 ## TrumpSuitGame
