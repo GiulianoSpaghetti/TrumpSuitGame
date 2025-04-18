@@ -11,6 +11,8 @@ Il primo software serio destinato al pubblico e non alle aziende ad utilizzare l
 ![Napoli-Logo](https://github.com/user-attachments/assets/8163c808-62d3-40d3-bce3-0957e57bc26a)
 ![made in parco grifeo](https://github.com/user-attachments/assets/fadbf046-aeae-4f11-bda4-eb332c701d56)
 
+[![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNzYuMDY2NjY1NjQ5NDE0MDYiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAyNzYuMDY2NjY1NjQ5NDE0MDYgMzUiPjxyZWN0IHdpZHRoPSIxMDguOTQ5OTk2OTQ4MjQyMTkiIGhlaWdodD0iMzUiIGZpbGw9IiNmMzQxMzEiLz48cmVjdCB4PSIxMDguOTQ5OTk2OTQ4MjQyMTkiIHdpZHRoPSIxNjcuMTE2NjY4NzAxMTcxODgiIGhlaWdodD0iMzUiIGZpbGw9IiMzODlBRDUiLz48dGV4dCB4PSI1NC40NzQ5OTg0NzQxMjEwOTQiIHk9IjIxLjUiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSInUm9ib3RvJywgc2Fucy1zZXJpZiIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjIiPk1BREUgV0lUSDwvdGV4dD48dGV4dCB4PSIxOTIuNTA4MzMxMjk4ODI4MTIiIHk9IjIxLjUiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSInTW9udHNlcnJhdCcsIHNhbnMtc2VyaWYiIGZpbGw9IiNGRkZGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtd2VpZ2h0PSI5MDAiIGxldHRlci1zcGFjaW5nPSIyIj5NSUNST1NPRlQgTUFVSTwvdGV4dD48L3N2Zz4=)](https://forthebadge.com)
+
 
 ## TrumpSuitGame
 Quello che avete davanti non è il gioco della briscola come si intende oggi, perché oggi tutti i simulatori di briscola dicono "hai preso l'asso, bravo" e finisce lì. Quello che avete davanti è un simulatore equo e professionale, con punteggio aggiornato in tempo reale, in modo da poter decidere se "rischiare" o meno coscientemente, scritto in maui, internazionalizzato in inglese, francese, spagnolo, tedesco, italiano e portoghese.
