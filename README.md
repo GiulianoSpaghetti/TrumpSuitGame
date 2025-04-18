@@ -17,6 +17,9 @@ Il primo software serio destinato al pubblico e non alle aziende ad utilizzare l
 [![forthebadge](https://forthebadge.com/images/badges/built-for-android.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://forthebadge.com)
 
+![approved-by-my-uncle](https://github.com/user-attachments/assets/a97c1a1e-dc34-4b18-b986-802ea0d27058)
+
+
 
 ## TrumpSuitGame
 Quello che avete davanti non è il gioco della briscola come si intende oggi, perché oggi tutti i simulatori di briscola dicono "hai preso l'asso, bravo" e finisce lì. Quello che avete davanti è un simulatore equo e professionale, con punteggio aggiornato in tempo reale, in modo da poter decidere se "rischiare" o meno coscientemente, scritto in maui, internazionalizzato in inglese, francese, spagnolo, tedesco, italiano e portoghese.
