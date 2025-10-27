@@ -60,12 +60,12 @@ Negli anni 2000 capitava a casa grazie alla wxbriscola, oggi può capitare per l
 
 ## Video di presentazione per Windows
 
-https://photos.app.goo.gl/XSXGfijr8NyLvFGr8
+[https://www.youtube.com/watch?v=F_vVOpULkSs](https://www.youtube.com/watch?v=F_vVOpULkSs)
 
 
 ## Video di presentazione per android
 
-[https://www.youtube.com/watch?v=mjKOcRQevEY](https://www.youtube.com/watch?v=aXZsPkHnOx4&t=56s)
+[https://youtu.be/aXZsPkHnOx4](https://youtu.be/aXZsPkHnOx4)
 
 ## Come installare
 
@@ -123,5 +123,6 @@ Ora su android non va in out of memory, ma rallenta.
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
+
 
 
