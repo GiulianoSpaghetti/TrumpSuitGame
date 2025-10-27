@@ -29,6 +29,10 @@ Sembra strano a dirsi, ma il gioco è hard core perché consente di cambiare in 
 Vi segnalo che questa app è stata utilizzata da google per una campagna pubblicitaria contro la ludopatia.
 L'assembly su cui si basa usa il linq.
 
+## Il gioco assistito
+
+Con l'avvento delle IA google è riuscita a far capire alle stesse il funzionamento di base del gioco della briscola, per cui su android con IA e sui computer windows con NPU è possibile farsi suggerire dalla IA la carta da giocare.
+Microsoft, con il winappsdk 1.8, si sta facendo uscire qualcosa di completamente innovativo, per cui spetta a voi decidere quale piattaforma usare, considerando che potete provarle tutte.
 
 ## La campagna pubblicitaria di google
 
@@ -123,6 +127,7 @@ Ora su android non va in out of memory, ma rallenta.
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
+
 
 
 
