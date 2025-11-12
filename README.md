@@ -8,6 +8,8 @@ Il primo prodotto distribuito di terze parti ad usare il LINQ.
 
 Il primo software serio destinato al pubblico e non alle aziende ad utilizzare le Properties.
 
+Il primo software per android 16.1
+
 ![Napoli-Logo](https://github.com/user-attachments/assets/8163c808-62d3-40d3-bce3-0957e57bc26a)
 ![made in parco grifeo](https://github.com/user-attachments/assets/fadbf046-aeae-4f11-bda4-eb332c701d56)
 
@@ -127,6 +129,7 @@ Ora su android non va in out of memory, ma rallenta.
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
+
 
 
 
