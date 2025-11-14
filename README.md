@@ -31,6 +31,8 @@ Sembra strano a dirsi, ma il gioco è hard core perché consente di cambiare in 
 Vi segnalo che questa app è stata utilizzata da google per una campagna pubblicitaria contro la ludopatia.
 L'assembly su cui si basa usa il linq.
 I binari sono in IL e non sono self contained, c'è bisogno del dotnet desktop runtime 8, 9 o 10 (a seconda di quale versione si sceglie), ma l'ultima versione: vengono ricompilati ed ottimizzati per il processore al primo avvio; quindi è sconsigliato il salvataggio del binario da ripristinare tra una reinizializzazione e l'altra o per il passaggio tra più computer.
+Su windows è consigliabile aggiornare il winappruntime alla 1.8 (https://winstall.app/apps/Microsoft.WindowsAppRuntime.1.8): di default è 1.7 ed il dotnet 10 è molto particolare anche se si basa ancora sull'1.7.
+E' tutto da scoprire...
 
 ## Il gioco assistito
 
@@ -130,6 +132,7 @@ Ora su android non va in out of memory, ma rallenta.
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
+
 
 
 
