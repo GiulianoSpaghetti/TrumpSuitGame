@@ -13,14 +13,6 @@ Il primo software per android 16.1
 ![Napoli-Logo](https://github.com/user-attachments/assets/8163c808-62d3-40d3-bce3-0957e57bc26a)
 ![made in parco grifeo](https://github.com/user-attachments/assets/fadbf046-aeae-4f11-bda4-eb332c701d56)
 
-![made-with-microsoft-maui](https://github.com/user-attachments/assets/2625f23d-ca78-4d34-901f-ea7936c2469d)
-[![forthebadge](https://forthebadge.com/images/badges/woo-new-release.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/works-on-my-machine.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-for-android.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://forthebadge.com)
-
-![approved-by-my-uncle](https://github.com/user-attachments/assets/a97c1a1e-dc34-4b18-b986-802ea0d27058)
-
 Best used on surface 11 and android 16
 
 ## TrumpSuitGame
@@ -144,6 +136,7 @@ Ora su android non va in out of memory, ma rallenta.
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
+
 
 
 
