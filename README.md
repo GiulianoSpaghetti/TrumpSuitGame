@@ -73,7 +73,7 @@ Negli anni 2000 capitava a casa grazie alla wxbriscola, oggi può capitare per l
 
 ## Su Windows
 
-Batsa prendere l'msix che più piace dalle release su github, che sono controllate e non contengono virus. Il package msix è associato ad un certificato .cer che bisogna installare in "Computer locale" > "Persone Attendibili".
+Basta prendere l'msix che più piace dalle release su github, che sono controllate e non contengono virus. Il package msix è associato ad un certificato .cer che bisogna installare in "Computer locale" > "Persone Attendibili".
 
 Prerequisiti: 
 
@@ -136,6 +136,7 @@ Ora su android non va in out of memory, ma rallenta.
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
+
 
 
 
