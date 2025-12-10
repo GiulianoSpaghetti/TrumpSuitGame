@@ -118,7 +118,7 @@ basandosi solo sui carichi si rischia di perdere, perché
 
 ## Aggiornamenti
 
-Per windows i package msix sono platform indepedent ed in IL, per cui è sufficiente scaricarsi il nuovo dotnet framework runtime e reinstallarsi il pacchetto per ottenere il codice binario ottimizzato con le ultime patch.
+Per windows i package msix sono platform indepedent ed in IL, ma sono in dotnet 9 e 10, pr cui è necessario ricompilare per evitare di avere il sistema spurio in caso di nuovo dotnet framework che comunque è necessario per l'avvio del software, che se aggiornato dovrebbe impeire lo shock sulle ventole.
 
 ## Bug noti
 Per windows serve il dotnet 9.0.4, perché è il primo su cui il linq funziona.
@@ -138,6 +138,7 @@ Ora su android non va in out of memory, ma rallenta.
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
+
 
 
 
