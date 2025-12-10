@@ -86,7 +86,7 @@ E' consigliabile avere l'appruntime 1.8 installato sul computer (https://winstal
 
 ## Aggiornamenti
 
-Per windows i package msix sono platform indepedent ed in IL, per cui è sufficiente scaricarsi il nuovo dotnet framework runtime e reinstallarsi il pacchetto per ottenere il codice binario ottimizzato con le ultime patch. Per questo è sconsigliato il salvataggio dei binari tra una reinizializzazione e l'altra o per il passaggio su più computer.
+Per windows i package msix sono platform indepedent ed in IL, ma sono in dotnet 9 e 10, pr cui è necessario ricompilare per evitare di avere il sistema spurio in caso di nuovo dotnet framework che comunque è necessario per l'avvio del software, che se aggiornato dovrebbe impeire lo shock sulle ventole.
 
 
 ## Come internazionalizzare il software
@@ -138,6 +138,7 @@ Ora su android non va in out of memory, ma rallenta.
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
+
 
 
 
