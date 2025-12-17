@@ -55,10 +55,11 @@ Negli anni 2000 capitava a casa grazie alla wxbriscola, oggi può capitare per l
 
 ## Screenshots su windows
 
-![Screenshot 2025-04-15 212906](https://github.com/user-attachments/assets/9e5d2f7d-ccc2-4cda-8cc6-740c75cf8754)
-![Screenshot 2025-04-15 212840](https://github.com/user-attachments/assets/004fdcd6-d181-43bc-acc3-b041758ea288)
-![Screenshot 2025-04-15 212807](https://github.com/user-attachments/assets/a0be0e15-3631-4c1b-b350-5d206d3e1b90)
-![Screenshot 2025-04-15 213714](https://github.com/user-attachments/assets/ce8d9945-f1bd-458d-808c-6f6f87ac020a)
+<img width="1920" height="2832" alt="Screenshot 2025-12-17 210611" src="https://github.com/user-attachments/assets/6b75f2e9-b3b6-4dc3-8e04-461c607f39d3" />
+<img width="1920" height="2832" alt="Screenshot 2025-12-17 210819" src="https://github.com/user-attachments/assets/fbc4c2f5-b24e-4c06-942e-ea6df1ccec69" />
+<img width="1920" height="2880" alt="Screenshot 2025-12-17 210919" src="https://github.com/user-attachments/assets/638146b5-8d78-4fd5-8bff-98040793b161" />
+<img width="1920" height="2880" alt="Screenshot 2025-12-17 211024" src="https://github.com/user-attachments/assets/5883c42f-622c-4b77-ba77-4bbad68d386c" />
+
 
 ## Video di presentazione per Windows
 
@@ -140,6 +141,7 @@ Ora su android non va in out of memory, ma rallenta.
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
+
 
 
 
