@@ -63,7 +63,7 @@ Negli anni 2000 capitava a casa grazie alla wxbriscola, oggi può capitare per l
 
 ## Video di presentazione per Windows
 
-[https://www.youtube.com/watch?v=F_vVOpULkSs](https://www.youtube.com/watch?v=F_vVOpULkSs)
+[https://youtu.be/VyJHtIsEl-k](https://youtu.be/VyJHtIsEl-k?feature=shared)
 
 
 ## Video di presentazione per android
