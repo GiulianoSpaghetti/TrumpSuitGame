@@ -1,6 +1,6 @@
 :it: Made in Italy. Il primo prodotto maui ad utilizzare i Resource Dictionary nel mondo.
 
-[Fatti spiegare il progetto da Gemini di Google](https://gemini.google.com/share/e3dca200113e): basta loggarti col tuo account.
+[Fatti spiegare il progetto da Gemini di Google](https://g.co/gemini/share/28d51e1d21b1g): basta loggarti col tuo account.
 
 Il secondo software in Maui che secondo Google non crasha.
 
