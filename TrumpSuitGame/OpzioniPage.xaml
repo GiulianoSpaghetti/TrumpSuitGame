@@ -55,6 +55,7 @@
             <Switch x:Name="swAvvisaTallone" Grid.Row="6" Grid.Column="1" />
             <Label x:Name="lbAvvisaTallone" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Text="" />
             <Button x:Name="btnOk" Text="" Clicked="OnOk_Click"  Grid.Row="7" Grid.Column="1" />
+            <Button x:Name="btnGatti" Text="Load Gatti Deck" Clicked="OnGatti_Click" Grid.Row="7" Grid.Column="0" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>
