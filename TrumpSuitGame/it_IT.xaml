@@ -52,4 +52,5 @@
     <system:String x:Key="Quadri">Quadri</system:String>
     <system:String x:Key="Fiori">Fiori</system:String>
     <system:String x:Key="Picche">Picche</system:String>
+    <system:String x:Key="ColMazzo">col%20mazzo%20</system:String>
 </ResourceDictionary>
