@@ -10,6 +10,7 @@ public partial class OpzioniPage : ContentPage
     private bool avvisaTalloneFinito;
     private UInt16 secondi;
     private UInt16 livello;
+    private Stream s;
     public OpzioniPage()
     {
         InitializeComponent();
@@ -31,6 +32,15 @@ public partial class OpzioniPage : ContentPage
         lbCartaBriscola.Text= $"{App.Dictionary["BriscolaDaPunti"]}";
         lbAvvisaTallone.Text= $"{App.Dictionary["AvvisaTallone"]}";
         btnOk.Text= $"{App.Dictionary["Salva"]}";
+        btnGatti.Text = $"{App.Dictionary["MazzoAlternativo"]}";
+        try
+        {
+            s=FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\0.png").Result;
+        }
+        catch (AggregateException ex)
+        {
+            btnGatti.IsEnabled = false;
+        }
     }
 
     public async void OnOk_Click(Object source, EventArgs evt)
@@ -72,6 +82,18 @@ public partial class OpzioniPage : ContentPage
         AppShellWindows.aggiorna = true;
 #endif
         await Shell.Current.GoToAsync("//Main");
+    }
+
+    public async void OnGatti_Click(Object source, EventArgs evt)
+    {
+        Preferences.Set("mazzoGatti", !Preferences.Get("mazzoGatti", false));
+#if ANDROID
+        AppShell.aggiorna = true;
+#else
+        AppShellWindows.aggiorna = true;
+#endif
+        await Shell.Current.GoToAsync("//Main");
+
     }
 
 }
