@@ -52,4 +52,5 @@
     <system:String x:Key="Quadri">Carreau</system:String>
     <system:String x:Key="Fiori">Trèfle</system:String>
     <system:String x:Key="Picche">Pique</system:String>
+    <system:String x:Key="ColMazzo">avec%20le%20jeu%20</system:String>
 </ResourceDictionary>
