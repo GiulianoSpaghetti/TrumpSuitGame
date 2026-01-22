@@ -52,4 +52,5 @@
     <system:String x:Key="Quadri">Diamantes</system:String>
     <system:String x:Key="Fiori">Tréboles</system:String>
     <system:String x:Key="Picche">Picas</system:String>
+    <system:String x:Key="ColMazzo">con%20baraja%20</system:String>
 </ResourceDictionary>
