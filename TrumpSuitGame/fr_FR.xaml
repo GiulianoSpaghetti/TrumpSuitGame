@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
@@ -47,4 +47,9 @@
     <system:String x:Key="a">-</system:String>
     <system:String x:Key="piattaforma">sur%20la%20plateforme</system:String>
     <system:String x:Key="EffettuaSecondaPartita">Est-ce qu'il joue un deuxième jeu?</system:String>
+    <system:String x:Key="MazzoAlternativo">Charger le jeu alternatif</system:String>
+    <system:String x:Key="Cuori">Cœur</system:String>
+    <system:String x:Key="Quadri">Carreau</system:String>
+    <system:String x:Key="Fiori">Trèfle</system:String>
+    <system:String x:Key="Picche">Pique</system:String>
 </ResourceDictionary>
