@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Maui.Alerts;
+using CommunityToolkit.Maui.Alerts;
+using Microsoft.Maui.Graphics.Platform;
 using org.altervista.numerone.framework;
 using System.Globalization;
 using System.Reflection;
@@ -20,6 +21,7 @@ public partial class MainPage : ContentPage
     private ElaboratoreCarteBriscola e;
     private GiocatoreHelperCpu helper;
     public static MainPage MainPageInstance { get; private set; }
+    private bool MazzoGatti;
     public MainPage()
     {
         this.InitializeComponent();
@@ -28,10 +30,14 @@ public partial class MainPage : ContentPage
         avvisaTalloneFinito = Preferences.Get("avvisaTalloneFinito", true);
         secondi = (UInt16)Preferences.Get("secondi", 5);
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
-        m = new Mazzo(e);
-        Carta.Inizializza(40, new org.altervista.numerone.framework.briscola.CartaHelper(e.CartaBriscola),
-App.Dictionary["bastoni"] as string, App.Dictionary["coppe"] as string, App.Dictionary["denari"] as string, App.Dictionary["spade"] as string
+        MazzoGatti = Preferences.Get("mazzoGatti", false);
+        m = new Mazzo(e, "Napoletano");
+        if (MazzoGatti)
+            LoadGattiDeck();
+        Carta.Inizializza(m, 40, new org.altervista.numerone.framework.briscola.CartaHelper(e.CartaBriscola),
+App.Dictionary["bastoni"] as string, App.Dictionary["coppe"] as string, App.Dictionary["denari"] as string, App.Dictionary["spade"] as string, App.Dictionary["Fiori"] as string, App.Dictionary["Quadri"] as string, App.Dictionary["Cuori"] as string, App.Dictionary["Picche"] as string
 );
+
         g = new Giocatore(new GiocatoreHelperUtente(), Preferences.Get("nomeUtente", "numerone"), 3);
         switch (Preferences.Get("livello", 3))
         {
@@ -195,7 +201,7 @@ App.Dictionary["bastoni"] as string, App.Dictionary["coppe"] as string, App.Dict
             numeroPartite = 0;
         }
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
-        m = new Mazzo(e);
+        m = new Mazzo(e, m.Nome);
         Carta.SetHelper(new org.altervista.numerone.framework.briscola.CartaHelper(e.CartaBriscola), m);
         briscola = Carta.GetCarta(e.CartaBriscola);
         g = new Giocatore(new GiocatoreHelperUtente(), g.Nome, 3);
@@ -293,6 +299,15 @@ App.Dictionary["bastoni"] as string, App.Dictionary["coppe"] as string, App.Dict
         briscolaDaPunti = Preferences.Get("briscolaDaPunti", false);
         t.Interval = TimeSpan.FromSeconds(secondi);
         aggiornaNomi = true;
+        MazzoGatti = Preferences.Get("mazzoGatti", false);
+        if (MazzoGatti)
+            LoadGattiDeck();
+        else
+            LoadNapoletanoDeck();
+        Carta.SetSemiStr(m,
+App.Dictionary["bastoni"] as string, App.Dictionary["coppe"] as string, App.Dictionary["denari"] as string, App.Dictionary["spade"] as string, App.Dictionary["Fiori"] as string, App.Dictionary["Quadri"] as string, App.Dictionary["Cuori"] as string, App.Dictionary["Picche"] as string
+);
+        CartaBriscola.Text = $"{App.Dictionary["IlSemeDiBriscolaE"]}: {briscola.SemeStr}";
         if (level != helper.GetLivello())
             NuovaPartita();
     }
@@ -330,6 +345,101 @@ App.Dictionary["bastoni"] as string, App.Dictionary["coppe"] as string, App.Dict
     private void OnCancelFp_Click(object sender, EventArgs e)
     {
         Application.Current.Quit();
+    }
+
+    private void LoadGattiDeck()
+    {
+        n0.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\0.png").Result);
+        n1.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\1.png").Result);
+        n2.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\2.png").Result);
+        n3.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\3.png").Result);
+        n4.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\4.png").Result);
+        n5.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\5.png").Result);
+        n6.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\6.png").Result);
+        n7.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\7.png").Result);
+        n8.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\8.png").Result);
+        n9.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\9.png").Result);
+        n10.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\10.png").Result);
+        n11.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\11.png").Result);
+        n12.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\12.png").Result);
+        n13.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\13.png").Result);
+        n14.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\14.png").Result);
+        n15.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\15.png").Result);
+        n16.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\16.png").Result);
+        n17.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\17.png").Result);
+        n18.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\18.png").Result);
+        n19.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\19.png").Result);
+        n20.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\20.png").Result);
+        n21.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\21.png").Result);
+        n22.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\22.png").Result);
+        n23.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\23.png").Result);
+        n24.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\24.png").Result);
+        n25.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\25.png").Result);
+        n26.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\26.png").Result);
+        n27.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\27.png").Result);
+        n28.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\28.png").Result);
+        n29.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\29.png").Result);
+        n30.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\30.png").Result);
+        n31.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\31.png").Result);
+        n32.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\32.png").Result);
+        n33.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\33.png").Result);
+        n34.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\34.png").Result);
+        n35.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\35.png").Result);
+        n36.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\36.png").Result);
+        n37.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\37.png").Result);
+        n38.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\38.png").Result);
+        n39.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\39.png").Result);
+        Cpu0.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\retro_carte_pc.png").Result);
+        Cpu1.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\retro_carte_pc.png").Result);
+        Cpu2.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Gatti\\retro_carte_pc.png").Result);
+        m.SetNome("Gatti");
+    }
+    private void LoadNapoletanoDeck()
+    {
+        n0.Source = "n0.png";
+        n1.Source = "n1.png";
+        n2.Source = "n2.png";
+        n3.Source = "n3.png";
+        n4.Source = "n4.png";
+        n5.Source = "n5.png";
+        n6.Source = "n6.png";
+        n7.Source = "n7.png";
+        n8.Source = "n8.png";
+        n9.Source = "n9.png";
+        n10.Source = "n10.png";
+        n11.Source = "n11.png";
+        n12.Source = "n12.png";
+        n13.Source = "n13.png";
+        n14.Source = "n14.png";
+        n15.Source = "n15.png";
+        n16.Source = "n16.png";
+        n17.Source = "n17.png";
+        n18.Source = "n18.png";
+        n19.Source = "n19.png";
+        n20.Source = "n20.png";
+        n21.Source = "n21.png";
+        n22.Source = "n22.png";
+        n23.Source = "n23.png";
+        n24.Source = "n24.png";
+        n25.Source = "n25.png";
+        n26.Source = "n26.png";
+        n27.Source = "n27.png";
+        n28.Source = "n28.png";
+        n29.Source = "n29.png";
+        n30.Source = "n30.png";
+        n31.Source = "n31.png";
+        n32.Source = "n32.png";
+        n33.Source = "n33.png";
+        n34.Source = "n34.png";
+        n35.Source = "n35.png";
+        n36.Source = "n36.png";
+        n37.Source = "n37.png";
+        n38.Source = "n38.png";
+        n39.Source = "n39.png";
+        Cpu0.Source = "retro_carte_pc.png";
+        Cpu1.Source = "retro_carte_pc.png";
+        Cpu2.Source = "retro_carte_pc.png";
+        m.SetNome("Napoletano");
     }
 }
 
