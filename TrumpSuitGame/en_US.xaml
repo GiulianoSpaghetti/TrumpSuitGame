@@ -52,4 +52,5 @@
     <system:String x:Key="Quadri">Diamonds</system:String>
     <system:String x:Key="Fiori">Clubs</system:String>
     <system:String x:Key="Picche">Spades</system:String>
+    <system:String x:Key="ColMazzo">with%20deck%20</system:String>
 </ResourceDictionary>
