@@ -46,10 +46,11 @@
     <system:String x:Key="efinito">està%20terminado</system:String>
     <system:String x:Key="a">a</system:String>
     <system:String x:Key="piattaforma">na%20platfroma</system:String>
-    <system:String x:Key="EdffettuaSecondaPartita">Ele joga um segundo jogo?</system:String>
+    <system:String x:Key="EffettuaSecondaPartita">Ele joga um segundo jogo?</system:String>
     <system:String x:Key="MazzoAlternativo">Carregar baralho alternativo</system:String>
     <system:String x:Key="Cuori">Coração</system:String>
     <system:String x:Key="Quadri">Ouros</system:String>
     <system:String x:Key="Fiori">Paus</system:String>
     <system:String x:Key="Picche">Espadas</system:String>
+    <system:String x:Key="ColMazzo">com%20baralho%20</system:String>
 </ResourceDictionary>
