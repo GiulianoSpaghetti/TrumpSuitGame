@@ -14,6 +14,8 @@ Il primo software per android 16.1
 
 Il primo software che, secondo test interni, è pronto per gemini live
 
+Il primo prodotto free software ad avere un DLC free software.
+
 ![Napoli-Logo](https://github.com/user-attachments/assets/8163c808-62d3-40d3-bce3-0957e57bc26a)
 ![made in parco grifeo](https://github.com/user-attachments/assets/fadbf046-aeae-4f11-bda4-eb332c701d56)
 
@@ -141,6 +143,7 @@ Ora su android non va in out of memory, ma rallenta.
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
+
 
 
 
