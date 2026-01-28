@@ -1,4 +1,4 @@
-using CommunityToolkit.Maui.Alerts;
+﻿using CommunityToolkit.Maui.Alerts;
 using Microsoft.Maui.Graphics.Platform;
 using org.altervista.numerone.framework;
 using System.Globalization;
@@ -21,7 +21,7 @@ public partial class MainPage : ContentPage
     private ElaboratoreCarteBriscola e;
     private GiocatoreHelperCpu helper;
     public static MainPage MainPageInstance { get; private set; }
-    private bool MazzoGatti;
+    private string mazzo;
     public MainPage()
     {
         this.InitializeComponent();
@@ -30,9 +30,9 @@ public partial class MainPage : ContentPage
         avvisaTalloneFinito = Preferences.Get("avvisaTalloneFinito", true);
         secondi = (UInt16)Preferences.Get("secondi", 5);
         e = new ElaboratoreCarteBriscola(briscolaDaPunti);
-        MazzoGatti = Preferences.Get("mazzoGatti", false);
+        mazzo = Preferences.Get("mazzo","Napoletano");
         m = new Mazzo(e, "Napoletano");
-        if (MazzoGatti)
+        if (mazzo=="Gatti")
             LoadGattiDeck();
         Carta.Inizializza(m, 40, new org.altervista.numerone.framework.briscola.CartaHelper(e.CartaBriscola),
 App.Dictionary["bastoni"] as string, App.Dictionary["coppe"] as string, App.Dictionary["denari"] as string, App.Dictionary["spade"] as string, App.Dictionary["Fiori"] as string, App.Dictionary["Quadri"] as string, App.Dictionary["Cuori"] as string, App.Dictionary["Picche"] as string
@@ -291,6 +291,7 @@ App.Dictionary["bastoni"] as string, App.Dictionary["coppe"] as string, App.Dict
 
     public void AggiornaOpzioni()
     {
+        string s;
         UInt16 level = (UInt16)Preferences.Get("livello", 3);
         g.Nome=Preferences.Get("nomeUtente", "");
         cpu.Nome=Preferences.Get("nomeCpu", "");
@@ -299,15 +300,19 @@ App.Dictionary["bastoni"] as string, App.Dictionary["coppe"] as string, App.Dict
         briscolaDaPunti = Preferences.Get("briscolaDaPunti", false);
         t.Interval = TimeSpan.FromSeconds(secondi);
         aggiornaNomi = true;
-        MazzoGatti = Preferences.Get("mazzoGatti", false);
-        if (MazzoGatti)
-            LoadGattiDeck();
-        else
-            LoadNapoletanoDeck();
-        Carta.SetSemiStr(m,
+        s = Preferences.Get("mazzo", "Napoletano");
+        if (s != mazzo)
+        {
+            if (s=="Gatti")
+                LoadGattiDeck();
+            else
+                LoadNapoletanoDeck();
+            Carta.SetSemiStr(m,
 App.Dictionary["bastoni"] as string, App.Dictionary["coppe"] as string, App.Dictionary["denari"] as string, App.Dictionary["spade"] as string, App.Dictionary["Fiori"] as string, App.Dictionary["Quadri"] as string, App.Dictionary["Cuori"] as string, App.Dictionary["Picche"] as string
 );
-        CartaBriscola.Text = $"{App.Dictionary["IlSemeDiBriscolaE"]}: {briscola.SemeStr}";
+            CartaBriscola.Text = $"{App.Dictionary["IlSemeDiBriscolaE"]}: {briscola.SemeStr}";
+            mazzo = s;
+        }
         if (level != helper.GetLivello())
             NuovaPartita();
     }

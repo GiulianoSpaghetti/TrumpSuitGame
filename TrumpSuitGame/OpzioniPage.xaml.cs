@@ -86,7 +86,11 @@ public partial class OpzioniPage : ContentPage
 
     public async void OnGatti_Click(Object source, EventArgs evt)
     {
-        Preferences.Set("mazzoGatti", !Preferences.Get("mazzoGatti", false));
+        string s = Preferences.Get("mazzo", "Napoletano");
+        if (s=="Napoletano")
+            Preferences.Set("mazzo", "Gatti");
+        else
+            Preferences.Set("mazzo", "Napoletano");
 #if ANDROID
         AppShell.aggiorna = true;
 #else
