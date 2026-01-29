@@ -55,14 +55,6 @@ Il nonnino secondo di mano non ha né denari né come sopratagliare, non può pr
 E' questo il motto registrato, in entrambe le sue forme.
 Negli anni 2000 capitava a casa grazie alla wxbriscola, oggi può capitare per la strada.
 
-## Screenshots su windows
-
-<img width="1920" height="2832" alt="Screenshot 2025-12-17 210611" src="https://github.com/user-attachments/assets/6b75f2e9-b3b6-4dc3-8e04-461c607f39d3" />
-<img width="1920" height="2832" alt="Screenshot 2025-12-17 210819" src="https://github.com/user-attachments/assets/fbc4c2f5-b24e-4c06-942e-ea6df1ccec69" />
-<img width="1920" height="2880" alt="Screenshot 2025-12-17 210919" src="https://github.com/user-attachments/assets/638146b5-8d78-4fd5-8bff-98040793b161" />
-<img width="1920" height="2880" alt="Screenshot 2025-12-17 211024" src="https://github.com/user-attachments/assets/5883c42f-622c-4b77-ba77-4bbad68d386c" />
-
-
 ## Video di presentazione per Windows
 
 https://youtu.be/vaqBwT32oLw
@@ -70,6 +62,14 @@ https://youtu.be/vaqBwT32oLw
 ## Video di presentazione per android
 
 https://youtu.be/NjEHxAarx_Q
+
+## Screenshots su Windows
+
+<img width="1600" height="900" alt="Screenshot 2026-01-29 210251" src="https://github.com/user-attachments/assets/6a0c6b96-836f-4bb0-8c06-e167458c10f1" />
+<img width="1600" height="900" alt="Screenshot 2026-01-29 210305" src="https://github.com/user-attachments/assets/f3e0f61f-6234-4055-95d1-d4beff2745f5" />
+<img width="1600" height="900" alt="Screenshot 2026-01-29 210318" src="https://github.com/user-attachments/assets/d0444b8a-14a4-4979-a8c5-7d494e869a63" />
+<img width="1600" height="900" alt="Screenshot 2026-01-29 210339" src="https://github.com/user-attachments/assets/bccd9f30-c290-4a98-9190-6a4c2e387067" />
+
 
 ## Come installare
 
@@ -142,6 +142,7 @@ Ora su android non va in out of memory, ma rallenta.
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
+
 
 
 
