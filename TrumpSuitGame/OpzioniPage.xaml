@@ -33,6 +33,7 @@
                 <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
             <Label x:Name="opNomeUtente" Grid.Row="0" Grid.Column="0" />
             <Entry x:Name="txtNomeUtente" Grid.Row="0" Grid.Column="1" />
@@ -50,12 +51,19 @@
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
-            <Switch x:Name="swCartaBriscola" Grid.Row="5" Grid.Column="1" />
-            <Label x:Name="lbCartaBriscola" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Text="" />
-            <Switch x:Name="swAvvisaTallone" Grid.Row="6" Grid.Column="1" />
-            <Label x:Name="lbAvvisaTallone" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Text="" />
-            <Button x:Name="btnOk" Text="" Clicked="OnOk_Click"  Grid.Row="7" Grid.Column="1" />
-            <Button x:Name="btnGatti" Text="Load Gatti Deck" Clicked="OnGatti_Click" Grid.Row="7" Grid.Column="0" />
+            <Label x:Name="lblMazzi" Grid.Row="5" Grid.Column="0" Text="Livello" />
+            <Picker x:Name="pkrmazzi" Title="" Grid.Row="5" Grid.Column="1">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}" x:Name="amazzi">
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Switch x:Name="swCartaBriscola" Grid.Row="6" Grid.Column="1" />
+            <Label x:Name="lbCartaBriscola" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Text="" />
+            <Switch x:Name="swAvvisaTallone" Grid.Row="7" Grid.Column="1" />
+            <Label x:Name="lbAvvisaTallone" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Text="" />
+            <Button x:Name="btnOk" Text="" Clicked="OnOk_Click"  Grid.Row="8" Grid.Column="1" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

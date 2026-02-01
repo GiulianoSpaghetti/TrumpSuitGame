@@ -18,14 +18,23 @@ public partial class InfoPage : ContentPage
 
     protected override void OnAppearing()
     {
+        String mazzo, s = "Card images are the property of Modiano", s1 ="";
         base.OnAppearing();
-        if (Preferences.Get("mazzo", "Napoletano") == "Gatti")
+        mazzo = Preferences.Get("mazzo", "Napoletano");
+        switch (mazzo)
         {
-            s = $"Card are made by my camera, using the corners and the deck of a french deck taken from italian journal \"Carte\"";
+            case "Gatti":
+                s = $"Card are made by my camera, using the corners and the deck of a french deck taken from italian journal \"Carte\"";
+                break;
+            case "Siciliano":
+                s1 = new StreamReader(FileSystem.OpenAppPackageFileAsync("Mazzi/Siciliano/credits.txt").Result).ReadToEnd();
+                s1 = $", {s1}";
+                break;
+            case "Trevigiano":
+                s1 = new StreamReader(FileSystem.OpenAppPackageFileAsync("Mazzi/Trevigiano/credits.txt").Result).ReadToEnd();
+                s1 = $", {s1}";
+                break;
         }
-        else
-            s = "Card images are the property of Modiano";
-
-        Credits.Text = $"{s}, .NET and MAUI are properties of Microsoft Corporation";
+        Credits.Text = $"{s}{s1} .NET and MAUI are properties of Microsoft Corporation";
     }
 }
