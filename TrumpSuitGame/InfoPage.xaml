@@ -11,21 +11,15 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-            </Grid.RowDefinitions>
-            <Label Text="The Trump Suit Game 3.9" Grid.Row="0" />
-            <Label Text="Two player trump game simulator without multiplayer"  Grid.Row="1"/>
-            <Label Text="ⓒ Giulio Sorrentino 2023-2026, some right reserved" Grid.Row="2" />
-            <Label Text="License: GPLv3 or, in your humble opinion, any later version" Grid.Row="3"/>
+        <StackLayout>
+            <Label Text="The Trump Suit Game 3.9"/>
+            <Label Text="Two player trump game simulator without multiplayer"/>
+            <Label Text="ⓒ Giulio Sorrentino 2023-2026, some right reserved" />
+            <Label Text="License: GPLv3 or, in your humble opinion, any later version"/>
+            <Label x:Name="TranslatorCredit" Text="" />
+            <Label x:Name="RevisorCredit" Text="" />
             <Label x:Name="Credits" Text="Card images are the property of Modiano, .NET and MAUI are properties of Microsoft Corporation" Grid.Row="4" />
             <Button Text="More Informations" Clicked="OnSito_Click" Grid.Row="5" />
-        </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

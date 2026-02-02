@@ -7,13 +7,13 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Label">
-                <Setter Property="TextColor" Value="White" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
             </Style>
             <Style TargetType="Entry">
-                <Setter Property="TextColor" Value="White" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
             </Style>
             <Style TargetType="Picker">
-                <Setter Property="TextColor" Value="White" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
