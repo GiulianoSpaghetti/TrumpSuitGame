@@ -79,7 +79,7 @@ jobs:
           dotnet workload install ios --ignore-failed-sources
           dotnet workload install maui --ignore-failed-sources
     - name: Restore Dependencies
-      run: dotnet restore TrumpSuitGame.csproj
+      run: dotnet restore TrumpSuitGame.sln
 
     # Decode the base 64 encoded pfx and save the Signing_Certificate
     - name: Decode the pfx
