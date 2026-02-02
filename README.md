@@ -57,7 +57,7 @@ Negli anni 2000 capitava a casa grazie alla wxbriscola, oggi può capitare per l
 
 ## Video di presentazione per Windows
 
-https://youtu.be/vaqBwT32oLw
+https://youtu.be/_-BLVqwIF7I
 
 ## Video di presentazione per android
 
@@ -142,6 +142,7 @@ Ora su android non va in out of memory, ma rallenta.
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
+
 
 
 
