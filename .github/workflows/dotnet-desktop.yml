@@ -58,7 +58,7 @@ jobs:
     env:
       Solution_Name: TrumpSuitGame.slnx               # Replace with your solution name, i.e. MyWpfApp.sln
       Wap_Project_Directory: TrumpSuitGame.Package    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
-      Wap_Project_Path: TrumpSuitGame
+      Wap_Project_Path: .\
 
     steps:
     - name: Checkout
@@ -87,7 +87,7 @@ jobs:
     - name: Decode the pfx
       run: |
         $pfx_cert_byte = [System.Convert]::FromBase64String("${{ secrets.Base64_Encoded_Pfx }}")
-        $certificatePath = Join-Path -Path .\TrumpSuitGame -ChildPath GitHubActionsWorkflow.pfx
+        $certificatePath = Join-Path -Path .\ -ChildPath GitHubActionsWorkflow.pfx
         [IO.File]::WriteAllBytes("$certificatePath", $pfx_cert_byte)
 
     # Create the app package by building and packaging the Windows Application Packaging project
