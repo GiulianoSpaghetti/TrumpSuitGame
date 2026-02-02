@@ -56,7 +56,7 @@ jobs:
                              # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
 
     env:
-      Solution_Name: TrumpSuitGame.csproj                         # Replace with your solution name, i.e. MyWpfApp.sln
+      Solution_Name: TrumpSuitGame.slnx               # Replace with your solution name, i.e. MyWpfApp.sln
       Wap_Project_Directory: TrumpSuitGame.Package    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
       Wap_Project_Path: TrumpSuitGame
 
@@ -81,7 +81,7 @@ jobs:
           dotnet workload install ios --ignore-failed-sources
           dotnet workload install maui --ignore-failed-sources
     - name: Restore Dependencies
-      run: dotnet restore TrumpSuitGame.sln
+      run: dotnet restore TrumpSuitGame.slnx
 
     # Decode the base 64 encoded pfx and save the Signing_Certificate
     - name: Decode the pfx
