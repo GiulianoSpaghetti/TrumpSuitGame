@@ -443,7 +443,7 @@ App.Dictionary["bastoni"] as string, App.Dictionary["coppe"] as string, App.Dict
         Cpu2.Source = "retro_carte_pc.png";
         m.SetNome("Napoletano");
     }
-    private void LoaSicilianoiDeck()
+    private void LoadSicilianoiDeck()
     {
         n0.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Siciliano\\0.png").Result);
         n1.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Siciliano\\1.png").Result);
@@ -490,7 +490,7 @@ App.Dictionary["bastoni"] as string, App.Dictionary["coppe"] as string, App.Dict
         Cpu2.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Siciliano\\retro_carte_pc.png").Result);
         m.SetNome("Siciliano");
     }
-    private void LoaSTrevigianoiDeck()
+    private void LoadTrevigianoiDeck()
     {
         n0.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Trevigiano\\0.png").Result);
         n1.Source = ImageSource.FromStream(() => FileSystem.OpenAppPackageFileAsync("Mazzi\\Trevigiano\\1.png").Result);
@@ -546,10 +546,10 @@ App.Dictionary["bastoni"] as string, App.Dictionary["coppe"] as string, App.Dict
                 LoadGattiDeck();
                 break;
             case "Siciliano":
-                LoaSicilianoiDeck();
+                LoadSicilianoiDeck();
                 break;
             case "Trevigiano":
-                LoaSTrevigianoiDeck();
+                LoadTrevigianoiDeck();
                 break;
             default: LoadNapoletanoDeck();
                 break;

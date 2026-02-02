@@ -46,11 +46,7 @@ public partial class GreetingsPage : ContentPage
 
     private async void OnFPShare_Click(object sender, EventArgs e)
     {
-        string s;
-        if (Preferences.Get("mazzoGatti", false))
-            s = "Gatti";
-        else
-            s = "Napoletano";
+        string s = Preferences.Get("mazzo", "Napoletano");
         await Launcher.Default.OpenAsync(new Uri($"https://twitter.com/intent/tweet?text={App.Dictionary["ColGioco"]}%20{partite + 1}%20{g.Nome}%20{App.Dictionary["contro"]}%20{cpu.Nome}%20{App.Dictionary["ColMazzo"]}{s}%20{App.Dictionary["efinito"]}%20{puntiUtente}%20{App.Dictionary["a"]}%20{puntiCpu}%20{App.Dictionary["piattaforma"]}%20{App.Piattaforma}&url=https%3A%2F%2Fgithub.com%2Fnumerunix%2FTrumpSuitGame"));
         btnShare.IsEnabled = false;
     }
