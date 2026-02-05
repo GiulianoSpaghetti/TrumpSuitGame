@@ -61,7 +61,7 @@ https://youtu.be/_-BLVqwIF7I
 
 ## Video di presentazione per android
 
-https://youtu.be/NjEHxAarx_Q
+https://youtu.be/3sWtIp5qWes?si=uzZx1t4NHN9FyiTs
 
 ## Screenshots su Windows
 
@@ -142,6 +142,7 @@ Ora su android non va in out of memory, ma rallenta.
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
+
 
 
 
