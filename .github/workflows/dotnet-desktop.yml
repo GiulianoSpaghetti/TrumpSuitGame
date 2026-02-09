@@ -96,8 +96,8 @@ jobs:
     - name: Create the app package
       run: msbuild $env:Solution_Name /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle /p:PackageCertificateKeyFile=$en:certificatePath
       env:
-        Appx_Bundle: Always
-        Appx_Bundle_Platforms: x86|x64
+        Appx_Bundle: never
+        Appx_Bundle_Platforms: x64|arm64
         Appx_Package_Build_Mode: StoreUpload
         Configuration: ${{ matrix.configuration }}
 
@@ -110,4 +110,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: MSIX Package
-        path: ${{ env.Wap_Project_Directory }}\TrumpSuitGame\TuumpSuitGame\bin\Release\net10.0-windows10.0.26100.0\win-x64\AppPackages
+        path: D:\a\TrumpSuitGame\TrumpSuitGame\TrumpSuitGame\AppPackages
