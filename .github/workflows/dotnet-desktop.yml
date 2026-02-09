@@ -20,8 +20,8 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 10.0.x
-        include-prerelease: true
-        dotnet-quality: 'stable'
+        include-prerelease: false
+        dotnet-quality: 'ga.'
 
     - name: Install .NET MAUI Workload
       run: dotnet workload install maui
