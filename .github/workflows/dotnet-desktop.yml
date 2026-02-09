@@ -58,7 +58,7 @@ jobs:
     env:
       Solution_Name: trumpsuitgame.slnx                    # Replace with your solution name, i.e. MyWpfApp.sln.
       Wap_Project_Directory: TrumpSuitGame                 # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
-      Wap_Project_Path: TrumpSuitGame\TrumpSuitGame                   # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
+      Wap_Project_Path: TrumpSuitGame                   # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
 
     steps:
     - name: Checkout
@@ -110,4 +110,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: MSIX Package
-        path: D:\a\TrumpSuitGame\TrumpSuitGame\TrumpSuitGame\bin\Release\net10.0-windows10.0.26100.0\win-x64\AppPackages
+        path: D:\a\TrumpSuitGame\AppPackages
