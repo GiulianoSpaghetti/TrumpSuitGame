@@ -110,4 +110,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: MSIX Package
-        path: ${{ env.Wap_Project_Directory }}\bin\Release\net10.0-windows10.0.26100.0\win-x64\AppPackages
+        path: ${{ env.Wap_Project_Directory }}\TrumpSuitGame\TuumpSuitGame\bin\Release\net10.0-windows10.0.26100.0\win-x64\AppPackages
