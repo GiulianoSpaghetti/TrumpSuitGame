@@ -93,14 +93,20 @@ jobs:
         [IO.File]::WriteAllBytes("$certificatePath", $pfx_cert_byte)
 
     # Create the app package by building and packaging the Windows Application Packaging project
-    - name: Create the app package
-      run: msbuild $env:Solution_Name /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle /p:PackageCertificateKeyFile=$en:certificatePath
+   # - name: Create the app package
+   #   run: msbuild $env:Solution_Name /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle /p:PackageCertificateKeyFile=$en:certificatePath
+   #   env:
+   #     Appx_Bundle: never
+   #     Appx_Bundle_Platforms: x64|arm64
+   #     Appx_Package_Build_Mode: StoreUpload
+   #     Configuration: ${{ matrix.configuration }}
+    - name: Build the Windows Application Packaging Project (wapproj)
+      run: msbuild $env:Solution_Name /p:Platform=$env:TargetPlatform /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:BuildMode /p:AppxBundle=$env:AppxBundle /p:PackageCertificateKeyFile=$env:SigningCertificatePath
       env:
-        Appx_Bundle: never
-        Appx_Bundle_Platforms: x64|arm64
-        Appx_Package_Build_Mode: StoreUpload
-        Configuration: ${{ matrix.configuration }}
-
+        AppxBundle: Never
+        BuildMode: SideLoadOnly
+        Configuration: Release
+        TargetPlatform: [x64, arm64]
     # Remove the pfx
     - name: Remove the pfx
       run: Remove-Item -path $env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
@@ -110,4 +116,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: MSIX Package
-        path: D:\a\TrumpSuitGame\AppPackages
+        path: D:\a\TrumpSuitGame\TrumpSuitGame\AppPackages
