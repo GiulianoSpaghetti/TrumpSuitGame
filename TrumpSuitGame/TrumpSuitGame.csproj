@@ -43,6 +43,7 @@
 		<AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
 		<GenerateTestArtifacts>True</GenerateTestArtifacts>
 		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+		<PackageCertificateThumbprint>4AA67A4BBD94B31875625FCFB408508B40325E36</PackageCertificateThumbprint>
 	</PropertyGroup>
 
 	<ItemGroup>

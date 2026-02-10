@@ -8,7 +8,7 @@
     xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
     IgnorableNamespaces="uap rescap com desktop mp">
 
-	<Identity Name="21961GiulioSorrentino.Thetrumpsuitgame" Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B" Version="3.9.6.0" />
+	<Identity Name="21961GiulioSorrentino.Thetrumpsuitgame" Publisher="CN=numer" Version="3.9.6.0" />
 	<mp:PhoneIdentity PhoneProductId="3ce577d7-7915-473f-8118-f5d6f5df99a3" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
 	<Properties>
     <DisplayName>The trump suit game</DisplayName>
