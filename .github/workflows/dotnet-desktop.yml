@@ -94,7 +94,7 @@ jobs:
 
     # Create the app package by building and packaging the Windows Application Packaging project
     - name: Create the app package
-      run: msbuild $env:Solution_Name /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle /p:PackageCertificateKeyFile=.\GitHubActionsWorkflow.pfx /p:PackageCertificatePassword=${{ secrets.Pfx_Key }}
+      run: dotnet publish -p:PublishProfile=.\TrumpSuitGame\Properties\PublishProfiles\MSIX-win-X64.pubxml -f net10.0-windows10.0.26100.0
       env:
         Appx_Bundle: never
         Appx_Bundle_Platforms: x64|arm64
