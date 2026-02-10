@@ -103,7 +103,7 @@ jobs:
    #     Appx_Package_Build_Mode: StoreUpload
    #     Configuration: ${{ matrix.configuration }}
     - name: Build the Windows Application Packaging Project (wapproj)
-      run: msbuild $env:Solution_Name /p:Platform=$env:TargetPlatform /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:BuildMode /p:AppxBundle=$env:AppxBundle /p:PackageCertificateKeyFile=$env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
+      run: msbuild $env:Solution_Name /p:Platform=$env:TargetPlatform /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:BuildMode /p:AppxBundle=$env:AppxBundle /p:PackageCertificateKeyFile=.\GitHubActionsWorkflow.pfx
       env:
         AppxBundle: Never
         BuildMode: SideLoadOnly
